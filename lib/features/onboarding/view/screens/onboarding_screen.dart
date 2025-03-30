@@ -25,6 +25,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         width: double.infinity,
         decoration: BoxDecoration(
           image: DecorationImage(
+            colorFilter:
+                currentIndex == 0
+                    ? ColorFilter.mode(
+                      Colors.white.withAlpha(170),
+                      BlendMode.overlay,
+                    )
+                    : null,
             image:
                 currentIndex == 0
                     ? AssetImage(Assets.imagesOnboardingBackground)
@@ -51,7 +58,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             fontSize: 13,
                             height: 1.6,
                             letterSpacing: 0,
-                            color: Colors.grey.shade400,
+                            color: Color(0xff949D9E),
                           ),
                         ),
                       ),
