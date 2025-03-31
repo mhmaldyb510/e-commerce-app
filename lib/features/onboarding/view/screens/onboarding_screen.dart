@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:e_commerce_app/core/constants/assets.dart';
 import 'package:e_commerce_app/core/widgets/custom_button.dart';
+import 'package:e_commerce_app/features/authentication/view/screens/login_screen.dart';
 import 'package:e_commerce_app/features/onboarding/view/widgets/first_onboarding_page.dart';
 import 'package:e_commerce_app/features/onboarding/view/widgets/second_onboarding_page.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
@@ -48,7 +49,15 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   ? Row(
                     children: [
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushAndRemoveUntil(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => LoginScreen(),
+                            ),
+                            (Route<dynamic> route) => false,
+                          );
+                        },
                         style: TextButton.styleFrom(padding: EdgeInsets.zero),
                         child: Text(
                           S.of(context).skip,
@@ -95,17 +104,15 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       currentIndex == 1
                           ? CustomButton(
                             key: ValueKey('startNowButton'),
-                            onPressed: () {},
-                            child: Text(
-                              S.of(context).startNow,
-                              style: TextStyle(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 16,
-                                height: 1.6,
-                                letterSpacing: 0,
-                                color: Color(0xffFFFFFF),
-                              ),
-                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => LoginScreen(),
+                                ),
+                              );
+                            },
+                            text: S.of(context).startNow,
                           )
                           : SizedBox(height: 54, key: ValueKey('emptySpace')),
                 ),

@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       ],
       supportedLocales: S.delegate.supportedLocales,
       debugShowCheckedModeBanner: false,
-      theme: LightTheme.theme,
+      theme: LightTheme().getThemeData(),
       home: OnboardingScreen(),
     );
   }

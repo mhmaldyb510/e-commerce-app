@@ -22,6 +22,17 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
+    "createNewAccount": MessageLookupByLibrary.simpleMessage(
+      "Create New Account",
+    ),
+    "dontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
+      "Don\'t have an account?",
+    ),
+    "email": MessageLookupByLibrary.simpleMessage("Email"),
+    "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
+    "login": MessageLookupByLibrary.simpleMessage("Login"),
+    "newAccount": MessageLookupByLibrary.simpleMessage("New Account"),
     "onboardingDetails1": MessageLookupByLibrary.simpleMessage(
       "Discover a unique shopping experience with ProductsHUB. Explore our wide range of high-quality products and get the best deals and exceptional service.",
     ),
@@ -29,7 +40,18 @@ class MessageLookup extends MessageLookupByLibrary {
       "We offer you the best variety of products. Check the details, images, and reviews to ensure you choose the perfect product.",
     ),
     "onboardingHead2": MessageLookupByLibrary.simpleMessage("Search and Shop"),
+    "or": MessageLookupByLibrary.simpleMessage("Or"),
+    "password": MessageLookupByLibrary.simpleMessage("Password"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("Welcome to "),
+    "signInWithApple": MessageLookupByLibrary.simpleMessage(
+      "Sign in with Apple",
+    ),
+    "signInWithFacebook": MessageLookupByLibrary.simpleMessage(
+      "Sign in with Facebook",
+    ),
+    "signInWithGoogle": MessageLookupByLibrary.simpleMessage(
+      "Sign in with Google",
+    ),
     "skip": MessageLookupByLibrary.simpleMessage("Skip"),
     "startNow": MessageLookupByLibrary.simpleMessage("Start now"),
   };

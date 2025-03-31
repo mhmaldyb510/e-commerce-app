@@ -1,11 +1,12 @@
+import 'package:e_commerce_app/core/themes/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CustomButton extends StatelessWidget {
   final void Function()? onPressed;
-  final Widget child;
+  final String text;
 
-  const CustomButton({super.key, this.onPressed, required this.child});
+  const CustomButton({super.key, this.onPressed, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +24,15 @@ class CustomButton extends StatelessWidget {
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [child],
+        children: [
+          Text(
+            text,
+            style: TextStyles.bodyBaseBold.copyWith(
+              color: Colors.white,
+              fontWeight: FontWeight.w700,
+            ),
+          ),
+        ],
       ),
     );
   }
