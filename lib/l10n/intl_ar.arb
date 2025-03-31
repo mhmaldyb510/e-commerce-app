@@ -16,7 +16,15 @@
     "or": "أو",
     "signInWithGoogle": "تسجيل بواسطة جوجل",
     "signInWithFacebook": "تسجيل بواسطة فيسبوك",
-    "signInWithApple": "تسجيل بواسطة ابل"
+    "signInWithApple": "تسجيل بواسطة ابل",
+    "pleaseEnterEmail": "من فضلك ادخل البريد الالكتروني",
+    "pleaseEnterValidEmail": "من فضلك ادخل بريد الكتروني صحيح",
+    "pleaseEnterPassword": "من فضلك ادخل كلمة المرور",
+    "passwordShouldBeAtLeast": "كلمة المرور يجب ان تكون على الاقل ",
+    "characters": "حروف",
+    "pleaseEnterName": "من فضلك ادخل الاسم",
+    "nameShouldBeAtLeast": "الاسم يجب ان يكون على الاقل "
+
 
 
 }
