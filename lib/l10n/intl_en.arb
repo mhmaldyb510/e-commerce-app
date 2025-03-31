@@ -4,5 +4,19 @@
     "onboardingDetails1": "Discover a unique shopping experience with ProductsHUB. Explore our wide range of high-quality products and get the best deals and exceptional service.",
     "onboardingHead2": "Search and Shop",
     "onboardingDetails2": "We offer you the best variety of products. Check the details, images, and reviews to ensure you choose the perfect product.",
-    "startNow": "Start now"
+    "startNow": "Start now",
+    "login": "Login",
+    "newAccount": "New Account",
+    "createNewAccount": "Create New Account",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "dontHaveAnAccount": "Don't have an account?",
+    "createAccount": "Create Account",
+    "or": "Or",
+    "signInWithGoogle": "Sign in with Google",
+    "signInWithFacebook": "Sign in with Facebook",
+    "signInWithApple": "Sign in with Apple"
+
+    
 }
