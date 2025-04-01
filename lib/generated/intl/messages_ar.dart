@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "characters": MessageLookupByLibrary.simpleMessage("حروف"),
     "createAccount": MessageLookupByLibrary.simpleMessage("قم بانشاء حساب"),
     "createNewAccount": MessageLookupByLibrary.simpleMessage("انشاء حساب جديد"),
     "dontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
@@ -30,6 +31,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+    "nameShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
+      "الاسم يجب ان يكون على الاقل ",
+    ),
     "newAccount": MessageLookupByLibrary.simpleMessage("حساب جديد"),
     "onboardingDetails1": MessageLookupByLibrary.simpleMessage(
       "اكتشف تجربة تسوق فريدة مع ProductsHUB. استكشف مجموعتنا الواسعة من المنتجات عالية الجودة واحصل على أفضل العروض والخدمة المتميزة.",
@@ -40,6 +44,21 @@ class MessageLookup extends MessageLookupByLibrary {
     "onboardingHead2": MessageLookupByLibrary.simpleMessage("ابحث وتسوق"),
     "or": MessageLookupByLibrary.simpleMessage("أو"),
     "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+    "passwordShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
+      "كلمة المرور يجب ان تكون على الاقل ",
+    ),
+    "pleaseEnterEmail": MessageLookupByLibrary.simpleMessage(
+      "من فضلك ادخل البريد الالكتروني",
+    ),
+    "pleaseEnterName": MessageLookupByLibrary.simpleMessage(
+      "من فضلك ادخل الاسم",
+    ),
+    "pleaseEnterPassword": MessageLookupByLibrary.simpleMessage(
+      "من فضلك ادخل كلمة المرور",
+    ),
+    "pleaseEnterValidEmail": MessageLookupByLibrary.simpleMessage(
+      "من فضلك ادخل بريد الكتروني صحيح",
+    ),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("مرحباً بك في "),
     "signInWithApple": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة ابل"),
     "signInWithFacebook": MessageLookupByLibrary.simpleMessage(

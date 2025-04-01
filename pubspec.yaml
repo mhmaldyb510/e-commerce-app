@@ -41,6 +41,9 @@ dependencies:
   smooth_page_indicator: ^1.2.1
   modal_progress_hud_nsn: ^0.5.1
   icons_plus: ^5.0.0
+  bloc: ^9.0.0
+  meta: ^1.16.0
+  flutter_bloc: ^9.1.0
 
 dev_dependencies:
   flutter_test:

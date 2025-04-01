@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "characters": MessageLookupByLibrary.simpleMessage("characters"),
     "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
     "createNewAccount": MessageLookupByLibrary.simpleMessage(
       "Create New Account",
@@ -32,6 +33,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "email": MessageLookupByLibrary.simpleMessage("Email"),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
     "login": MessageLookupByLibrary.simpleMessage("Login"),
+    "nameShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
+      "Name should be at least ",
+    ),
     "newAccount": MessageLookupByLibrary.simpleMessage("New Account"),
     "onboardingDetails1": MessageLookupByLibrary.simpleMessage(
       "Discover a unique shopping experience with ProductsHUB. Explore our wide range of high-quality products and get the best deals and exceptional service.",
@@ -42,6 +46,21 @@ class MessageLookup extends MessageLookupByLibrary {
     "onboardingHead2": MessageLookupByLibrary.simpleMessage("Search and Shop"),
     "or": MessageLookupByLibrary.simpleMessage("Or"),
     "password": MessageLookupByLibrary.simpleMessage("Password"),
+    "passwordShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
+      "Password should be at least ",
+    ),
+    "pleaseEnterEmail": MessageLookupByLibrary.simpleMessage(
+      "Please enter email",
+    ),
+    "pleaseEnterName": MessageLookupByLibrary.simpleMessage(
+      "Please enter name",
+    ),
+    "pleaseEnterPassword": MessageLookupByLibrary.simpleMessage(
+      "Please enter password",
+    ),
+    "pleaseEnterValidEmail": MessageLookupByLibrary.simpleMessage(
+      "Please enter valid email",
+    ),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("Welcome to "),
     "signInWithApple": MessageLookupByLibrary.simpleMessage(
       "Sign in with Apple",

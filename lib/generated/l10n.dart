@@ -194,6 +194,71 @@ class S {
       args: [],
     );
   }
+
+  /// `Please enter email`
+  String get pleaseEnterEmail {
+    return Intl.message(
+      'Please enter email',
+      name: 'pleaseEnterEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter valid email`
+  String get pleaseEnterValidEmail {
+    return Intl.message(
+      'Please enter valid email',
+      name: 'pleaseEnterValidEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter password`
+  String get pleaseEnterPassword {
+    return Intl.message(
+      'Please enter password',
+      name: 'pleaseEnterPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password should be at least `
+  String get passwordShouldBeAtLeast {
+    return Intl.message(
+      'Password should be at least ',
+      name: 'passwordShouldBeAtLeast',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `characters`
+  String get characters {
+    return Intl.message('characters', name: 'characters', desc: '', args: []);
+  }
+
+  /// `Please enter name`
+  String get pleaseEnterName {
+    return Intl.message(
+      'Please enter name',
+      name: 'pleaseEnterName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name should be at least `
+  String get nameShouldBeAtLeast {
+    return Intl.message(
+      'Name should be at least ',
+      name: 'nameShouldBeAtLeast',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

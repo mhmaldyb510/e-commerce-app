@@ -16,7 +16,15 @@
     "or": "Or",
     "signInWithGoogle": "Sign in with Google",
     "signInWithFacebook": "Sign in with Facebook",
-    "signInWithApple": "Sign in with Apple"
+    "signInWithApple": "Sign in with Apple",
+    "pleaseEnterEmail": "Please enter email",
+    "pleaseEnterValidEmail": "Please enter valid email",
+    "pleaseEnterPassword": "Please enter password",
+    "passwordShouldBeAtLeast": "Password should be at least ",
+    "characters": "characters",
+    "pleaseEnterName": "Please enter name",
+    "nameShouldBeAtLeast": "Name should be at least "
+
 
     
 }
