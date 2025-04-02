@@ -5,6 +5,7 @@ import 'package:e_commerce_app/core/widgets/custom_button.dart';
 import 'package:e_commerce_app/core/widgets/custom_text_form_field.dart';
 import 'package:e_commerce_app/core/widgets/third_part_buttons.dart';
 import 'package:e_commerce_app/features/authentication/cubit/authentication_cubit.dart';
+import 'package:e_commerce_app/features/authentication/view/screens/signup_screen.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -19,15 +20,15 @@ class LoginForm extends StatelessWidget {
       builder: (context, state) {
         var cubit = context.read<AuthenticationCubit>();
         return Form(
-          key: cubit.formKey,
-          autovalidateMode: cubit.autovalidateMode,
+          key: cubit.logInFormKey,
+          autovalidateMode: cubit.logInAutovalidateMode,
           child: SingleChildScrollView(
             child: Column(
               children: [
                 SizedBox(height: 24),
                 // --------------email field----------------
                 CustomTextFormField(
-                  onChanged: (value) => cubit.email = value,
+                  onChanged: (value) => cubit.logInEmail = value,
                   validator:
                       (p0) => Validation.emailValidator(context, p0 ?? ''),
                   hintText: S.of(context).email,
@@ -37,7 +38,7 @@ class LoginForm extends StatelessWidget {
                 SizedBox(height: 16),
                 // --------------password field----------------
                 CustomTextFormField(
-                  onChanged: (value) => cubit.password = value,
+                  onChanged: (value) => cubit.logInPassword = value,
                   validator:
                       (p0) => Validation.passwordValidator(context, p0 ?? ''),
                   hintText: S.of(context).password,
@@ -68,6 +69,13 @@ class LoginForm extends StatelessWidget {
                 SizedBox(height: 33),
                 // --------------dont have an account section----------------
                 GestureDetector(
+                  onTap:
+                      () => Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SignupScreen(),
+                        ),
+                      ),
                   child: RichText(
                     text: TextSpan(
                       text: '${S.of(context).dontHaveAnAccount} ',

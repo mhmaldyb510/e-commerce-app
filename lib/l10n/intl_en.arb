@@ -23,7 +23,11 @@
     "passwordShouldBeAtLeast": "Password should be at least ",
     "characters": "characters",
     "pleaseEnterName": "Please enter name",
-    "nameShouldBeAtLeast": "Name should be at least "
+    "nameShouldBeAtLeast": "Name should be at least ",
+    "fullName": "Full Name",
+    "byCreatingAccount": "By creating an account , you agree to our | Terms and Conditions",
+    "alreadyHaveAnAccount": "Already have an account?"
+
 
 
     

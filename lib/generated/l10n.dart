@@ -259,6 +259,31 @@ class S {
       args: [],
     );
   }
+
+  /// `Full Name`
+  String get fullName {
+    return Intl.message('Full Name', name: 'fullName', desc: '', args: []);
+  }
+
+  /// `By creating an account , you agree to our | Terms and Conditions`
+  String get byCreatingAccount {
+    return Intl.message(
+      'By creating an account , you agree to our | Terms and Conditions',
+      name: 'byCreatingAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Already have an account?`
+  String get alreadyHaveAnAccount {
+    return Intl.message(
+      'Already have an account?',
+      name: 'alreadyHaveAnAccount',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
