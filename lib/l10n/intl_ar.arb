@@ -7,7 +7,7 @@
     "startNow": "ابدأ الان",
     "login": "تسجيل الدخول",
     "newAccount": "حساب جديد",
-    "createNewAccount": "انشاء حساب جديد",
+    "createNewAccount": "إنشاء حساب جديد",
     "email": "البريد الالكتروني",
     "password": "كلمة المرور",
     "forgotPassword": "نسيت كلمة المرور؟",
@@ -23,8 +23,10 @@
     "passwordShouldBeAtLeast": "كلمة المرور يجب ان تكون على الاقل ",
     "characters": "حروف",
     "pleaseEnterName": "من فضلك ادخل الاسم",
-    "nameShouldBeAtLeast": "الاسم يجب ان يكون على الاقل "
-
+    "nameShouldBeAtLeast": "الاسم يجب ان يكون على الاقل ",
+    "fullName": "الاسم كامل",
+    "byCreatingAccount": "من خلال إنشاء حساب , فإنك توافق على | الشروط والأحكام الخاصة بنا",
+    "alreadyHaveAnAccount": "تمتلك حساب بالفعل؟"
 
 
 }

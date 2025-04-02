@@ -22,14 +22,21 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "alreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
+      "تمتلك حساب بالفعل؟",
+    ),
+    "byCreatingAccount": MessageLookupByLibrary.simpleMessage(
+      "من خلال إنشاء حساب , فإنك توافق على | الشروط والأحكام الخاصة بنا",
+    ),
     "characters": MessageLookupByLibrary.simpleMessage("حروف"),
     "createAccount": MessageLookupByLibrary.simpleMessage("قم بانشاء حساب"),
-    "createNewAccount": MessageLookupByLibrary.simpleMessage("انشاء حساب جديد"),
+    "createNewAccount": MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
     "dontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "لا يوجد لديك حساب؟",
     ),
     "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
+    "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "nameShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
       "الاسم يجب ان يكون على الاقل ",
