@@ -284,6 +284,21 @@ class S {
       args: [],
     );
   }
+
+  /// `Don't worry, just enter your email and we will send a verification code.`
+  String get verificationCodePrompt {
+    return Intl.message(
+      'Don\'t worry, just enter your email and we will send a verification code.',
+      name: 'verificationCodePrompt',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `?`
+  String get questionMark {
+    return Intl.message('?', name: 'questionMark', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

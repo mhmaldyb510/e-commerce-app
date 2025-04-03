@@ -66,6 +66,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "pleaseEnterValidEmail": MessageLookupByLibrary.simpleMessage(
       "من فضلك ادخل بريد الكتروني صحيح",
     ),
+    "questionMark": MessageLookupByLibrary.simpleMessage("؟"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("مرحباً بك في "),
     "signInWithApple": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة ابل"),
     "signInWithFacebook": MessageLookupByLibrary.simpleMessage(
@@ -76,5 +77,8 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
     "startNow": MessageLookupByLibrary.simpleMessage("ابدأ الان"),
+    "verificationCodePrompt": MessageLookupByLibrary.simpleMessage(
+      "لا تقلق ، ما عليك سوى كتابة البريد الإلكتروني وسنرسل رمز التحقق.",
+    ),
   };
 }

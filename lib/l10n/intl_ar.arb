@@ -26,7 +26,7 @@
     "nameShouldBeAtLeast": "الاسم يجب ان يكون على الاقل ",
     "fullName": "الاسم كامل",
     "byCreatingAccount": "من خلال إنشاء حساب , فإنك توافق على | الشروط والأحكام الخاصة بنا",
-    "alreadyHaveAnAccount": "تمتلك حساب بالفعل؟"
-
-
+    "alreadyHaveAnAccount": "تمتلك حساب بالفعل؟",
+    "verificationCodePrompt": "لا تقلق ، ما عليك سوى كتابة البريد الإلكتروني وسنرسل رمز التحقق.",
+    "questionMark": "؟"
 }

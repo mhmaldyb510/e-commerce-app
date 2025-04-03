@@ -68,6 +68,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "pleaseEnterValidEmail": MessageLookupByLibrary.simpleMessage(
       "Please enter valid email",
     ),
+    "questionMark": MessageLookupByLibrary.simpleMessage("?"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("Welcome to "),
     "signInWithApple": MessageLookupByLibrary.simpleMessage(
       "Sign in with Apple",
@@ -80,5 +81,8 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "skip": MessageLookupByLibrary.simpleMessage("Skip"),
     "startNow": MessageLookupByLibrary.simpleMessage("Start now"),
+    "verificationCodePrompt": MessageLookupByLibrary.simpleMessage(
+      "Don\'t worry, just enter your email and we will send a verification code.",
+    ),
   };
 }
