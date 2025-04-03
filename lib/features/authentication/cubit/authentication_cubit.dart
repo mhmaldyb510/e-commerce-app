@@ -50,7 +50,7 @@ class AuthenticationCubit extends Cubit<AuthenticationState> {
       // TODO: implement signUp
     }
   }
-
+  
   // forgetPassword variables
 
   String forgetPasswordEmail = '';
@@ -66,4 +66,5 @@ class AuthenticationCubit extends Cubit<AuthenticationState> {
       // TODO: implement forgetPassword
     }
   }
+
 }
