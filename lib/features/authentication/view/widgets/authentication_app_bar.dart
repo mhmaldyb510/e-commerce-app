@@ -26,11 +26,13 @@ class AuthenticationAppBar extends StatelessWidget {
       title: Text(
         title == AuthenticationAppBarType.login
             ? S.of(context).login
-            : S.of(context).newAccount,
+            : title == AuthenticationAppBarType.register
+            ? S.of(context).newAccount
+            : S.of(context).forgotPassword.split(S.of(context).questionMark)[0],
         style: TextStyles.bodyLargeBold,
       ),
     );
   }
 }
 
-enum AuthenticationAppBarType { login, register }
+enum AuthenticationAppBarType { login, register, forgotPassword }

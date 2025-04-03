@@ -50,4 +50,20 @@ class AuthenticationCubit extends Cubit<AuthenticationState> {
       // TODO: implement signUp
     }
   }
+
+  // forgetPassword variables
+
+  String forgetPasswordEmail = '';
+
+  GlobalKey<FormState> forgetPasswordFormKey = GlobalKey<FormState>();
+
+  AutovalidateMode forgetPasswordAutovalidateMode = AutovalidateMode.disabled;
+
+  forgetPassword() {
+    forgetPasswordAutovalidateMode = AutovalidateMode.always;
+    emit(AuthenticationInitial());
+    if (forgetPasswordFormKey.currentState!.validate()) {
+      // TODO: implement forgetPassword
+    }
+  }
 }

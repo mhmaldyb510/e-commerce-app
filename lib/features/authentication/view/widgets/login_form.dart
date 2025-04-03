@@ -5,6 +5,7 @@ import 'package:e_commerce_app/core/widgets/custom_button.dart';
 import 'package:e_commerce_app/core/widgets/custom_text_form_field.dart';
 import 'package:e_commerce_app/core/widgets/third_part_buttons.dart';
 import 'package:e_commerce_app/features/authentication/cubit/authentication_cubit.dart';
+import 'package:e_commerce_app/features/authentication/view/screens/forgot_password_screen.dart';
 import 'package:e_commerce_app/features/authentication/view/screens/signup_screen.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -52,7 +53,14 @@ class LoginForm extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const ForgotPasswordScreen(),
+                          ),
+                        );
+                      },
                       child: Text(
                         S.of(context).forgotPassword,
                         style: TextStyles.bodySmallBold.copyWith(

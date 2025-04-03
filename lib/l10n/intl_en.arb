@@ -26,9 +26,7 @@
     "nameShouldBeAtLeast": "Name should be at least ",
     "fullName": "Full Name",
     "byCreatingAccount": "By creating an account , you agree to our | Terms and Conditions",
-    "alreadyHaveAnAccount": "Already have an account?"
-
-
-
-    
+    "alreadyHaveAnAccount": "Already have an account?",
+    "verificationCodePrompt": "Don't worry, just enter your email and we will send a verification code.",
+    "questionMark": "?"
 }
