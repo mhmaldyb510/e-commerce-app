@@ -1,6 +1,7 @@
 import 'package:e_commerce_app/features/authentication/cubit/authentication_cubit.dart';
 import 'package:e_commerce_app/features/authentication/view/widgets/authentication_app_bar.dart';
 import 'package:e_commerce_app/features/authentication/view/widgets/forgot_password_form.dart';
+import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -11,11 +12,15 @@ class ForgotPasswordScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => AuthenticationCubit(),
-      child: const Scaffold(
+      child: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(56),
+          preferredSize: const Size.fromHeight(56),
           child: AuthenticationAppBar(
-            title: AuthenticationAppBarType.forgotPassword,
+            title:
+                S
+                    .of(context)
+                    .forgotPassword
+                    .split(S.of(context).questionMark)[0],
           ),
         ),
         body: Padding(

@@ -1,6 +1,7 @@
 import 'package:e_commerce_app/features/authentication/cubit/authentication_cubit.dart';
 import 'package:e_commerce_app/features/authentication/view/widgets/authentication_app_bar.dart';
 import 'package:e_commerce_app/features/authentication/view/widgets/signup_form.dart';
+import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
@@ -17,9 +18,7 @@ class SignupScreen extends StatelessWidget {
         child: Scaffold(
           appBar: PreferredSize(
             preferredSize: Size.fromHeight(56),
-            child: const AuthenticationAppBar(
-              title: AuthenticationAppBarType.register,
-            ),
+            child: AuthenticationAppBar(title: S.of(context).newAccount),
           ),
           body: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
