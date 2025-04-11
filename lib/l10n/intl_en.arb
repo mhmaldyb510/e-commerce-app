@@ -28,5 +28,8 @@
     "byCreatingAccount": "By creating an account , you agree to our | Terms and Conditions",
     "alreadyHaveAnAccount": "Already have an account?",
     "verificationCodePrompt": "Don't worry, just enter your email and we will send a verification code.",
-    "questionMark": "?"
+    "questionMark": "?",
+    "codeVerification": "Code Verification",
+    "enterCodeSentToEmail": "Enter the code sent to this email",
+    "resendCode": "Resend the Code"
 }

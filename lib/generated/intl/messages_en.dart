@@ -29,6 +29,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "By creating an account , you agree to our | Terms and Conditions",
     ),
     "characters": MessageLookupByLibrary.simpleMessage("characters"),
+    "codeVerification": MessageLookupByLibrary.simpleMessage(
+      "Code Verification",
+    ),
     "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
     "createNewAccount": MessageLookupByLibrary.simpleMessage(
       "Create New Account",
@@ -37,6 +40,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "Don\'t have an account?",
     ),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
+    "enterCodeSentToEmail": MessageLookupByLibrary.simpleMessage(
+      "Enter the code sent to this email",
+    ),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
     "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
     "login": MessageLookupByLibrary.simpleMessage("Login"),
@@ -69,6 +75,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Please enter valid email",
     ),
     "questionMark": MessageLookupByLibrary.simpleMessage("?"),
+    "resendCode": MessageLookupByLibrary.simpleMessage("Resend the Code"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("Welcome to "),
     "signInWithApple": MessageLookupByLibrary.simpleMessage(
       "Sign in with Apple",

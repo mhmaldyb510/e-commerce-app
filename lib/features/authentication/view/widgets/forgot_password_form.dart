@@ -38,6 +38,7 @@ class ForgotPasswordForm extends StatelessWidget {
                   hintText: S.of(context).email,
                   keyboardType: TextInputType.emailAddress,
                   textInputAction: TextInputAction.done,
+                  onChanged: (value) => cubit.forgetPasswordEmail = value,
                 ),
                 SizedBox(height: 30),
                 // --------------action button----------------
@@ -47,7 +48,9 @@ class ForgotPasswordForm extends StatelessWidget {
                           .of(context)
                           .forgotPassword
                           .split(S.of(context).questionMark)[0],
-                  onPressed: () => cubit.forgetPassword(),
+                  onPressed: () {
+                    cubit.forgetPassword(context);
+                  },
                 ),
               ],
             ),

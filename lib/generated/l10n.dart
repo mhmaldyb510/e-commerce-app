@@ -299,6 +299,36 @@ class S {
   String get questionMark {
     return Intl.message('?', name: 'questionMark', desc: '', args: []);
   }
+
+  /// `Code Verification`
+  String get codeVerification {
+    return Intl.message(
+      'Code Verification',
+      name: 'codeVerification',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter the code sent to this email`
+  String get enterCodeSentToEmail {
+    return Intl.message(
+      'Enter the code sent to this email',
+      name: 'enterCodeSentToEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Resend the Code`
+  String get resendCode {
+    return Intl.message(
+      'Resend the Code',
+      name: 'resendCode',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
