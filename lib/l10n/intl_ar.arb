@@ -31,5 +31,10 @@
     "questionMark": "؟",
     "codeVerification": "تحقق من الرمز",
     "enterCodeSentToEmail": "أدخل الرمز الذي أرسلناه إلى عنوان البريد التالي",
-    "resendCode": "إعادة إرسال الرمز"
+    "resendCode": "إعادة إرسال الرمز",
+    "newPassword": "كلمة مرور جديدة",
+    "create": "إنشاء",
+    "createNewPasswordForSignIn": "انشاء كلمة مرور جديدة لتسجيل الدخول",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "passwordsDoNotMatch": "كلمات المرور لا تتطابق"
 }

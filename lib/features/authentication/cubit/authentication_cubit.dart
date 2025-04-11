@@ -69,4 +69,26 @@ class AuthenticationCubit extends Cubit<AuthenticationState> {
       );
     }
   }
+
+  // OTP variables
+
+  //TODO: handel otp variables
+
+  // changePassword variables
+
+  String changePasswordNewPassword = '';
+
+  String changePasswordConfirmationPassword = '';
+
+  GlobalKey<FormState> changePasswordFormKey = GlobalKey<FormState>();
+
+  AutovalidateMode changePasswordAutovalidateMode = AutovalidateMode.disabled;
+
+  changePassword() {
+    changePasswordAutovalidateMode = AutovalidateMode.always;
+    emit(AuthenticationInitial());
+    if (changePasswordFormKey.currentState!.validate()) {
+      // TODO: implement changePassword
+    }
+  }
 }

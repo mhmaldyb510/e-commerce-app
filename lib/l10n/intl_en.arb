@@ -31,5 +31,10 @@
     "questionMark": "?",
     "codeVerification": "Code Verification",
     "enterCodeSentToEmail": "Enter the code sent to this email",
-    "resendCode": "Resend the Code"
+    "resendCode": "Resend the Code",
+    "newPassword": "New Password",
+    "create": "Create",
+    "createNewPasswordForSignIn": "Create New Password for Sign In",
+    "confirmPassword": "Confirm Password",
+    "passwordsDoNotMatch": "Passwords do not match"
 }

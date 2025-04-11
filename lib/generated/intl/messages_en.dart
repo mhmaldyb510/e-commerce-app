@@ -32,9 +32,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "codeVerification": MessageLookupByLibrary.simpleMessage(
       "Code Verification",
     ),
+    "confirmPassword": MessageLookupByLibrary.simpleMessage("Confirm Password"),
+    "create": MessageLookupByLibrary.simpleMessage("Create"),
     "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
     "createNewAccount": MessageLookupByLibrary.simpleMessage(
       "Create New Account",
+    ),
+    "createNewPasswordForSignIn": MessageLookupByLibrary.simpleMessage(
+      "Create New Password for Sign In",
     ),
     "dontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "Don\'t have an account?",
@@ -50,6 +55,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Name should be at least ",
     ),
     "newAccount": MessageLookupByLibrary.simpleMessage("New Account"),
+    "newPassword": MessageLookupByLibrary.simpleMessage("New Password"),
     "onboardingDetails1": MessageLookupByLibrary.simpleMessage(
       "Discover a unique shopping experience with ProductsHUB. Explore our wide range of high-quality products and get the best deals and exceptional service.",
     ),
@@ -61,6 +67,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "password": MessageLookupByLibrary.simpleMessage("Password"),
     "passwordShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
       "Password should be at least ",
+    ),
+    "passwordsDoNotMatch": MessageLookupByLibrary.simpleMessage(
+      "Passwords do not match",
     ),
     "pleaseEnterEmail": MessageLookupByLibrary.simpleMessage(
       "Please enter email",

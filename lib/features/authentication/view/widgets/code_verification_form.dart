@@ -3,6 +3,7 @@ import 'package:e_commerce_app/core/themes/light_theme.dart';
 import 'package:e_commerce_app/core/themes/text_styles.dart';
 import 'package:e_commerce_app/core/widgets/custom_button.dart';
 import 'package:e_commerce_app/features/authentication/cubit/authentication_cubit.dart';
+import 'package:e_commerce_app/features/authentication/view/screens/new_password_screen.dart';
 import 'package:e_commerce_app/features/authentication/view/widgets/otp_field.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +35,13 @@ class CodeVerificationForm extends StatelessWidget {
                 SizedBox(height: 29),
                 CustomButton(
                   text: S.of(context).codeVerification,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => NewPasswordScreen(),
+                      ),
+                    );
+                  },
                 ),
                 SizedBox(height: 24),
                 Align(

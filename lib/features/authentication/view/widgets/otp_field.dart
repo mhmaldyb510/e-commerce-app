@@ -24,6 +24,7 @@ class _OtpFieldState extends State<OtpField> {
     return Directionality(
       textDirection: TextDirection.ltr,
       child: PinCodeTextField(
+        // Todo: Handle validation 
         appContext: context,
         autoDisposeControllers: true,
         textStyle: TextStyles.heading5Bold.copyWith(
