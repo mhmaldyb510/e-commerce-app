@@ -28,5 +28,8 @@
     "byCreatingAccount": "من خلال إنشاء حساب , فإنك توافق على | الشروط والأحكام الخاصة بنا",
     "alreadyHaveAnAccount": "تمتلك حساب بالفعل؟",
     "verificationCodePrompt": "لا تقلق ، ما عليك سوى كتابة البريد الإلكتروني وسنرسل رمز التحقق.",
-    "questionMark": "؟"
+    "questionMark": "؟",
+    "codeVerification": "تحقق من الرمز",
+    "enterCodeSentToEmail": "أدخل الرمز الذي أرسلناه إلى عنوان البريد التالي",
+    "resendCode": "إعادة إرسال الرمز"
 }

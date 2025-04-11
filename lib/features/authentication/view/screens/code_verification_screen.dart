@@ -1,12 +1,12 @@
 import 'package:e_commerce_app/features/authentication/cubit/authentication_cubit.dart';
 import 'package:e_commerce_app/features/authentication/view/widgets/authentication_app_bar.dart';
-import 'package:e_commerce_app/features/authentication/view/widgets/forgot_password_form.dart';
+import 'package:e_commerce_app/features/authentication/view/widgets/code_verification_form.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class ForgotPasswordScreen extends StatelessWidget {
-  const ForgotPasswordScreen({super.key});
+class CodeVerificationScreen extends StatelessWidget {
+  const CodeVerificationScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,17 +15,11 @@ class ForgotPasswordScreen extends StatelessWidget {
       child: Scaffold(
         appBar: PreferredSize(
           preferredSize: const Size.fromHeight(56),
-          child: AuthenticationAppBar(
-            title:
-                S
-                    .of(context)
-                    .forgotPassword
-                    .split(S.of(context).questionMark)[0],
-          ),
+          child: AuthenticationAppBar(title: S.of(context).codeVerification),
         ),
         body: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16),
-          child: ForgotPasswordForm(),
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: CodeVerificationForm(),
         ),
       ),
     );

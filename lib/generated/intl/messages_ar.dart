@@ -29,12 +29,16 @@ class MessageLookup extends MessageLookupByLibrary {
       "من خلال إنشاء حساب , فإنك توافق على | الشروط والأحكام الخاصة بنا",
     ),
     "characters": MessageLookupByLibrary.simpleMessage("حروف"),
+    "codeVerification": MessageLookupByLibrary.simpleMessage("تحقق من الرمز"),
     "createAccount": MessageLookupByLibrary.simpleMessage("قم بانشاء حساب"),
     "createNewAccount": MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
     "dontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "لا يوجد لديك حساب؟",
     ),
     "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
+    "enterCodeSentToEmail": MessageLookupByLibrary.simpleMessage(
+      "أدخل الرمز الذي أرسلناه إلى عنوان البريد التالي",
+    ),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
     "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
@@ -67,6 +71,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "من فضلك ادخل بريد الكتروني صحيح",
     ),
     "questionMark": MessageLookupByLibrary.simpleMessage("؟"),
+    "resendCode": MessageLookupByLibrary.simpleMessage("إعادة إرسال الرمز"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("مرحباً بك في "),
     "signInWithApple": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة ابل"),
     "signInWithFacebook": MessageLookupByLibrary.simpleMessage(

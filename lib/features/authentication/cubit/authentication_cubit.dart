@@ -1,4 +1,5 @@
 import 'package:bloc/bloc.dart';
+import 'package:e_commerce_app/features/authentication/view/screens/code_verification_screen.dart';
 import 'package:flutter/material.dart';
 
 part 'authentication_state.dart';
@@ -50,7 +51,7 @@ class AuthenticationCubit extends Cubit<AuthenticationState> {
       // TODO: implement signUp
     }
   }
-  
+
   // forgetPassword variables
 
   String forgetPasswordEmail = '';
@@ -59,12 +60,13 @@ class AuthenticationCubit extends Cubit<AuthenticationState> {
 
   AutovalidateMode forgetPasswordAutovalidateMode = AutovalidateMode.disabled;
 
-  forgetPassword() {
+  forgetPassword(BuildContext context) {
     forgetPasswordAutovalidateMode = AutovalidateMode.always;
     emit(AuthenticationInitial());
     if (forgetPasswordFormKey.currentState!.validate()) {
-      // TODO: implement forgetPassword
+      Navigator.of(context).push(
+        MaterialPageRoute(builder: (context) => const CodeVerificationScreen()),
+      );
     }
   }
-
 }

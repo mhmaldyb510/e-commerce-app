@@ -1,0 +1,3 @@
+class InputFieldsTheme {
+  InputFieldsTheme._();
+}

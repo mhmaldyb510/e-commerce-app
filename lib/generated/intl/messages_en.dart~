@@ -75,7 +75,10 @@ class MessageLookup extends MessageLookupByLibrary {
       "Please enter valid email",
     ),
     "questionMark": MessageLookupByLibrary.simpleMessage("?"),
+<<<<<<< HEAD
     "resendCode": MessageLookupByLibrary.simpleMessage("Resend the Code"),
+=======
+>>>>>>> main
     "sayWelcome": MessageLookupByLibrary.simpleMessage("Welcome to "),
     "signInWithApple": MessageLookupByLibrary.simpleMessage(
       "Sign in with Apple",
