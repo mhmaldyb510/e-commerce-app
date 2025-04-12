@@ -17,8 +17,8 @@ class NewPasswordScreen extends StatelessWidget {
           preferredSize: const Size.fromHeight(56),
           child: AuthenticationAppBar(title: S.of(context).newPassword),
         ),
-        body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
+        body: const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16),
           child: NewPasswordForm(),
         ),
       ),

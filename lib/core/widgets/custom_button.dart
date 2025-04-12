@@ -15,7 +15,7 @@ class CustomButton extends StatelessWidget {
       style: TextButton.styleFrom(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         backgroundColor: Theme.of(context).primaryColor,
-        padding: EdgeInsets.all(15),
+        padding: const EdgeInsets.all(15),
         textStyle: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.w700,

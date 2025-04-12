@@ -23,7 +23,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                     .split(S.of(context).questionMark)[0],
           ),
         ),
-        body: Padding(
+        body: const Padding(
           padding: EdgeInsets.symmetric(horizontal: 16),
           child: ForgotPasswordForm(),
         ),

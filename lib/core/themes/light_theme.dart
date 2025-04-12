@@ -9,7 +9,7 @@ class LightTheme extends ThemeClass {
     return ThemeData(
       brightness: Brightness.light,
 
-      colorScheme: ColorScheme.light(primary: primaryColor),
+      colorScheme: const ColorScheme.light(primary: primaryColor),
       fontFamily: GoogleFonts.cairo().fontFamily,
       primaryColor: primaryColor,
     );

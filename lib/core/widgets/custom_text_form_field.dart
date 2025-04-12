@@ -52,7 +52,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                 )
                 : null,
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
-        fillColor: Color(0xffF9FAFA),
+        fillColor: const Color(0xffF9FAFA),
         filled: true,
         hintText: widget.hintText,
         hintStyle: TextStyles.bodySmallBold.copyWith(
@@ -61,11 +61,11 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
         ),
 
         enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Color(0xffE6E9EA)),
+          borderSide: const BorderSide(color: Color(0xffE6E9EA)),
           borderRadius: BorderRadius.circular(4),
         ),
         focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Color(0xffE6E9EA)),
+          borderSide: const BorderSide(color: Color(0xffE6E9EA)),
           borderRadius: BorderRadius.circular(4),
         ),
       ),

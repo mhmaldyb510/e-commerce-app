@@ -22,7 +22,7 @@ class NewPasswordForm extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: 24),
+                const SizedBox(height: 24),
                 Text(
                   S.of(context).createNewPasswordForSignIn,
                   style: TextStyles.bodyBaseBold.copyWith(
@@ -30,7 +30,7 @@ class NewPasswordForm extends StatelessWidget {
                     color: AppColors.grayscale950,
                   ),
                 ),
-                SizedBox(height: 34),
+                const SizedBox(height: 34),
                 // --------------password field----------------
                 CustomTextFormField(
                   onChanged: (value) => cubit.changePasswordNewPassword = value,
@@ -41,7 +41,7 @@ class NewPasswordForm extends StatelessWidget {
                   textInputAction: TextInputAction.done,
                   keyboardType: TextInputType.visiblePassword,
                 ),
-                SizedBox(height: 24),
+                const SizedBox(height: 24),
                 // --------------confirm password field----------------
                 CustomTextFormField(
                   onChanged:
@@ -58,7 +58,7 @@ class NewPasswordForm extends StatelessWidget {
                   textInputAction: TextInputAction.done,
                   keyboardType: TextInputType.visiblePassword,
                 ),
-                SizedBox(height: 24),
+                const SizedBox(height: 24),
                 CustomButton(
                   text: "${S.of(context).create} ${S.of(context).newPassword}",
                   onPressed: () {

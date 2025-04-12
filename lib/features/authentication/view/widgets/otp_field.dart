@@ -24,7 +24,7 @@ class _OtpFieldState extends State<OtpField> {
     return Directionality(
       textDirection: TextDirection.ltr,
       child: PinCodeTextField(
-        // Todo: Handle validation 
+        // Todo: Handle validation
         appContext: context,
         autoDisposeControllers: true,
         textStyle: TextStyles.heading5Bold.copyWith(
@@ -48,12 +48,12 @@ class _OtpFieldState extends State<OtpField> {
           disabledBorderWidth: 1,
           inactiveBorderWidth: 1,
           selectedColor: AppColors.orange500,
-          activeColor: Color(0xffE6E9EA),
-          disabledColor: Color(0xffE6E9EA),
-          inactiveColor: Color(0xffE6E9EA),
-          activeFillColor: Color(0xffF9FAFA),
-          selectedFillColor: Color(0xffF9FAFA),
-          inactiveFillColor: Color(0xffF9FAFA),
+          activeColor: const Color(0xffE6E9EA),
+          disabledColor: const Color(0xffE6E9EA),
+          inactiveColor: const Color(0xffE6E9EA),
+          activeFillColor: const Color(0xffF9FAFA),
+          selectedFillColor: const Color(0xffF9FAFA),
+          inactiveFillColor: const Color(0xffF9FAFA),
         ),
 
         enableActiveFill: true,

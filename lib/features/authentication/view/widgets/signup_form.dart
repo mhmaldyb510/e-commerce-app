@@ -23,7 +23,7 @@ class SignupForm extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: 24),
+                const SizedBox(height: 24),
                 // --------------name field----------------
                 CustomTextFormField(
                   validator:
@@ -33,7 +33,7 @@ class SignupForm extends StatelessWidget {
                   textInputAction: TextInputAction.next,
                   onChanged: (value) => cubit.signUpName = value,
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 // --------------email field----------------
                 CustomTextFormField(
                   validator:
@@ -43,7 +43,7 @@ class SignupForm extends StatelessWidget {
                   textInputAction: TextInputAction.next,
                   onChanged: (value) => cubit.signUpEmail = value,
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 // --------------password field----------------
                 CustomTextFormField(
                   validator:
@@ -53,7 +53,7 @@ class SignupForm extends StatelessWidget {
                   onChanged: (value) => cubit.signUpPassword = value,
                   hintText: S.of(context).password,
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 // --------------accept license checkbox----------------
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -62,7 +62,7 @@ class SignupForm extends StatelessWidget {
                       scale: 1.2,
                       child: Checkbox(
                         materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                        side: BorderSide(color: AppColors.offColor),
+                        side: const BorderSide(color: AppColors.offColor),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(4),
                         ),
@@ -95,7 +95,7 @@ class SignupForm extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 // --------------sign up button----------------
                 CustomButton(
                   text: S.of(context).createNewAccount,
@@ -103,13 +103,15 @@ class SignupForm extends StatelessWidget {
                     cubit.signUp();
                   },
                 ),
-                SizedBox(height: 26),
+                const SizedBox(height: 26),
                 // --------------already have an account section----------------
                 GestureDetector(
                   onTap:
                       () => Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (context) => LoginScreen()),
+                        MaterialPageRoute(
+                          builder: (context) => const LoginScreen(),
+                        ),
                       ),
                   child: RichText(
                     text: TextSpan(

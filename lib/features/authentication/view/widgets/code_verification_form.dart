@@ -21,7 +21,7 @@ class CodeVerificationForm extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                SizedBox(height: 24),
+                const SizedBox(height: 24),
                 Text(
                   '${S.of(context).enterCodeSentToEmail}\nExample@email.com',
                   style: TextStyles.bodyBaseBold.copyWith(
@@ -29,21 +29,21 @@ class CodeVerificationForm extends StatelessWidget {
                     color: AppColors.grayscale600,
                   ),
                 ),
-                SizedBox(height: 29),
+                const SizedBox(height: 29),
                 // --------------code field----------------
-                OtpField(length: 4),
-                SizedBox(height: 29),
+                const OtpField(length: 4),
+                const SizedBox(height: 29),
                 CustomButton(
                   text: S.of(context).codeVerification,
                   onPressed: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) => NewPasswordScreen(),
+                        builder: (context) => const NewPasswordScreen(),
                       ),
                     );
                   },
                 ),
-                SizedBox(height: 24),
+                const SizedBox(height: 24),
                 Align(
                   alignment: Alignment.center,
                   child: GestureDetector(
