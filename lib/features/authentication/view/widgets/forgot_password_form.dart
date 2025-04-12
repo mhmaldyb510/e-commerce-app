@@ -22,7 +22,7 @@ class ForgotPasswordForm extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: 24),
+                const SizedBox(height: 24),
                 Text(
                   S.of(context).verificationCodePrompt,
                   style: TextStyles.bodyBaseBold.copyWith(
@@ -30,7 +30,7 @@ class ForgotPasswordForm extends StatelessWidget {
                     color: AppColors.grayscale600,
                   ),
                 ),
-                SizedBox(height: 31),
+                const SizedBox(height: 31),
                 // --------------email field----------------
                 CustomTextFormField(
                   validator:
@@ -40,7 +40,7 @@ class ForgotPasswordForm extends StatelessWidget {
                   textInputAction: TextInputAction.done,
                   onChanged: (value) => cubit.forgetPasswordEmail = value,
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 // --------------action button----------------
                 CustomButton(
                   text:

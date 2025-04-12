@@ -30,8 +30,15 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "characters": MessageLookupByLibrary.simpleMessage("حروف"),
     "codeVerification": MessageLookupByLibrary.simpleMessage("تحقق من الرمز"),
+    "confirmPassword": MessageLookupByLibrary.simpleMessage(
+      "تأكيد كلمة المرور",
+    ),
+    "create": MessageLookupByLibrary.simpleMessage("إنشاء"),
     "createAccount": MessageLookupByLibrary.simpleMessage("قم بانشاء حساب"),
     "createNewAccount": MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
+    "createNewPasswordForSignIn": MessageLookupByLibrary.simpleMessage(
+      "انشاء كلمة مرور جديدة لتسجيل الدخول",
+    ),
     "dontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "لا يوجد لديك حساب؟",
     ),
@@ -46,6 +53,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "الاسم يجب ان يكون على الاقل ",
     ),
     "newAccount": MessageLookupByLibrary.simpleMessage("حساب جديد"),
+    "newPassword": MessageLookupByLibrary.simpleMessage("كلمة مرور جديدة"),
     "onboardingDetails1": MessageLookupByLibrary.simpleMessage(
       "اكتشف تجربة تسوق فريدة مع ProductsHUB. استكشف مجموعتنا الواسعة من المنتجات عالية الجودة واحصل على أفضل العروض والخدمة المتميزة.",
     ),
@@ -57,6 +65,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
     "passwordShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
       "كلمة المرور يجب ان تكون على الاقل ",
+    ),
+    "passwordsDoNotMatch": MessageLookupByLibrary.simpleMessage(
+      "كلمات المرور لا تتطابق",
     ),
     "pleaseEnterEmail": MessageLookupByLibrary.simpleMessage(
       "من فضلك ادخل البريد الالكتروني",

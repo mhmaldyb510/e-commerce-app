@@ -10,8 +10,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      locale: Locale('ar'),
-      localizationsDelegates: [
+      locale: const Locale('ar'),
+      localizationsDelegates: const [
         S.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       supportedLocales: S.delegate.supportedLocales,
       debugShowCheckedModeBanner: false,
       theme: LightTheme().getThemeData(),
-      home: OnboardingScreen(),
+      home: const OnboardingScreen(),
     );
   }
 }

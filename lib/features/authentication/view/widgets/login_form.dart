@@ -26,7 +26,7 @@ class LoginForm extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: 24),
+                const SizedBox(height: 24),
                 // --------------email field----------------
                 CustomTextFormField(
                   onChanged: (value) => cubit.logInEmail = value,
@@ -36,7 +36,7 @@ class LoginForm extends StatelessWidget {
                   keyboardType: TextInputType.emailAddress,
                   textInputAction: TextInputAction.next,
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 // --------------password field----------------
                 CustomTextFormField(
                   onChanged: (value) => cubit.logInPassword = value,
@@ -47,7 +47,7 @@ class LoginForm extends StatelessWidget {
                   textInputAction: TextInputAction.done,
                   keyboardType: TextInputType.visiblePassword,
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 // --------------forgot password section----------------
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -71,10 +71,10 @@ class LoginForm extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 33),
+                const SizedBox(height: 33),
                 // --------------login button----------------
                 CustomButton(text: S.of(context).login, onPressed: cubit.logIn),
-                SizedBox(height: 33),
+                const SizedBox(height: 33),
                 // --------------dont have an account section----------------
                 GestureDetector(
                   onTap:
@@ -94,17 +94,17 @@ class LoginForm extends StatelessWidget {
                       children: [
                         TextSpan(
                           text: S.of(context).createAccount,
-                          style: TextStyle(color: AppColors.green1_500),
+                          style: const TextStyle(color: AppColors.green1_500),
                         ),
                       ],
                     ),
                   ),
                 ),
-                SizedBox(height: 33),
+                const SizedBox(height: 33),
                 // --------------or section----------------
                 Row(
                   children: [
-                    Expanded(
+                    const Expanded(
                       child: Divider(color: AppColors.offColor, thickness: 1),
                     ),
                     Padding(
@@ -117,33 +117,33 @@ class LoginForm extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Expanded(
+                    const Expanded(
                       child: Divider(color: AppColors.offColor, thickness: 1),
                     ),
                   ],
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 // --------------google button----------------
                 ThirdPartButtons(
                   text: S.of(context).signInWithGoogle,
                   icon: Brand(Brands.google),
                   onPressed: () {},
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 // --------------apple button----------------
                 ThirdPartButtons(
                   text: S.of(context).signInWithApple,
                   icon: Brand(
                     Brands.apple_logo,
 
-                    colorFilter: ColorFilter.mode(
+                    colorFilter: const ColorFilter.mode(
                       AppColors.grayscale950,
                       BlendMode.srcATop,
                     ),
                   ),
                   onPressed: () {},
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 // --------------facebook button----------------
                 ThirdPartButtons(
                   text: S.of(context).signInWithFacebook,

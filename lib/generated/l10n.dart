@@ -329,6 +329,51 @@ class S {
       args: [],
     );
   }
+
+  /// `New Password`
+  String get newPassword {
+    return Intl.message(
+      'New Password',
+      name: 'newPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create`
+  String get create {
+    return Intl.message('Create', name: 'create', desc: '', args: []);
+  }
+
+  /// `Create New Password for Sign In`
+  String get createNewPasswordForSignIn {
+    return Intl.message(
+      'Create New Password for Sign In',
+      name: 'createNewPasswordForSignIn',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm Password`
+  String get confirmPassword {
+    return Intl.message(
+      'Confirm Password',
+      name: 'confirmPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Passwords do not match`
+  String get passwordsDoNotMatch {
+    return Intl.message(
+      'Passwords do not match',
+      name: 'passwordsDoNotMatch',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -17,11 +17,11 @@ class LoginScreen extends StatelessWidget {
         inAsyncCall: false,
         child: Scaffold(
           appBar: PreferredSize(
-            preferredSize: Size.fromHeight(56),
+            preferredSize: const Size.fromHeight(56),
             child: AuthenticationAppBar(title: S.of(context).login),
           ),
-          body: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
+          body: const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16),
             child: LoginForm(),
           ),
         ),

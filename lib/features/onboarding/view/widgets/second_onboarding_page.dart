@@ -13,7 +13,7 @@ class SecondOnboardingPage extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Image.asset(Assets.imagesOnboarding2, width: 250),
-          SizedBox(height: 64),
+          const SizedBox(height: 64),
           Text(
             S.of(context).onboardingHead2,
             textAlign: TextAlign.center,
@@ -21,17 +21,17 @@ class SecondOnboardingPage extends StatelessWidget {
               fontWeight: FontWeight.w700,
               fontSize: 23,
               height: 1.0,
-              color: Color(0xff0C0D0D),
+              color: const Color(0xff0C0D0D),
               letterSpacing: 0,
             ),
           ),
-          SizedBox(height: 24),
+          const SizedBox(height: 24),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 37),
             child: Text(
               S.of(context).onboardingDetails2,
               textAlign: TextAlign.center,
-              style: TextStyle(
+              style: const TextStyle(
                 fontWeight: FontWeight.w600,
                 fontSize: 13,
                 height: 1.7,

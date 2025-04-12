@@ -35,8 +35,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     : null,
             image:
                 currentIndex == 0
-                    ? AssetImage(Assets.imagesOnboardingBackground)
-                    : AssetImage(Assets.imagesOnboardingBackground2),
+                    ? const AssetImage(Assets.imagesOnboardingBackground)
+                    : const AssetImage(Assets.imagesOnboardingBackground2),
             fit: BoxFit.fitWidth,
             alignment: Alignment.topCenter,
           ),
@@ -53,7 +53,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           Navigator.pushAndRemoveUntil(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => LoginScreen(),
+                              builder: (context) => const LoginScreen(),
                             ),
                             (Route<dynamic> route) => false,
                           );
@@ -62,7 +62,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         child: Text(
                           S.of(context).skip,
                           textAlign: TextAlign.center,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontWeight: FontWeight.w400,
                             fontSize: 13,
                             height: 1.6,
@@ -84,7 +84,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       currentIndex = value;
                     });
                   },
-                  children: [FirstOnboardingPage(), SecondOnboardingPage()],
+                  children: const [
+                    FirstOnboardingPage(),
+                    SecondOnboardingPage(),
+                  ],
                 ),
               ),
               SmoothPageIndicator(
@@ -92,10 +95,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 count: 2,
                 effect:
                     currentIndex == 1
-                        ? ExpandingDotsEffect(dotColor: Colors.indigo)
-                        : WormEffect(),
+                        ? const ExpandingDotsEffect(dotColor: Colors.indigo)
+                        : const WormEffect(),
               ),
-              SizedBox(height: 29),
+              const SizedBox(height: 29),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: AnimatedSwitcher(
@@ -103,18 +106,21 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   child:
                       currentIndex == 1
                           ? CustomButton(
-                            key: ValueKey('startNowButton'),
+                            key: const ValueKey('startNowButton'),
                             onPressed: () {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => LoginScreen(),
+                                  builder: (context) => const LoginScreen(),
                                 ),
                               );
                             },
                             text: S.of(context).startNow,
                           )
-                          : SizedBox(height: 54, key: ValueKey('emptySpace')),
+                          : const SizedBox(
+                            height: 54,
+                            key: ValueKey('emptySpace'),
+                          ),
                 ),
               ),
             ],

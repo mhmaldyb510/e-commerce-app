@@ -26,6 +26,22 @@ class Validation {
     }
   }
 
+  static String? confirmPasswordValidator(
+    BuildContext context,
+    String value,
+    String password,
+  ) {
+    if (value.isEmpty) {
+      return S.of(context).pleaseEnterPassword;
+    } else if (value.length < 6) {
+      return '${S.of(context).passwordShouldBeAtLeast} 6 ${S.of(context).characters}';
+    } else if (value != password) {
+      return S.of(context).passwordsDoNotMatch;
+    } else {
+      return null;
+    }
+  }
+
   static String? nameValidator(BuildContext context, String value) {
     if (value.isEmpty) {
       return S.of(context).pleaseEnterName;

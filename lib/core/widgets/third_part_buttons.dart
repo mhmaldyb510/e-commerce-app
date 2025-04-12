@@ -22,16 +22,16 @@ class ThirdPartButtons extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
-          side: BorderSide(color: AppColors.offColor),
+          side: const BorderSide(color: AppColors.offColor),
         ),
         backgroundColor: Colors.transparent,
         shadowColor: Colors.transparent,
-        padding: EdgeInsets.all(15),
+        padding: const EdgeInsets.all(15),
       ),
       child: Row(
         children: [
           icon,
-          SizedBox(width: 53),
+          const SizedBox(width: 53),
           Text(
             text,
             style: TextStyles.bodyBaseBold.copyWith(
