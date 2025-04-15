@@ -36,5 +36,7 @@
     "create": "Create",
     "createNewPasswordForSignIn": "Create New Password for Sign In",
     "confirmPassword": "Confirm Password",
-    "passwordsDoNotMatch": "Passwords do not match"
+    "passwordsDoNotMatch": "Passwords do not match",
+    "goodMorning": "Good Morning !..",
+    "searchFor": "Search for......."
 }

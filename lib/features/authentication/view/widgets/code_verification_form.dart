@@ -1,5 +1,4 @@
 import 'package:e_commerce_app/core/themes/app_colors.dart';
-import 'package:e_commerce_app/core/themes/light_theme.dart';
 import 'package:e_commerce_app/core/themes/text_styles.dart';
 import 'package:e_commerce_app/core/widgets/custom_button.dart';
 import 'package:e_commerce_app/features/authentication/cubit/authentication_cubit.dart';
@@ -50,7 +49,7 @@ class CodeVerificationForm extends StatelessWidget {
                     child: Text(
                       S.of(context).resendCode,
                       style: TextStyles.bodyBaseBold.copyWith(
-                        color: LightTheme.primaryColor,
+                        color: Theme.of(context).primaryColor,
                         fontWeight: FontWeight.w600,
                       ),
                     ),

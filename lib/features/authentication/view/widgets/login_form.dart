@@ -73,7 +73,10 @@ class LoginForm extends StatelessWidget {
                 ),
                 const SizedBox(height: 33),
                 // --------------login button----------------
-                CustomButton(text: S.of(context).login, onPressed: cubit.logIn),
+                CustomButton(
+                  text: S.of(context).login,
+                  onPressed: () => cubit.logIn(context),
+                ),
                 const SizedBox(height: 33),
                 // --------------dont have an account section----------------
                 GestureDetector(
