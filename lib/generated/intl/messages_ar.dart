@@ -48,6 +48,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
     "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
+    "goodMorning": MessageLookupByLibrary.simpleMessage("صباح الخير !.."),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "nameShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
       "الاسم يجب ان يكون على الاقل ",
@@ -84,6 +85,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "questionMark": MessageLookupByLibrary.simpleMessage("؟"),
     "resendCode": MessageLookupByLibrary.simpleMessage("إعادة إرسال الرمز"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("مرحباً بك في "),
+    "searchFor": MessageLookupByLibrary.simpleMessage("بحث عن......."),
     "signInWithApple": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة ابل"),
     "signInWithFacebook": MessageLookupByLibrary.simpleMessage(
       "تسجيل بواسطة فيسبوك",

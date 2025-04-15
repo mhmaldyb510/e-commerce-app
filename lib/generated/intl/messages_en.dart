@@ -50,6 +50,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
     "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
+    "goodMorning": MessageLookupByLibrary.simpleMessage("Good Morning !.."),
     "login": MessageLookupByLibrary.simpleMessage("Login"),
     "nameShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
       "Name should be at least ",
@@ -86,6 +87,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "questionMark": MessageLookupByLibrary.simpleMessage("?"),
     "resendCode": MessageLookupByLibrary.simpleMessage("Resend the Code"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("Welcome to "),
+    "searchFor": MessageLookupByLibrary.simpleMessage("Search for......."),
     "signInWithApple": MessageLookupByLibrary.simpleMessage(
       "Sign in with Apple",
     ),

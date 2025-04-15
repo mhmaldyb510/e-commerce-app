@@ -17,5 +17,9 @@ class Assets {
   /// Assets for imagesOnboardingBackground2
   /// assets/images/onboarding_background2.png
   static const String imagesOnboardingBackground2 = "assets/images/onboarding_background2.png";
+
+  /// Assets for imagesProfileImage
+  /// assets/images/profile_image.png
+  static const String imagesProfileImage = "assets/images/profile_image.png";
 }
 

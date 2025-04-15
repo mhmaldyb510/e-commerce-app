@@ -100,7 +100,7 @@ class SignupForm extends StatelessWidget {
                 CustomButton(
                   text: S.of(context).createNewAccount,
                   onPressed: () {
-                    cubit.signUp();
+                    cubit.signUp(context);
                   },
                 ),
                 const SizedBox(height: 26),
