@@ -46,6 +46,9 @@ dependencies:
   flutter_bloc: ^9.1.0
   verification_code: ^0.0.4
   pin_code_fields: ^8.0.1
+  iconsax_plus: ^1.0.0
+  flutter_image_slideshow: ^0.1.6
+  dio: ^5.8.0+1
   flutter_native_splash: ^2.4.6
 
 dev_dependencies:
@@ -75,6 +78,7 @@ flutter:
   assets:
     - assets/icon/
     - assets/images/
+    - assets/icons/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -99,6 +103,15 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+flutter_assets:
+  assets_path:
+    - assets/images/
+    - assets/icons/
+  output_path: lib/core/constants/
+  filename: assets.dart
+  field_prefix: null
+flutter_intl:
+  enabled: true
 
 flutter_launcher_icons:
   android: "launcher_icon"

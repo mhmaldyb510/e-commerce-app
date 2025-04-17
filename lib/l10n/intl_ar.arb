@@ -1,6 +1,6 @@
 {
     "skip": "تخطي",
-    "sayWelcome":"مرحباً بك في ",
+    "sayWelcome": "مرحباً بك في ",
     "onboardingDetails1": "اكتشف تجربة تسوق فريدة مع ProductsHUB. استكشف مجموعتنا الواسعة من المنتجات عالية الجودة واحصل على أفضل العروض والخدمة المتميزة.",
     "onboardingHead2": "ابحث وتسوق",
     "onboardingDetails2": "نقدم لك أفضل المنتجات المتنوعة. اطلع على التفاصيل والصور والتقييمات لتتأكد من اختيار المنتج المثالي",
@@ -12,7 +12,7 @@
     "password": "كلمة المرور",
     "forgotPassword": "نسيت كلمة المرور؟",
     "dontHaveAnAccount": "لا يوجد لديك حساب؟",
-    "createAccount":  "قم بانشاء حساب",
+    "createAccount": "قم بانشاء حساب",
     "or": "أو",
     "signInWithGoogle": "تسجيل بواسطة جوجل",
     "signInWithFacebook": "تسجيل بواسطة فيسبوك",
@@ -38,5 +38,9 @@
     "confirmPassword": "تأكيد كلمة المرور",
     "passwordsDoNotMatch": "كلمات المرور لا تتطابق",
     "goodMorning": "صباح الخير !..",
-    "searchFor": "بحث عن......."
+    "searchFor": "بحث عن.......",
+    "mostPopular": "الاكثر مبيعا",
+    "more": "المزيد",
+    "reviews": "التقييمات"
+
 }
