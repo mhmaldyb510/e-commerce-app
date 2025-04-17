@@ -15,6 +15,7 @@ class LightTheme extends ThemeClass {
       primary: AppColors.kPrimaryColor,
       secondary: Color(0xffF3F5F7),
     ),
+
     hintColor: AppColors.grayscale400,
     textTheme: const TextTheme(
       bodyMedium: TextStyle(color: AppColors.grayscale950),

@@ -41,5 +41,6 @@ class Assets {
   /// Assets for imagesShose
   /// assets/images/shose.jpg
   static const String imagesShose = "assets/images/shose.jpg";
+
 }
 

@@ -18,6 +18,7 @@ class DarkTheme extends ThemeClass {
       primary: primaryColor,
       secondary: Color(0xff171717),
     ),
+
     hintColor: const Color(0xff949d9e),
     primaryColor: primaryColor,
     textTheme: const TextTheme(
@@ -25,4 +26,5 @@ class DarkTheme extends ThemeClass {
       titleSmall: TextStyle(color: Colors.white),
     ),
   );
+
 }
