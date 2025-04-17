@@ -205,28 +205,4 @@ fakeData() async {
   List<Product> products = data.map((e) => Product.fromJson(e)).toList();
   return products;
 }
-              child: TextField(
-                readOnly: true,
-                onTapOutside: (event) {
-                  FocusScope.of(context).unfocus();
-                },
-                decoration: InputDecoration(
-                  hintStyle: TextStyles.bodySmallRegular.copyWith(
-                    color: Theme.of(context).hintColor,
-                  ),
-                  prefixIcon: const Icon(Iconsax.search_normal_outline),
-                  suffix: const Icon(Iconsax.setting_4_outline),
-                  hintText: S.of(context).searchFor,
-                  border: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(16)),
-                    borderSide: BorderSide.none,
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
+ 
