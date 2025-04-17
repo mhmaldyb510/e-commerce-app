@@ -50,6 +50,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
     "goodMorning": MessageLookupByLibrary.simpleMessage("صباح الخير !.."),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+    "more": MessageLookupByLibrary.simpleMessage("المزيد"),
+    "mostPopular": MessageLookupByLibrary.simpleMessage("الاكثر مبيعا"),
     "nameShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
       "الاسم يجب ان يكون على الاقل ",
     ),
@@ -84,6 +86,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "questionMark": MessageLookupByLibrary.simpleMessage("؟"),
     "resendCode": MessageLookupByLibrary.simpleMessage("إعادة إرسال الرمز"),
+    "reviews": MessageLookupByLibrary.simpleMessage("التقييمات"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("مرحباً بك في "),
     "searchFor": MessageLookupByLibrary.simpleMessage("بحث عن......."),
     "signInWithApple": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة ابل"),

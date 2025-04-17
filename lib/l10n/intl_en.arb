@@ -1,6 +1,6 @@
 {
     "skip": "Skip",
-    "sayWelcome":"Welcome to ",
+    "sayWelcome": "Welcome to ",
     "onboardingDetails1": "Discover a unique shopping experience with ProductsHUB. Explore our wide range of high-quality products and get the best deals and exceptional service.",
     "onboardingHead2": "Search and Shop",
     "onboardingDetails2": "We offer you the best variety of products. Check the details, images, and reviews to ensure you choose the perfect product.",
@@ -38,5 +38,8 @@
     "confirmPassword": "Confirm Password",
     "passwordsDoNotMatch": "Passwords do not match",
     "goodMorning": "Good Morning !..",
-    "searchFor": "Search for......."
+    "searchFor": "Search for.......",
+    "mostPopular": "Most Popular",
+    "more": "More",
+    "reviews": "Reviews"
 }
