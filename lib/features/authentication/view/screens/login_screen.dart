@@ -1,5 +1,5 @@
 import 'package:e_commerce_app/features/authentication/cubit/authentication_cubit.dart';
-import 'package:e_commerce_app/features/authentication/view/widgets/authentication_app_bar.dart';
+import 'package:e_commerce_app/core/widgets/custom_app_bar.dart';
 import 'package:e_commerce_app/features/authentication/view/widgets/login_form.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +18,7 @@ class LoginScreen extends StatelessWidget {
         child: Scaffold(
           appBar: PreferredSize(
             preferredSize: const Size.fromHeight(56),
-            child: AuthenticationAppBar(title: S.of(context).login),
+            child: CustomAppBar(title: S.of(context).login),
           ),
           body: const Padding(
             padding: EdgeInsets.symmetric(horizontal: 16),
