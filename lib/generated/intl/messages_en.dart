@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "alreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "Already have an account?",
     ),
+    "bestSellers": MessageLookupByLibrary.simpleMessage("Best Sellers"),
     "byCreatingAccount": MessageLookupByLibrary.simpleMessage(
       "By creating an account , you agree to our | Terms and Conditions",
     ),

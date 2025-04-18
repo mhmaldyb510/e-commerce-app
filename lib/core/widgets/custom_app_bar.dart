@@ -1,9 +1,9 @@
 import 'package:e_commerce_app/core/themes/text_styles.dart';
 import 'package:flutter/material.dart';
 
-class AuthenticationAppBar extends StatelessWidget {
+class CustomAppBar extends StatelessWidget {
   final String title;
-  const AuthenticationAppBar({super.key, required this.title});
+  const CustomAppBar({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
