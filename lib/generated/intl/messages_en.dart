@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "account": MessageLookupByLibrary.simpleMessage("Account"),
     "alreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "Already have an account?",
     ),
@@ -29,6 +30,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "byCreatingAccount": MessageLookupByLibrary.simpleMessage(
       "By creating an account , you agree to our | Terms and Conditions",
     ),
+    "cart": MessageLookupByLibrary.simpleMessage("Cart"),
+    "categories": MessageLookupByLibrary.simpleMessage("Categories"),
     "characters": MessageLookupByLibrary.simpleMessage("characters"),
     "codeVerification": MessageLookupByLibrary.simpleMessage(
       "Code Verification",
@@ -52,6 +55,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
     "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
     "goodMorning": MessageLookupByLibrary.simpleMessage("Good Morning !.."),
+    "home": MessageLookupByLibrary.simpleMessage("Home"),
     "login": MessageLookupByLibrary.simpleMessage("Login"),
     "more": MessageLookupByLibrary.simpleMessage("More"),
     "mostPopular": MessageLookupByLibrary.simpleMessage("Most Popular"),
@@ -92,6 +96,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "reviews": MessageLookupByLibrary.simpleMessage("Reviews"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("Welcome to "),
     "searchFor": MessageLookupByLibrary.simpleMessage("Search for......."),
+    "settings": MessageLookupByLibrary.simpleMessage("Settings"),
     "signInWithApple": MessageLookupByLibrary.simpleMessage(
       "Sign in with Apple",
     ),
