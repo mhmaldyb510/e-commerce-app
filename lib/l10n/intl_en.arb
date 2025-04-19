@@ -42,5 +42,27 @@
     "mostPopular": "Most Popular",
     "more": "More",
     "reviews": "Reviews",
-    "bestSellers": "Best Sellers"
+    "bestSellers": "Best Sellers",
+
+    "home": "Home",
+    "@home": {
+        "description": "Label for the home bottom navigation item"
+    },
+    "cart": "Cart",
+    "@cart": {
+        "description": "Label for the cart bottom navigation item"
+    },
+    "categories": "Categories",
+    "@categories": {
+        "description": "Label for the categories bottom navigation item"
+    },
+    "account": "Account",
+    "@account": {
+        "description": "Label for the account bottom navigation item"
+    },
+    "settings": "Settings",
+    "@settings": {
+        "description": "Label for the settings bottom navigation item"
+    }
+
 }

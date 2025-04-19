@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "account": MessageLookupByLibrary.simpleMessage("حسابي"),
     "alreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "تمتلك حساب بالفعل؟",
     ),
@@ -29,6 +30,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "byCreatingAccount": MessageLookupByLibrary.simpleMessage(
       "من خلال إنشاء حساب , فإنك توافق على | الشروط والأحكام الخاصة بنا",
     ),
+    "cart": MessageLookupByLibrary.simpleMessage("السلة"),
+    "categories": MessageLookupByLibrary.simpleMessage("التصنيفات"),
     "characters": MessageLookupByLibrary.simpleMessage("حروف"),
     "codeVerification": MessageLookupByLibrary.simpleMessage("تحقق من الرمز"),
     "confirmPassword": MessageLookupByLibrary.simpleMessage(
@@ -50,6 +53,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "forgotPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
     "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
     "goodMorning": MessageLookupByLibrary.simpleMessage("صباح الخير !.."),
+    "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "more": MessageLookupByLibrary.simpleMessage("المزيد"),
     "mostPopular": MessageLookupByLibrary.simpleMessage("الاكثر مبيعا"),
@@ -90,6 +94,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "reviews": MessageLookupByLibrary.simpleMessage("التقييمات"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("مرحباً بك في "),
     "searchFor": MessageLookupByLibrary.simpleMessage("بحث عن......."),
+    "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
     "signInWithApple": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة ابل"),
     "signInWithFacebook": MessageLookupByLibrary.simpleMessage(
       "تسجيل بواسطة فيسبوك",

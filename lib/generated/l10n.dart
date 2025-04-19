@@ -424,6 +424,56 @@ class S {
       args: [],
     );
   }
+
+  /// `Home`
+  String get home {
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: 'Label for the home bottom navigation item',
+      args: [],
+    );
+  }
+
+  /// `Cart`
+  String get cart {
+    return Intl.message(
+      'Cart',
+      name: 'cart',
+      desc: 'Label for the cart bottom navigation item',
+      args: [],
+    );
+  }
+
+  /// `Categories`
+  String get categories {
+    return Intl.message(
+      'Categories',
+      name: 'categories',
+      desc: 'Label for the categories bottom navigation item',
+      args: [],
+    );
+  }
+
+  /// `Account`
+  String get account {
+    return Intl.message(
+      'Account',
+      name: 'account',
+      desc: 'Label for the account bottom navigation item',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get settings {
+    return Intl.message(
+      'Settings',
+      name: 'settings',
+      desc: 'Label for the settings bottom navigation item',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

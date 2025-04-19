@@ -50,6 +50,7 @@ dependencies:
   flutter_image_slideshow: ^0.1.6
   dio: ^5.8.0+1
   flutter_native_splash: ^2.4.6
+  persistent_bottom_nav_bar: any
 
 dev_dependencies:
   flutter_lints: ^5.0.0
@@ -112,9 +113,3 @@ flutter_assets:
   field_prefix: null
 flutter_intl:
   enabled: true
-
-flutter_launcher_icons:
-  android: "launcher_icon"
-  ios: false
-  image_path: "assets/icon/LOGO.png"
-  min_sdk_android: 21 # android min sdk min:16, default 21

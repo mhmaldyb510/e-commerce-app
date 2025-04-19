@@ -42,6 +42,28 @@
     "mostPopular": "الاكثر مبيعا",
     "more": "المزيد",
     "reviews": "التقييمات",
-    "bestSellers": "الاكثر مبيعا"
+    "bestSellers": "الاكثر مبيعا",
+
+    "home": "الرئيسية",
+    "@home": {
+        "description": "Label for the home bottom navigation item"
+    },
+    "cart": "السلة",
+    "@cart": {
+        "description": "Label for the cart bottom navigation item"
+    },
+    "categories": "التصنيفات",
+    "@categories": {
+        "description": "Label for the categories bottom navigation item"
+    },
+    "account": "حسابي",
+    "@account": {
+        "description": "Label for the account bottom navigation item"
+    },
+    "settings": "الإعدادات",
+    "@settings": {
+        "description": "Label for the settings bottom navigation item"
+
+}
 
 }

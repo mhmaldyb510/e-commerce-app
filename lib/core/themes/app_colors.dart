@@ -4,7 +4,8 @@ class AppColors {
   AppColors._();
   static const Color offColor = Color(0xffDDDFDF);
   static const Color kPrimaryColor = Color(0xff1B5E37);
-
+  //white color
+  static const Color whiteColor = Color(0xffffffff);
   // Grayscale
   static const Color grayscale50 = Color(0xFFF2F3F3);
   static const Color grayscale100 = Color(0xFFE4E6E7);
