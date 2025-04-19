@@ -31,7 +31,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       PersistentBottomNavBarItem(
         contentPadding: 0,
 
-        inactiveIcon: Icon(Iconsax.home_outline,color: AppColors.grayscale500,) ,
+        inactiveIcon: const Icon(Iconsax.home_outline,color: AppColors.grayscale500,) ,
         icon: CircleAvatar(
             radius: 15,
             backgroundColor: AppColors.kPrimaryColor,
@@ -40,7 +40,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       ),
       PersistentBottomNavBarItem(
        contentPadding: 0,
-        inactiveIcon: Icon(Iconsax.element_3_outline,color: AppColors.grayscale500) ,
+        inactiveIcon: const Icon(Iconsax.element_3_outline,color: AppColors.grayscale500) ,
         icon:  CircleAvatar(
             radius: 15,
             backgroundColor: AppColors.kPrimaryColor,
@@ -50,7 +50,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       PersistentBottomNavBarItem(
         contentPadding: 0,
 
-        inactiveIcon: Icon(Iconsax.shopping_cart_outline,color: AppColors.grayscale500,) ,
+        inactiveIcon: const Icon(Iconsax.shopping_cart_outline,color: AppColors.grayscale500,) ,
         icon: CircleAvatar(
             radius: 15,
             backgroundColor: AppColors.kPrimaryColor,
@@ -60,7 +60,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       PersistentBottomNavBarItem(
         contentPadding: 0,
 
-        inactiveIcon: Icon(Iconsax.user_outline,color: AppColors.grayscale500,) ,
+        inactiveIcon: const Icon(Iconsax.user_outline,color: AppColors.grayscale500,) ,
         icon: CircleAvatar(
             radius: 15,
             backgroundColor: AppColors.kPrimaryColor,

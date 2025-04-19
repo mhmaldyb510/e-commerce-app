@@ -1,6 +1,5 @@
 import 'package:bloc/bloc.dart';
 import 'package:e_commerce_app/features/authentication/view/screens/code_verification_screen.dart';
-import 'package:e_commerce_app/features/home/view/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../home/view/widgets/bottom_navigation_bar.dart';
