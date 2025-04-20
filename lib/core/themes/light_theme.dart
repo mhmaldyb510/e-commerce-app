@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 class LightTheme extends ThemeClass {
   ThemeData getThemeData() => super.baseTheme.copyWith(
+    scaffoldBackgroundColor: Colors.white,
     brightness: Brightness.light,
     iconButtonTheme: IconButtonThemeData(
       style: IconButton.styleFrom(
