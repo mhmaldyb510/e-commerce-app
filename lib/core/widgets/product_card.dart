@@ -71,49 +71,53 @@ class ProductCard extends StatelessWidget {
                   ),
                   Directionality(
                     textDirection: TextDirection.ltr,
-                    child: Row(
-                      children: [
-                        const SizedBox(width: 8),
-                        Text(
-                          //this will transform price from USD to EGP we will not need it if we use price set with EGP
-                          'EGP ${(double.parse(price) * 50).toStringAsFixed(0)}',
-                          style: TextStyles.bodyBaseRegular.copyWith(
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
-                            height:
-                                18 /
-                                14, // line-height is calculated as a ratio of font-size
-                            letterSpacing: -0.17,
-                            color:
-                                Theme.of(context).textTheme.bodyMedium?.color,
+                    child: Flexible(
+                      child: Row(
+                        children: [
+                          const SizedBox(width: 8),
+                          Text(
+                            //this will transform price from USD to EGP we will not need it if we use price set with EGP
+                            'EGP ${(double.parse(price) * 50).toStringAsFixed(0)}',
+                            style: TextStyles.bodyBaseRegular.copyWith(
+                              fontWeight: FontWeight.w400,
+                              fontSize: 14,
+                              height:
+                                  18 /
+                                  14, // line-height is calculated as a ratio of font-size
+                              letterSpacing: -0.17,
+                              color:
+                                  Theme.of(context).textTheme.bodyMedium?.color,
+                            ),
                           ),
-                        ),
-                        const SizedBox(width: 16),
-                        Text(
-                          '${(double.parse(price) * 50 * 1.4).toStringAsFixed(0)} EGP',
-                          style: TextStyles.bodyBaseRegular.copyWith(
-                            decoration: TextDecoration.lineThrough,
-                            fontWeight: FontWeight.w400,
-                            fontSize: 11,
-                            height:
-                                18 /
-                                11, // line-height is calculated as a ratio of font-size
-                            letterSpacing: -0.17,
-                            color: Theme.of(
-                              context,
-                            ).textTheme.bodySmall!.color?.withAlpha(153),
+                          const SizedBox(width: 16),
+                          Text(
+                            '${(double.parse(price) * 50 * 1.4).toStringAsFixed(0)} EGP',
+                            style: TextStyles.bodyBaseRegular.copyWith(
+                              decoration: TextDecoration.lineThrough,
+                              fontWeight: FontWeight.w400,
+                              fontSize: 11,
+                              height:
+                                  18 /
+                                  11, // line-height is calculated as a ratio of font-size
+                              letterSpacing: -0.17,
+                              color: Theme.of(
+                                context,
+                              ).textTheme.bodySmall!.color?.withAlpha(153),
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 8, left: 8, top: 8),
-                    child: Align(
-                      alignment: Alignment.centerLeft,
-                      child: Text(
-                        '${S.of(context).reviews} ($rate) ⭐',
-                        textAlign: TextAlign.left,
+                  Flexible(
+                    child: Padding(
+                      padding: const EdgeInsets.only(right: 8, left: 8, top: 8),
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          '${S.of(context).reviews} ($rate) ⭐',
+                          textAlign: TextAlign.left,
+                        ),
                       ),
                     ),
                   ),

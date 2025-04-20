@@ -1,8 +1,12 @@
+import 'dart:developer';
+
 import 'package:dio/dio.dart';
 import 'package:e_commerce_app/core/constants/assets.dart';
+import 'package:e_commerce_app/core/models/product_model.dart';
 import 'package:e_commerce_app/core/themes/app_colors.dart';
 import 'package:e_commerce_app/core/themes/text_styles.dart';
 import 'package:e_commerce_app/core/widgets/product_card.dart';
+import 'package:e_commerce_app/features/best_seller/view/screens/best_seller_screen.dart';
 import 'package:e_commerce_app/features/home/model/ads_images_list.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -118,11 +122,20 @@ class HomeScreen extends StatelessWidget {
                       S.of(context).mostPopular,
                       style: TextStyles.bodyBaseBold,
                     ),
-                    Text(
-                      S.of(context).more,
+                    GestureDetector(
+                      onTap:
+                          () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const BestSellerScreen(),
+                            ),
+                          ),
+                      child: Text(
+                        S.of(context).more,
 
-                      style: TextStyles.bodySmallRegular.copyWith(
-                        color: Theme.of(context).hintColor,
+                        style: TextStyles.bodySmallRegular.copyWith(
+                          color: Theme.of(context).hintColor,
+                        ),
                       ),
                     ),
                   ],
@@ -134,7 +147,7 @@ class HomeScreen extends StatelessWidget {
                 future: fakeData(),
                 builder: (context, snapshot) {
                   if (snapshot.hasData) {
-                    List<Product> products = snapshot.data as List<Product>;
+                    List<ProductModel> products = snapshot.data as List<ProductModel>;
                     return GridView.builder(
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
@@ -176,34 +189,17 @@ class HomeScreen extends StatelessWidget {
 
 //this is just a testing data we will change it once api is ready
 
-class Product {
-  final String title;
-  final String price;
-  final String image;
-  final String rating;
 
-  Product({
-    required this.title,
-    required this.price,
-    required this.image,
-    required this.rating,
-  });
-
-  factory Product.fromJson(Map<String, dynamic> json) {
-    return Product(
-      title: json['title'],
-      price: json['price'].toString(),
-      image: json['image'],
-      rating: json['rating']['rate'].toString(),
-    );
-  }
-}
 
 fakeData() async {
   Dio dio = Dio();
-  Response response = await dio.get('https://fakestoreapi.com/products');
-  List<dynamic> data = response.data as List<dynamic>;
-  List<Product> products = data.map((e) => Product.fromJson(e)).toList();
-  return products;
+  try {
+    Response response = await dio.get('https://fakestoreapi.com/products');
+    List<dynamic> data = response.data as List<dynamic>;
+    List<ProductModel> products = data.map((e) => ProductModel.fromJson(e)).toList();
+    return products;
+  } on DioException catch (e) {
+    log(e.toString());
+    rethrow;
+  }
 }
- 
