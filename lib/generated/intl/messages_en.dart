@@ -56,14 +56,18 @@ class MessageLookup extends MessageLookupByLibrary {
     "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
     "goodMorning": MessageLookupByLibrary.simpleMessage("Good Morning !.."),
     "home": MessageLookupByLibrary.simpleMessage("Home"),
+    "inPastTime": MessageLookupByLibrary.simpleMessage("In past time"),
     "login": MessageLookupByLibrary.simpleMessage("Login"),
+    "markAllAsRead": MessageLookupByLibrary.simpleMessage("Mark all as read"),
     "more": MessageLookupByLibrary.simpleMessage("More"),
     "mostPopular": MessageLookupByLibrary.simpleMessage("Most Popular"),
     "nameShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
       "Name should be at least ",
     ),
     "newAccount": MessageLookupByLibrary.simpleMessage("New Account"),
+    "newNotification": MessageLookupByLibrary.simpleMessage("New"),
     "newPassword": MessageLookupByLibrary.simpleMessage("New Password"),
+    "notification": MessageLookupByLibrary.simpleMessage("Notification"),
     "onboardingDetails1": MessageLookupByLibrary.simpleMessage(
       "Discover a unique shopping experience with ProductsHUB. Explore our wide range of high-quality products and get the best deals and exceptional service.",
     ),

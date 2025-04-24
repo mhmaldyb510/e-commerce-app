@@ -425,6 +425,36 @@ class S {
     );
   }
 
+  /// `Notification`
+  String get notification {
+    return Intl.message(
+      'Notification',
+      name: 'notification',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `New`
+  String get newNotification {
+    return Intl.message('New', name: 'newNotification', desc: '', args: []);
+  }
+
+  /// `Mark all as read`
+  String get markAllAsRead {
+    return Intl.message(
+      'Mark all as read',
+      name: 'markAllAsRead',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `In past time`
+  String get inPastTime {
+    return Intl.message('In past time', name: 'inPastTime', desc: '', args: []);
+  }
+
   /// `Home`
   String get home {
     return Intl.message(
