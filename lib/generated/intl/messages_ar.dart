@@ -54,14 +54,18 @@ class MessageLookup extends MessageLookupByLibrary {
     "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
     "goodMorning": MessageLookupByLibrary.simpleMessage("صباح الخير !.."),
     "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
+    "inPastTime": MessageLookupByLibrary.simpleMessage("في وقت سابق"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+    "markAllAsRead": MessageLookupByLibrary.simpleMessage("تحديد الكل مقروء"),
     "more": MessageLookupByLibrary.simpleMessage("المزيد"),
     "mostPopular": MessageLookupByLibrary.simpleMessage("الاكثر مبيعا"),
     "nameShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
       "الاسم يجب ان يكون على الاقل ",
     ),
     "newAccount": MessageLookupByLibrary.simpleMessage("حساب جديد"),
+    "newNotification": MessageLookupByLibrary.simpleMessage("جديد"),
     "newPassword": MessageLookupByLibrary.simpleMessage("كلمة مرور جديدة"),
+    "notification": MessageLookupByLibrary.simpleMessage("الاشعارات"),
     "onboardingDetails1": MessageLookupByLibrary.simpleMessage(
       "اكتشف تجربة تسوق فريدة مع ProductsHUB. استكشف مجموعتنا الواسعة من المنتجات عالية الجودة واحصل على أفضل العروض والخدمة المتميزة.",
     ),

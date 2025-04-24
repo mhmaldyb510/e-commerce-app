@@ -43,7 +43,10 @@
     "more": "More",
     "reviews": "Reviews",
     "bestSellers": "Best Sellers",
-
+    "notification": "Notification",
+    "newNotification": "New",
+    "markAllAsRead": "Mark all as read",
+    "inPastTime": "In past time",
     "home": "Home",
     "@home": {
         "description": "Label for the home bottom navigation item"
@@ -64,5 +67,4 @@
     "@settings": {
         "description": "Label for the settings bottom navigation item"
     }
-
 }

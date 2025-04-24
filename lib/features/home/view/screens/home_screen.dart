@@ -8,6 +8,7 @@ import 'package:e_commerce_app/core/themes/text_styles.dart';
 import 'package:e_commerce_app/core/widgets/product_card.dart';
 import 'package:e_commerce_app/features/best_seller/view/screens/best_seller_screen.dart';
 import 'package:e_commerce_app/features/home/model/ads_images_list.dart';
+import 'package:e_commerce_app/features/notifications/view/screens/notification_screen.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
@@ -55,7 +56,14 @@ class HomeScreen extends StatelessWidget {
                       ),
                       const Spacer(),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const NotificationScreen(),
+                            ),
+                          );
+                        },
                         style: Theme.of(context).iconButtonTheme.style,
                         icon: const Icon(Iconsax.notification_outline),
                       ),
@@ -147,7 +155,8 @@ class HomeScreen extends StatelessWidget {
                 future: fakeData(),
                 builder: (context, snapshot) {
                   if (snapshot.hasData) {
-                    List<ProductModel> products = snapshot.data as List<ProductModel>;
+                    List<ProductModel> products =
+                        snapshot.data as List<ProductModel>;
                     return GridView.builder(
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
@@ -189,14 +198,13 @@ class HomeScreen extends StatelessWidget {
 
 //this is just a testing data we will change it once api is ready
 
-
-
 fakeData() async {
   Dio dio = Dio();
   try {
     Response response = await dio.get('https://fakestoreapi.com/products');
     List<dynamic> data = response.data as List<dynamic>;
-    List<ProductModel> products = data.map((e) => ProductModel.fromJson(e)).toList();
+    List<ProductModel> products =
+        data.map((e) => ProductModel.fromJson(e)).toList();
     return products;
   } on DioException catch (e) {
     log(e.toString());

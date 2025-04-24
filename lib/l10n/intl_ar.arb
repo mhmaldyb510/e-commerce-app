@@ -43,7 +43,10 @@
     "more": "المزيد",
     "reviews": "التقييمات",
     "bestSellers": "الاكثر مبيعا",
-
+    "notification": "الاشعارات",
+    "newNotification": "جديد",
+    "markAllAsRead": "تحديد الكل مقروء",
+    "inPastTime": "في وقت سابق",
     "home": "الرئيسية",
     "@home": {
         "description": "Label for the home bottom navigation item"
@@ -63,7 +66,5 @@
     "settings": "الإعدادات",
     "@settings": {
         "description": "Label for the settings bottom navigation item"
-
-}
-
+    }
 }
