@@ -23,7 +23,7 @@ class NotificationLabelRow extends StatelessWidget {
           Text(
             label,
             style: TextStyles.bodyBaseBold.copyWith(
-              color: Theme.of(context).textTheme.titleMedium!.color,
+              color: Theme.of(context).textTheme.bodyMedium!.color,
             ),
           ),
           const SizedBox(width: 6),
@@ -33,7 +33,7 @@ class NotificationLabelRow extends StatelessWidget {
             child: Text(
               count.toString(),
               style: TextStyles.bodySmallBold.copyWith(
-                color: Theme.of(context).textTheme.titleMedium!.color,
+                color: Theme.of(context).textTheme.bodyMedium!.color,
               ),
             ),
           ),
