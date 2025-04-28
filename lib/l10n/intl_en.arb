@@ -48,6 +48,7 @@
     "markAllAsRead": "Mark all as read",
     "inPastTime": "In past time",
     "home": "Home",
+    "products": "Products",
     "@home": {
         "description": "Label for the home bottom navigation item"
     },

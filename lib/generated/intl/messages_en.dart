@@ -95,6 +95,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "pleaseEnterValidEmail": MessageLookupByLibrary.simpleMessage(
       "Please enter valid email",
     ),
+    "products": MessageLookupByLibrary.simpleMessage("Products"),
     "questionMark": MessageLookupByLibrary.simpleMessage("?"),
     "resendCode": MessageLookupByLibrary.simpleMessage("Resend the Code"),
     "reviews": MessageLookupByLibrary.simpleMessage("Reviews"),

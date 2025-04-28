@@ -5,10 +5,12 @@ import 'package:e_commerce_app/core/constants/assets.dart';
 import 'package:e_commerce_app/core/models/product_model.dart';
 import 'package:e_commerce_app/core/themes/app_colors.dart';
 import 'package:e_commerce_app/core/themes/text_styles.dart';
+import 'package:e_commerce_app/core/widgets/custom_search_field.dart';
 import 'package:e_commerce_app/core/widgets/product_card.dart';
 import 'package:e_commerce_app/features/best_seller/view/screens/best_seller_screen.dart';
 import 'package:e_commerce_app/features/home/model/ads_images_list.dart';
 import 'package:e_commerce_app/features/notifications/view/screens/notification_screen.dart';
+import 'package:e_commerce_app/features/search/view/screen/search_screen.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
@@ -75,31 +77,14 @@ class HomeScreen extends StatelessWidget {
             SliverToBoxAdapter(
               child: Padding(
                 padding: const EdgeInsets.only(bottom: 12),
-                child: TextField(
-                  readOnly: true,
-                  onTapOutside: (event) {
-                    FocusScope.of(context).unfocus();
-                  },
-                  decoration: InputDecoration(
-                    hintStyle: TextStyles.bodySmallRegular.copyWith(
-                      color: Theme.of(context).hintColor,
-                    ),
-                    prefixIcon: const Icon(
-                      Iconsax.search_normal_outline,
-                      color: AppColors.kPrimaryColor,
-                    ),
-                    suffixIcon: const Icon(
-                      Iconsax.setting_4_outline,
-                      color: AppColors.kPrimaryColor,
-                    ),
-                    hintText: S.of(context).searchFor,
-                    border: const OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(16)),
-                      borderSide: BorderSide.none,
-                    ),
-                  ),
+                child: CustomSearchField(
                   onTap: () {
-                    //Todo: add search screen Navigation
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SearchScreen(),
+                      ),
+                    );
                   },
                 ),
               ),

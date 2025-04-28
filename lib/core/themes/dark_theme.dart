@@ -7,6 +7,7 @@ class DarkTheme extends ThemeClass {
 
   ThemeData getThemeData() => super.baseTheme.copyWith(
     brightness: Brightness.dark,
+
     scaffoldBackgroundColor: const Color(0xff0D0D0D),
     iconButtonTheme: IconButtonThemeData(
       style: IconButton.styleFrom(
@@ -15,6 +16,7 @@ class DarkTheme extends ThemeClass {
       ),
     ),
     colorScheme: const ColorScheme.dark(
+      surface: Colors.black,
       primary: primaryColor,
       secondary: Color(0xff171717),
     ),

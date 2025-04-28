@@ -47,6 +47,7 @@
     "newNotification": "جديد",
     "markAllAsRead": "تحديد الكل مقروء",
     "inPastTime": "في وقت سابق",
+    "products": "المنتجات",
     "home": "الرئيسية",
     "@home": {
         "description": "Label for the home bottom navigation item"

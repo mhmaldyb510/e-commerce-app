@@ -465,6 +465,11 @@ class S {
     );
   }
 
+  /// `Products`
+  String get products {
+    return Intl.message('Products', name: 'products', desc: '', args: []);
+  }
+
   /// `Cart`
   String get cart {
     return Intl.message(
