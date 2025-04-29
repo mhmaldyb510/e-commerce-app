@@ -13,6 +13,7 @@ class LightTheme extends ThemeClass {
       ),
     ),
     colorScheme: const ColorScheme.light(
+      surface: Colors.white,
       primary: AppColors.kPrimaryColor,
       secondary: Color(0xffF3F5F7),
     ),

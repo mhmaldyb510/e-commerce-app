@@ -49,7 +49,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                           const SizedBox(height: 2),
                           Text(
-                            'محمد ناصر',
+                            'محمد ',
                             style: TextStyles.bodyBaseBold.copyWith(
                               fontWeight: FontWeight.w700,
                             ),
