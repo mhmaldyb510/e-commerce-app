@@ -23,6 +23,7 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "account": MessageLookupByLibrary.simpleMessage("حسابي"),
+    "alphabetically": MessageLookupByLibrary.simpleMessage("الأبجديه"),
     "alreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "تمتلك حساب بالفعل؟",
     ),
@@ -50,6 +51,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "enterCodeSentToEmail": MessageLookupByLibrary.simpleMessage(
       "أدخل الرمز الذي أرسلناه إلى عنوان البريد التالي",
     ),
+    "filter": MessageLookupByLibrary.simpleMessage("تصفيه"),
+    "filterBy": MessageLookupByLibrary.simpleMessage("تصنيف حسب"),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
     "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
     "goodMorning": MessageLookupByLibrary.simpleMessage("صباح الخير !.."),
@@ -74,6 +77,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "onboardingHead2": MessageLookupByLibrary.simpleMessage("ابحث وتسوق"),
     "or": MessageLookupByLibrary.simpleMessage("أو"),
+    "ourProducts": MessageLookupByLibrary.simpleMessage("منتجاتنا"),
     "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
     "passwordShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
       "كلمة المرور يجب ان تكون على الاقل ",
@@ -93,6 +97,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "pleaseEnterValidEmail": MessageLookupByLibrary.simpleMessage(
       "من فضلك ادخل بريد الكتروني صحيح",
     ),
+    "price": MessageLookupByLibrary.simpleMessage("السعر"),
+    "priseHighToLow": MessageLookupByLibrary.simpleMessage(
+      "السعر (من الاعلى للاقل)",
+    ),
+    "priseLowToHigh": MessageLookupByLibrary.simpleMessage(
+      "السعر (من الاقل للاعلى)",
+    ),
     "products": MessageLookupByLibrary.simpleMessage("المنتجات"),
     "questionMark": MessageLookupByLibrary.simpleMessage("؟"),
     "resendCode": MessageLookupByLibrary.simpleMessage("إعادة إرسال الرمز"),
@@ -108,7 +119,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "تسجيل بواسطة جوجل",
     ),
     "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
+    "sortBy": MessageLookupByLibrary.simpleMessage("ترتيب حسب"),
     "startNow": MessageLookupByLibrary.simpleMessage("ابدأ الان"),
+    "to": MessageLookupByLibrary.simpleMessage("إلى"),
     "verificationCodePrompt": MessageLookupByLibrary.simpleMessage(
       "لا تقلق ، ما عليك سوى كتابة البريد الإلكتروني وسنرسل رمز التحقق.",
     ),

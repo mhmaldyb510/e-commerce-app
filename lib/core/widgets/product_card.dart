@@ -1,21 +1,16 @@
 import 'dart:developer';
 import 'package:e_commerce_app/core/constants/assets.dart';
+import 'package:e_commerce_app/core/models/product_model.dart';
 import 'package:e_commerce_app/core/themes/text_styles.dart';
 import 'package:e_commerce_app/core/widgets/favorite_button.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class ProductCard extends StatelessWidget {
-  final String name;
-  final String price;
-  final String imagePath;
-  final String rate;
+  final ProductModel product;
   const ProductCard({
-    super.key,
-    required this.name,
-    required this.price,
-    required this.imagePath,
-    required this.rate,
+    super.key, required this.product,
+ 
   });
 
   @override
@@ -45,7 +40,7 @@ class ProductCard extends StatelessWidget {
                       borderRadius: BorderRadius.circular(15),
                       color: Colors.white,
                       image: DecorationImage(
-                        image: NetworkImage(imagePath),
+                        image: NetworkImage(product.image),
                         fit: BoxFit.contain,
                       ),
                     ),
@@ -53,7 +48,7 @@ class ProductCard extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(8),
                     child: Text(
-                      name,
+                      product.title,
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
 
@@ -77,7 +72,7 @@ class ProductCard extends StatelessWidget {
                           const SizedBox(width: 8),
                           Text(
                             //this will transform price from USD to EGP we will not need it if we use price set with EGP
-                            'EGP ${(double.parse(price) * 50).toStringAsFixed(0)}',
+                            'EGP ${(double.parse(product.price) * 50).toStringAsFixed(0)}',
                             style: TextStyles.bodyBaseRegular.copyWith(
                               fontWeight: FontWeight.w400,
                               fontSize: 14,
@@ -91,7 +86,7 @@ class ProductCard extends StatelessWidget {
                           ),
                           const SizedBox(width: 16),
                           Text(
-                            '${(double.parse(price) * 50 * 1.4).toStringAsFixed(0)} EGP',
+                            '${(double.parse(product.price) * 50 * 1.4).toStringAsFixed(0)} EGP',
                             style: TextStyles.bodyBaseRegular.copyWith(
                               decoration: TextDecoration.lineThrough,
                               fontWeight: FontWeight.w400,
@@ -115,7 +110,7 @@ class ProductCard extends StatelessWidget {
                       child: Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
-                          '${S.of(context).reviews} ($rate) ⭐',
+                          '${S.of(context).reviews} (${product.rating}) ⭐',
                           textAlign: TextAlign.left,
                         ),
                       ),

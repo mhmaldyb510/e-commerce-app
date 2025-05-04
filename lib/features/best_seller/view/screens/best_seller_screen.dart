@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/core/models/product_model.dart';
 import 'package:e_commerce_app/core/themes/text_styles.dart';
 import 'package:e_commerce_app/core/widgets/custom_app_bar.dart';
 import 'package:e_commerce_app/core/widgets/product_card.dart';
@@ -57,10 +58,12 @@ class BestSellerScreen extends StatelessWidget {
 
                         itemBuilder:
                             (context, index) => ProductCard(
-                              name: state.products[index].title,
-                              price: state.products[index].price,
-                              imagePath: state.products[index].image,
-                              rate: state.products[index].rating,
+                              product: ProductModel(
+                                title: state.products[index].title,
+                                price: state.products[index].price,
+                                image: state.products[index].image,
+                                rating: state.products[index].rating,
+                              ),
                             ),
                       )
                       : const SliverToBoxAdapter(child: SizedBox.shrink()),

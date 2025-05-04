@@ -23,6 +23,7 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "account": MessageLookupByLibrary.simpleMessage("Account"),
+    "alphabetically": MessageLookupByLibrary.simpleMessage("Alphabetically"),
     "alreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "Already have an account?",
     ),
@@ -52,6 +53,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "enterCodeSentToEmail": MessageLookupByLibrary.simpleMessage(
       "Enter the code sent to this email",
     ),
+    "filter": MessageLookupByLibrary.simpleMessage("Filter"),
+    "filterBy": MessageLookupByLibrary.simpleMessage("Filter By"),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
     "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
     "goodMorning": MessageLookupByLibrary.simpleMessage("Good Morning !.."),
@@ -76,6 +79,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "onboardingHead2": MessageLookupByLibrary.simpleMessage("Search and Shop"),
     "or": MessageLookupByLibrary.simpleMessage("Or"),
+    "ourProducts": MessageLookupByLibrary.simpleMessage("Our Products"),
     "password": MessageLookupByLibrary.simpleMessage("Password"),
     "passwordShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
       "Password should be at least ",
@@ -95,11 +99,19 @@ class MessageLookup extends MessageLookupByLibrary {
     "pleaseEnterValidEmail": MessageLookupByLibrary.simpleMessage(
       "Please enter valid email",
     ),
+    "price": MessageLookupByLibrary.simpleMessage("Price"),
+    "priseHighToLow": MessageLookupByLibrary.simpleMessage(
+      "Price (High to Low)",
+    ),
+    "priseLowToHigh": MessageLookupByLibrary.simpleMessage(
+      "Price (Low to High)",
+    ),
     "products": MessageLookupByLibrary.simpleMessage("Products"),
     "questionMark": MessageLookupByLibrary.simpleMessage("?"),
     "resendCode": MessageLookupByLibrary.simpleMessage("Resend the Code"),
     "reviews": MessageLookupByLibrary.simpleMessage("Reviews"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("Welcome to "),
+    "scopeDotes": MessageLookupByLibrary.simpleMessage(":"),
     "searchFor": MessageLookupByLibrary.simpleMessage("Search for......."),
     "settings": MessageLookupByLibrary.simpleMessage("Settings"),
     "signInWithApple": MessageLookupByLibrary.simpleMessage(
@@ -112,7 +124,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "Sign in with Google",
     ),
     "skip": MessageLookupByLibrary.simpleMessage("Skip"),
+    "sortBy": MessageLookupByLibrary.simpleMessage("Sort By"),
     "startNow": MessageLookupByLibrary.simpleMessage("Start now"),
+    "to": MessageLookupByLibrary.simpleMessage("To"),
     "verificationCodePrompt": MessageLookupByLibrary.simpleMessage(
       "Don\'t worry, just enter your email and we will send a verification code.",
     ),

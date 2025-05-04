@@ -49,6 +49,16 @@
     "inPastTime": "In past time",
     "home": "Home",
     "products": "Products",
+    "ourProducts": "Our Products",
+    "filterBy": "Filter By",
+    "scopeDotes": ":",
+    "price": "Price",
+    "to": "To",
+    "filter": "Filter",
+    "sortBy": "Sort By",
+    "priseLowToHigh": "Price (Low to High)",
+    "priseHighToLow": "Price (High to Low)",
+    "alphabetically": "Alphabetically",
     "@home": {
         "description": "Label for the home bottom navigation item"
     },
