@@ -465,6 +465,81 @@ class S {
     );
   }
 
+  /// `Products`
+  String get products {
+    return Intl.message('Products', name: 'products', desc: '', args: []);
+  }
+
+  /// `Our Products`
+  String get ourProducts {
+    return Intl.message(
+      'Our Products',
+      name: 'ourProducts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Filter By`
+  String get filterBy {
+    return Intl.message('Filter By', name: 'filterBy', desc: '', args: []);
+  }
+
+  /// `:`
+  String get scopeDotes {
+    return Intl.message(':', name: 'scopeDotes', desc: '', args: []);
+  }
+
+  /// `Price`
+  String get price {
+    return Intl.message('Price', name: 'price', desc: '', args: []);
+  }
+
+  /// `To`
+  String get to {
+    return Intl.message('To', name: 'to', desc: '', args: []);
+  }
+
+  /// `Filter`
+  String get filter {
+    return Intl.message('Filter', name: 'filter', desc: '', args: []);
+  }
+
+  /// `Sort By`
+  String get sortBy {
+    return Intl.message('Sort By', name: 'sortBy', desc: '', args: []);
+  }
+
+  /// `Price (Low to High)`
+  String get priseLowToHigh {
+    return Intl.message(
+      'Price (Low to High)',
+      name: 'priseLowToHigh',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Price (High to Low)`
+  String get priseHighToLow {
+    return Intl.message(
+      'Price (High to Low)',
+      name: 'priseHighToLow',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Alphabetically`
+  String get alphabetically {
+    return Intl.message(
+      'Alphabetically',
+      name: 'alphabetically',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Cart`
   String get cart {
     return Intl.message(

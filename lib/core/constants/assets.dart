@@ -18,6 +18,26 @@ class Assets {
   /// assets/images/ad3.png
   static const String imagesAd3 = "assets/images/ad3.png";
 
+  /// Assets for imagesElectronics
+  /// assets/images/electronics.jpg
+  static const String imagesElectronics = "assets/images/electronics.jpg";
+
+  /// Assets for imagesImageSplashDark
+  /// assets/images/image_splash_dark.png
+  static const String imagesImageSplashDark = "assets/images/image_splash_dark.png";
+
+  /// Assets for imagesImageSplashLight
+  /// assets/images/image_splash_light.png
+  static const String imagesImageSplashLight = "assets/images/image_splash_light.png";
+
+  /// Assets for imagesJewelery
+  /// assets/images/jewelery.jpg
+  static const String imagesJewelery = "assets/images/jewelery.jpg";
+
+  /// Assets for imagesMen's clothing
+  /// assets/images/men's clothing.jpg
+  static const String imagesMensClothing = "assets/images/men's clothing.jpg";
+
   /// Assets for imagesOnboarding1
   /// assets/images/onboarding1.png
   static const String imagesOnboarding1 = "assets/images/onboarding1.png";
@@ -42,5 +62,20 @@ class Assets {
   /// assets/images/shose.jpg
   static const String imagesShose = "assets/images/shose.jpg";
 
+  /// Assets for imagesSplashImage
+  /// assets/images/splash_image.png
+  static const String imagesSplashImage = "assets/images/splash_image.png";
+
+  /// Assets for imagesSplashImageBrandingDark
+  /// assets/images/splash_image_branding_dark.png
+  static const String imagesSplashImageBrandingDark = "assets/images/splash_image_branding_dark.png";
+
+  /// Assets for imagesSplashImageBrandingLight
+  /// assets/images/splash_image_branding_light.png
+  static const String imagesSplashImageBrandingLight = "assets/images/splash_image_branding_light.png";
+
+  /// Assets for imagesWomen's clothing
+  /// assets/images/women's clothing.jpg
+  static const String imagesWomenSClothing = "assets/images/women's clothing.jpg";
 }
 

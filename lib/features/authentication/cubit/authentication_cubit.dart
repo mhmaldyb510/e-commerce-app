@@ -1,8 +1,7 @@
 import 'package:bloc/bloc.dart';
+import 'package:e_commerce_app/core/widgets/main_layout.dart';
 import 'package:e_commerce_app/features/authentication/view/screens/code_verification_screen.dart';
 import 'package:flutter/material.dart';
-
-import '../../home/view/widgets/bottom_navigation_bar.dart';
 
 part 'authentication_state.dart';
 
@@ -25,7 +24,7 @@ class AuthenticationCubit extends Cubit<AuthenticationState> {
     if (logInFormKey.currentState!.validate()) {
       // TODO: implement logIn
       Navigator.of(context).pushAndRemoveUntil(
-        MaterialPageRoute(builder: (context) => const BottomNavBar()),
+        MaterialPageRoute(builder: (context) => const MainLayout()),
         (route) => false,
       );
     }
@@ -56,7 +55,7 @@ class AuthenticationCubit extends Cubit<AuthenticationState> {
     if (signUpFormKey.currentState!.validate()) {
       // TODO: implement signUp
       Navigator.of(context).pushAndRemoveUntil(
-        MaterialPageRoute(builder: (context) => const BottomNavBar()),
+        MaterialPageRoute(builder: (context) => const MainLayout()),
         (route) => false,
       );
     }

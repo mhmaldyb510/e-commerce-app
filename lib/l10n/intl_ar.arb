@@ -47,7 +47,17 @@
     "newNotification": "جديد",
     "markAllAsRead": "تحديد الكل مقروء",
     "inPastTime": "في وقت سابق",
+    "products": "المنتجات",
+    "ourProducts": "منتجاتنا",
+    "filterBy": "تصنيف حسب",
     "home": "الرئيسية",
+    "price": "السعر",
+    "to": "إلى",
+    "filter": "تصفيه",
+    "sortBy": "ترتيب حسب",
+    "priseLowToHigh": "السعر (من الاقل للاعلى)",
+    "priseHighToLow": "السعر (من الاعلى للاقل)",
+    "alphabetically": "الأبجديه",
     "@home": {
         "description": "Label for the home bottom navigation item"
     },
