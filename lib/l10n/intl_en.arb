@@ -59,6 +59,8 @@
     "priseLowToHigh": "Price (Low to High)",
     "priseHighToLow": "Price (High to Low)",
     "alphabetically": "Alphabetically",
+    "theReview": "The Review",
+    "addToCart": "Add to Cart",
     "@home": {
         "description": "Label for the home bottom navigation item"
     },

@@ -540,6 +540,16 @@ class S {
     );
   }
 
+  /// `The Review`
+  String get theReview {
+    return Intl.message('The Review', name: 'theReview', desc: '', args: []);
+  }
+
+  /// `Add to Cart`
+  String get addToCart {
+    return Intl.message('Add to Cart', name: 'addToCart', desc: '', args: []);
+  }
+
   /// `Cart`
   String get cart {
     return Intl.message(

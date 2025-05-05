@@ -63,6 +63,8 @@ class BestSellerScreen extends StatelessWidget {
                                 price: state.products[index].price,
                                 image: state.products[index].image,
                                 rating: state.products[index].rating,
+                                description: state.products[index].description,
+                                ratingCount: state.products[index].ratingCount
                               ),
                             ),
                       )

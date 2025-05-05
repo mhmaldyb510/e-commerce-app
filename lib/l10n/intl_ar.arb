@@ -58,6 +58,8 @@
     "priseLowToHigh": "السعر (من الاقل للاعلى)",
     "priseHighToLow": "السعر (من الاعلى للاقل)",
     "alphabetically": "الأبجديه",
+    "theReview": "المراجعة",
+    "addToCart": "اضافة للسلة",
     "@home": {
         "description": "Label for the home bottom navigation item"
     },
