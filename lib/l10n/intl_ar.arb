@@ -71,6 +71,12 @@
     "buyNowAndPayLater": "شراء الان ودفع لاحقا",
     "pleaseSelectPaymentMethod": "يرجي تحديد طريقه الدفع",
     "next": "التالي",
+    "city": "المدينة",
+    "floorAndApartmentNumber": "رقم الطابق , رقم الشقه",
+    "pleaseEnterApartmentNumber": "يرجي كتابة رقم الشقه",
+    "pleaseEnterAddress": "يرجي كتابة العنوان",
+    "pleaseEnterCity": "يرجي كتابة المدينة",
+    "saveTheAddress": "حفظ العنوان",
     "@home": {
         "description": "Label for the home bottom navigation item"
     },

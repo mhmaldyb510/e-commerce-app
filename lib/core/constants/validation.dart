@@ -51,4 +51,28 @@ class Validation {
       return null;
     }
   }
+
+  static String? addressValidator(BuildContext context, String value) {
+    if (value.isEmpty) {
+      return S.of(context).pleaseEnterAddress;
+    } else {
+      return null;
+    }
+  }
+
+  static String? cityValidator(BuildContext context, String value) {
+    if (value.isEmpty) {
+      return S.of(context).pleaseEnterCity;
+    } else {
+      return null;
+    }
+  }
+
+  static String? apartmentValidator(BuildContext context, String value) {
+    if (value.isEmpty) {
+      return S.of(context).pleaseEnterApartmentNumber;
+    } else {
+      return null;
+    }
+  }
 }

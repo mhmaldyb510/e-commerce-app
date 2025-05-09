@@ -39,6 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "cart": MessageLookupByLibrary.simpleMessage("Cart"),
     "categories": MessageLookupByLibrary.simpleMessage("Categories"),
     "characters": MessageLookupByLibrary.simpleMessage("characters"),
+    "city": MessageLookupByLibrary.simpleMessage("City"),
     "codeVerification": MessageLookupByLibrary.simpleMessage(
       "Code Verification",
     ),
@@ -64,6 +65,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "filter": MessageLookupByLibrary.simpleMessage("Filter"),
     "filterBy": MessageLookupByLibrary.simpleMessage("Filter By"),
+    "floorAndApartmentNumber": MessageLookupByLibrary.simpleMessage(
+      "Floor Number, Apartment Number",
+    ),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
     "free": MessageLookupByLibrary.simpleMessage("Free"),
     "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
@@ -102,6 +106,15 @@ class MessageLookup extends MessageLookupByLibrary {
     "paymentOnDelivery": MessageLookupByLibrary.simpleMessage(
       "Payment on Delivery",
     ),
+    "pleaseEnterAddress": MessageLookupByLibrary.simpleMessage(
+      "Please enter address",
+    ),
+    "pleaseEnterApartmentNumber": MessageLookupByLibrary.simpleMessage(
+      "Please enter apartment number",
+    ),
+    "pleaseEnterCity": MessageLookupByLibrary.simpleMessage(
+      "Please enter city",
+    ),
     "pleaseEnterEmail": MessageLookupByLibrary.simpleMessage(
       "Please enter email",
     ),
@@ -129,6 +142,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "resendCode": MessageLookupByLibrary.simpleMessage("Resend the Code"),
     "review": MessageLookupByLibrary.simpleMessage("Review"),
     "reviews": MessageLookupByLibrary.simpleMessage("Reviews"),
+    "saveTheAddress": MessageLookupByLibrary.simpleMessage("Save the Address"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("Welcome to "),
     "scopeDotes": MessageLookupByLibrary.simpleMessage(":"),
     "searchFor": MessageLookupByLibrary.simpleMessage("Search for......."),

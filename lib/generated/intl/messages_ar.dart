@@ -39,6 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "cart": MessageLookupByLibrary.simpleMessage("السلة"),
     "categories": MessageLookupByLibrary.simpleMessage("التصنيفات"),
     "characters": MessageLookupByLibrary.simpleMessage("حروف"),
+    "city": MessageLookupByLibrary.simpleMessage("المدينة"),
     "codeVerification": MessageLookupByLibrary.simpleMessage("تحقق من الرمز"),
     "confirmPassword": MessageLookupByLibrary.simpleMessage(
       "تأكيد كلمة المرور",
@@ -62,6 +63,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "filter": MessageLookupByLibrary.simpleMessage("تصفيه"),
     "filterBy": MessageLookupByLibrary.simpleMessage("تصنيف حسب"),
+    "floorAndApartmentNumber": MessageLookupByLibrary.simpleMessage(
+      "رقم الطابق , رقم الشقه",
+    ),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
     "free": MessageLookupByLibrary.simpleMessage("مجانا"),
     "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
@@ -100,6 +104,15 @@ class MessageLookup extends MessageLookupByLibrary {
     "paymentOnDelivery": MessageLookupByLibrary.simpleMessage(
       "الدفع عند الإستلام",
     ),
+    "pleaseEnterAddress": MessageLookupByLibrary.simpleMessage(
+      "يرجي كتابة العنوان",
+    ),
+    "pleaseEnterApartmentNumber": MessageLookupByLibrary.simpleMessage(
+      "يرجي كتابة رقم الشقه",
+    ),
+    "pleaseEnterCity": MessageLookupByLibrary.simpleMessage(
+      "يرجي كتابة المدينة",
+    ),
     "pleaseEnterEmail": MessageLookupByLibrary.simpleMessage(
       "من فضلك ادخل البريد الالكتروني",
     ),
@@ -127,6 +140,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "resendCode": MessageLookupByLibrary.simpleMessage("إعادة إرسال الرمز"),
     "review": MessageLookupByLibrary.simpleMessage("المراجعة"),
     "reviews": MessageLookupByLibrary.simpleMessage("التقييمات"),
+    "saveTheAddress": MessageLookupByLibrary.simpleMessage("حفظ العنوان"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("مرحباً بك في "),
     "searchFor": MessageLookupByLibrary.simpleMessage("بحث عن......."),
     "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),

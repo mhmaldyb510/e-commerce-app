@@ -72,6 +72,12 @@
     "buyNowAndPayLater": "Buy Now and Pay Later",
     "pleaseSelectPaymentMethod": "Please select a payment method",
     "next": "Next",
+    "city": "City",
+    "floorAndApartmentNumber": "Floor Number, Apartment Number",
+    "pleaseEnterApartmentNumber": "Please enter apartment number",
+    "pleaseEnterAddress": "Please enter address",
+    "pleaseEnterCity": "Please enter city",
+    "saveTheAddress": "Save the Address",
     "@home": {
         "description": "Label for the home bottom navigation item"
     },

@@ -625,6 +625,61 @@ class S {
     return Intl.message('Next', name: 'next', desc: '', args: []);
   }
 
+  /// `City`
+  String get city {
+    return Intl.message('City', name: 'city', desc: '', args: []);
+  }
+
+  /// `Floor Number, Apartment Number`
+  String get floorAndApartmentNumber {
+    return Intl.message(
+      'Floor Number, Apartment Number',
+      name: 'floorAndApartmentNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter apartment number`
+  String get pleaseEnterApartmentNumber {
+    return Intl.message(
+      'Please enter apartment number',
+      name: 'pleaseEnterApartmentNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter address`
+  String get pleaseEnterAddress {
+    return Intl.message(
+      'Please enter address',
+      name: 'pleaseEnterAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter city`
+  String get pleaseEnterCity {
+    return Intl.message(
+      'Please enter city',
+      name: 'pleaseEnterCity',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save the Address`
+  String get saveTheAddress {
+    return Intl.message(
+      'Save the Address',
+      name: 'saveTheAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Cart`
   String get cart {
     return Intl.message(

@@ -2,6 +2,7 @@ import 'package:e_commerce_app/core/cubits/modal_buttom_sheet_cubit/modal_bottom
 import 'package:e_commerce_app/core/models/product_model.dart';
 import 'package:e_commerce_app/core/widgets/custom_app_bar.dart';
 import 'package:e_commerce_app/features/checkout/cubit/checkout_cubit.dart';
+import 'package:e_commerce_app/features/checkout/view/widgets/address_page.dart';
 import 'package:e_commerce_app/features/checkout/view/widgets/checkout_titles_list.dart';
 import 'package:e_commerce_app/features/checkout/view/widgets/shipping_page.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
@@ -72,7 +73,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                               BlocProvider.of<CheckoutCubit>(context).pageIndex,
                           children: const [
                             ShippingPage(),
-                            Center(child: Text('Address')),
+                            AddressPage(),
                             Center(child: Text('Payment')),
                             Center(child: Text('Review')),
                           ],
