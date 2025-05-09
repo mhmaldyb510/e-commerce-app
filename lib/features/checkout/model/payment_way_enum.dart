@@ -1,0 +1,4 @@
+enum PaymentWayEnum {
+  online,
+  cash,
+}

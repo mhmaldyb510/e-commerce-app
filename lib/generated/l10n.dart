@@ -550,6 +550,81 @@ class S {
     return Intl.message('Add to Cart', name: 'addToCart', desc: '', args: []);
   }
 
+  /// `Shipping`
+  String get shipping {
+    return Intl.message('Shipping', name: 'shipping', desc: '', args: []);
+  }
+
+  /// `Address`
+  String get address {
+    return Intl.message('Address', name: 'address', desc: '', args: []);
+  }
+
+  /// `Payment`
+  String get payment {
+    return Intl.message('Payment', name: 'payment', desc: '', args: []);
+  }
+
+  /// `Review`
+  String get review {
+    return Intl.message('Review', name: 'review', desc: '', args: []);
+  }
+
+  /// `Free`
+  String get free {
+    return Intl.message('Free', name: 'free', desc: '', args: []);
+  }
+
+  /// `EGP`
+  String get egyptianPound {
+    return Intl.message('EGP', name: 'egyptianPound', desc: '', args: []);
+  }
+
+  /// `Payment on Delivery`
+  String get paymentOnDelivery {
+    return Intl.message(
+      'Payment on Delivery',
+      name: 'paymentOnDelivery',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delivery From Place`
+  String get deliveryFromPlace {
+    return Intl.message(
+      'Delivery From Place',
+      name: 'deliveryFromPlace',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Buy Now and Pay Later`
+  String get buyNowAndPayLater {
+    return Intl.message(
+      'Buy Now and Pay Later',
+      name: 'buyNowAndPayLater',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please select a payment method`
+  String get pleaseSelectPaymentMethod {
+    return Intl.message(
+      'Please select a payment method',
+      name: 'pleaseSelectPaymentMethod',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Next`
+  String get next {
+    return Intl.message('Next', name: 'next', desc: '', args: []);
+  }
+
   /// `Cart`
   String get cart {
     return Intl.message(

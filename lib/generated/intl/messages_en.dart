@@ -24,11 +24,15 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "account": MessageLookupByLibrary.simpleMessage("Account"),
     "addToCart": MessageLookupByLibrary.simpleMessage("Add to Cart"),
+    "address": MessageLookupByLibrary.simpleMessage("Address"),
     "alphabetically": MessageLookupByLibrary.simpleMessage("Alphabetically"),
     "alreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "Already have an account?",
     ),
     "bestSellers": MessageLookupByLibrary.simpleMessage("Best Sellers"),
+    "buyNowAndPayLater": MessageLookupByLibrary.simpleMessage(
+      "Buy Now and Pay Later",
+    ),
     "byCreatingAccount": MessageLookupByLibrary.simpleMessage(
       "By creating an account , you agree to our | Terms and Conditions",
     ),
@@ -47,9 +51,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "createNewPasswordForSignIn": MessageLookupByLibrary.simpleMessage(
       "Create New Password for Sign In",
     ),
+    "deliveryFromPlace": MessageLookupByLibrary.simpleMessage(
+      "Delivery From Place",
+    ),
     "dontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "Don\'t have an account?",
     ),
+    "egyptianPound": MessageLookupByLibrary.simpleMessage("EGP"),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
     "enterCodeSentToEmail": MessageLookupByLibrary.simpleMessage(
       "Enter the code sent to this email",
@@ -57,6 +65,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "filter": MessageLookupByLibrary.simpleMessage("Filter"),
     "filterBy": MessageLookupByLibrary.simpleMessage("Filter By"),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
+    "free": MessageLookupByLibrary.simpleMessage("Free"),
     "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
     "goodMorning": MessageLookupByLibrary.simpleMessage("Good Morning !.."),
     "home": MessageLookupByLibrary.simpleMessage("Home"),
@@ -71,6 +80,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "newAccount": MessageLookupByLibrary.simpleMessage("New Account"),
     "newNotification": MessageLookupByLibrary.simpleMessage("New"),
     "newPassword": MessageLookupByLibrary.simpleMessage("New Password"),
+    "next": MessageLookupByLibrary.simpleMessage("Next"),
     "notification": MessageLookupByLibrary.simpleMessage("Notification"),
     "onboardingDetails1": MessageLookupByLibrary.simpleMessage(
       "Discover a unique shopping experience with ProductsHUB. Explore our wide range of high-quality products and get the best deals and exceptional service.",
@@ -88,6 +98,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "passwordsDoNotMatch": MessageLookupByLibrary.simpleMessage(
       "Passwords do not match",
     ),
+    "payment": MessageLookupByLibrary.simpleMessage("Payment"),
+    "paymentOnDelivery": MessageLookupByLibrary.simpleMessage(
+      "Payment on Delivery",
+    ),
     "pleaseEnterEmail": MessageLookupByLibrary.simpleMessage(
       "Please enter email",
     ),
@@ -100,6 +114,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "pleaseEnterValidEmail": MessageLookupByLibrary.simpleMessage(
       "Please enter valid email",
     ),
+    "pleaseSelectPaymentMethod": MessageLookupByLibrary.simpleMessage(
+      "Please select a payment method",
+    ),
     "price": MessageLookupByLibrary.simpleMessage("Price"),
     "priseHighToLow": MessageLookupByLibrary.simpleMessage(
       "Price (High to Low)",
@@ -110,11 +127,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "products": MessageLookupByLibrary.simpleMessage("Products"),
     "questionMark": MessageLookupByLibrary.simpleMessage("?"),
     "resendCode": MessageLookupByLibrary.simpleMessage("Resend the Code"),
+    "review": MessageLookupByLibrary.simpleMessage("Review"),
     "reviews": MessageLookupByLibrary.simpleMessage("Reviews"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("Welcome to "),
     "scopeDotes": MessageLookupByLibrary.simpleMessage(":"),
     "searchFor": MessageLookupByLibrary.simpleMessage("Search for......."),
     "settings": MessageLookupByLibrary.simpleMessage("Settings"),
+    "shipping": MessageLookupByLibrary.simpleMessage("Shipping"),
     "signInWithApple": MessageLookupByLibrary.simpleMessage(
       "Sign in with Apple",
     ),

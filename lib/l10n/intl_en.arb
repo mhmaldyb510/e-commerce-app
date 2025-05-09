@@ -61,6 +61,17 @@
     "alphabetically": "Alphabetically",
     "theReview": "The Review",
     "addToCart": "Add to Cart",
+    "shipping": "Shipping",
+    "address": "Address",
+    "payment": "Payment",
+    "review": "Review",
+    "free": "Free",
+    "egyptianPound": "EGP",
+    "paymentOnDelivery": "Payment on Delivery",
+    "deliveryFromPlace": "Delivery From Place",
+    "buyNowAndPayLater": "Buy Now and Pay Later",
+    "pleaseSelectPaymentMethod": "Please select a payment method",
+    "next": "Next",
     "@home": {
         "description": "Label for the home bottom navigation item"
     },

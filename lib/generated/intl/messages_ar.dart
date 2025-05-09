@@ -24,11 +24,15 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "account": MessageLookupByLibrary.simpleMessage("حسابي"),
     "addToCart": MessageLookupByLibrary.simpleMessage("اضافة للسلة"),
+    "address": MessageLookupByLibrary.simpleMessage("العنوان"),
     "alphabetically": MessageLookupByLibrary.simpleMessage("الأبجديه"),
     "alreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "تمتلك حساب بالفعل؟",
     ),
     "bestSellers": MessageLookupByLibrary.simpleMessage("الاكثر مبيعا"),
+    "buyNowAndPayLater": MessageLookupByLibrary.simpleMessage(
+      "شراء الان ودفع لاحقا",
+    ),
     "byCreatingAccount": MessageLookupByLibrary.simpleMessage(
       "من خلال إنشاء حساب , فإنك توافق على | الشروط والأحكام الخاصة بنا",
     ),
@@ -45,9 +49,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "createNewPasswordForSignIn": MessageLookupByLibrary.simpleMessage(
       "انشاء كلمة مرور جديدة لتسجيل الدخول",
     ),
+    "deliveryFromPlace": MessageLookupByLibrary.simpleMessage(
+      "التسليم من المكان",
+    ),
     "dontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "لا يوجد لديك حساب؟",
     ),
+    "egyptianPound": MessageLookupByLibrary.simpleMessage("جنيه"),
     "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
     "enterCodeSentToEmail": MessageLookupByLibrary.simpleMessage(
       "أدخل الرمز الذي أرسلناه إلى عنوان البريد التالي",
@@ -55,6 +63,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "filter": MessageLookupByLibrary.simpleMessage("تصفيه"),
     "filterBy": MessageLookupByLibrary.simpleMessage("تصنيف حسب"),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
+    "free": MessageLookupByLibrary.simpleMessage("مجانا"),
     "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
     "goodMorning": MessageLookupByLibrary.simpleMessage("صباح الخير !.."),
     "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
@@ -69,6 +78,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "newAccount": MessageLookupByLibrary.simpleMessage("حساب جديد"),
     "newNotification": MessageLookupByLibrary.simpleMessage("جديد"),
     "newPassword": MessageLookupByLibrary.simpleMessage("كلمة مرور جديدة"),
+    "next": MessageLookupByLibrary.simpleMessage("التالي"),
     "notification": MessageLookupByLibrary.simpleMessage("الاشعارات"),
     "onboardingDetails1": MessageLookupByLibrary.simpleMessage(
       "اكتشف تجربة تسوق فريدة مع ProductsHUB. استكشف مجموعتنا الواسعة من المنتجات عالية الجودة واحصل على أفضل العروض والخدمة المتميزة.",
@@ -86,6 +96,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "passwordsDoNotMatch": MessageLookupByLibrary.simpleMessage(
       "كلمات المرور لا تتطابق",
     ),
+    "payment": MessageLookupByLibrary.simpleMessage("الدفع"),
+    "paymentOnDelivery": MessageLookupByLibrary.simpleMessage(
+      "الدفع عند الإستلام",
+    ),
     "pleaseEnterEmail": MessageLookupByLibrary.simpleMessage(
       "من فضلك ادخل البريد الالكتروني",
     ),
@@ -98,6 +112,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "pleaseEnterValidEmail": MessageLookupByLibrary.simpleMessage(
       "من فضلك ادخل بريد الكتروني صحيح",
     ),
+    "pleaseSelectPaymentMethod": MessageLookupByLibrary.simpleMessage(
+      "يرجي تحديد طريقه الدفع",
+    ),
     "price": MessageLookupByLibrary.simpleMessage("السعر"),
     "priseHighToLow": MessageLookupByLibrary.simpleMessage(
       "السعر (من الاعلى للاقل)",
@@ -108,10 +125,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "products": MessageLookupByLibrary.simpleMessage("المنتجات"),
     "questionMark": MessageLookupByLibrary.simpleMessage("؟"),
     "resendCode": MessageLookupByLibrary.simpleMessage("إعادة إرسال الرمز"),
+    "review": MessageLookupByLibrary.simpleMessage("المراجعة"),
     "reviews": MessageLookupByLibrary.simpleMessage("التقييمات"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("مرحباً بك في "),
     "searchFor": MessageLookupByLibrary.simpleMessage("بحث عن......."),
     "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
+    "shipping": MessageLookupByLibrary.simpleMessage("الشحن"),
     "signInWithApple": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة ابل"),
     "signInWithFacebook": MessageLookupByLibrary.simpleMessage(
       "تسجيل بواسطة فيسبوك",

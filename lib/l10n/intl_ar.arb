@@ -60,6 +60,17 @@
     "alphabetically": "الأبجديه",
     "theReview": "المراجعة",
     "addToCart": "اضافة للسلة",
+    "shipping": "الشحن",
+    "address": "العنوان",
+    "payment": "الدفع",
+    "review": "المراجعة",
+    "free": "مجانا",
+    "egyptianPound": "جنيه",
+    "paymentOnDelivery": "الدفع عند الإستلام",
+    "deliveryFromPlace": "التسليم من المكان",
+    "buyNowAndPayLater": "شراء الان ودفع لاحقا",
+    "pleaseSelectPaymentMethod": "يرجي تحديد طريقه الدفع",
+    "next": "التالي",
     "@home": {
         "description": "Label for the home bottom navigation item"
     },

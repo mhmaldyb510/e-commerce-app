@@ -20,6 +20,7 @@ class LightTheme extends ThemeClass {
 
     hintColor: AppColors.grayscale400,
     textTheme: const TextTheme(
+      bodySmall: TextStyle(color: AppColors.grayscale950),
       bodyMedium: TextStyle(color: AppColors.grayscale950),
       bodyLarge: TextStyle(color: AppColors.grayscale950),
     ),
