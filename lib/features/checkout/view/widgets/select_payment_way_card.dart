@@ -1,6 +1,6 @@
 import 'package:e_commerce_app/core/themes/app_colors.dart';
 import 'package:e_commerce_app/core/themes/text_styles.dart';
-import 'package:e_commerce_app/features/checkout/model/payment_way_enum.dart';
+import 'package:e_commerce_app/features/checkout/model/how_to_pay_enum.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
@@ -8,9 +8,9 @@ class SelectPaymentWayCard extends StatelessWidget {
   final String title;
   final String details;
   final int fees;
-  final PaymentWayEnum value;
-  final PaymentWayEnum? groupValue;
-  final void Function(PaymentWayEnum?)? onChanged;
+  final HowToPayEnum value;
+  final HowToPayEnum? groupValue;
+  final void Function(HowToPayEnum?)? onChanged;
   const SelectPaymentWayCard({
     super.key,
     required this.title,
@@ -31,7 +31,7 @@ class SelectPaymentWayCard extends StatelessWidget {
                 ? Border.all(color: AppColors.green1_500)
                 : null,
       ),
-      child: RadioListTile<PaymentWayEnum>(
+      child: RadioListTile<HowToPayEnum>(
         activeColor: Theme.of(context).primaryColor,
         value: value,
         groupValue: groupValue,

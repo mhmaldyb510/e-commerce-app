@@ -36,19 +36,31 @@ class MessageLookup extends MessageLookupByLibrary {
     "byCreatingAccount": MessageLookupByLibrary.simpleMessage(
       "من خلال إنشاء حساب , فإنك توافق على | الشروط والأحكام الخاصة بنا",
     ),
+    "cardHolderName": MessageLookupByLibrary.simpleMessage("اسم حامل البطاقه"),
+    "cardNumber": MessageLookupByLibrary.simpleMessage("رقم البطاقة"),
+    "cardNumberShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
+      "رقم البطاقة يجب ان يكون على الاقل ",
+    ),
     "cart": MessageLookupByLibrary.simpleMessage("السلة"),
     "categories": MessageLookupByLibrary.simpleMessage("التصنيفات"),
     "characters": MessageLookupByLibrary.simpleMessage("حروف"),
+    "choosePaymentMethod": MessageLookupByLibrary.simpleMessage(
+      "أختار طريقه الدفع المناسبه :",
+    ),
     "city": MessageLookupByLibrary.simpleMessage("المدينة"),
     "codeVerification": MessageLookupByLibrary.simpleMessage("تحقق من الرمز"),
     "confirmPassword": MessageLookupByLibrary.simpleMessage(
       "تأكيد كلمة المرور",
     ),
+    "confirmTheOrder": MessageLookupByLibrary.simpleMessage("تاكيد الطلب"),
     "create": MessageLookupByLibrary.simpleMessage("إنشاء"),
     "createAccount": MessageLookupByLibrary.simpleMessage("قم بانشاء حساب"),
     "createNewAccount": MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
     "createNewPasswordForSignIn": MessageLookupByLibrary.simpleMessage(
       "انشاء كلمة مرور جديدة لتسجيل الدخول",
+    ),
+    "cvvShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
+      "CVV يجب ان يكون على الاقل ",
     ),
     "deliveryFromPlace": MessageLookupByLibrary.simpleMessage(
       "التسليم من المكان",
@@ -61,6 +73,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "enterCodeSentToEmail": MessageLookupByLibrary.simpleMessage(
       "أدخل الرمز الذي أرسلناه إلى عنوان البريد التالي",
     ),
+    "expiryDate": MessageLookupByLibrary.simpleMessage("تاريخ الصلاحيه"),
     "filter": MessageLookupByLibrary.simpleMessage("تصفيه"),
     "filterBy": MessageLookupByLibrary.simpleMessage("تصنيف حسب"),
     "floorAndApartmentNumber": MessageLookupByLibrary.simpleMessage(
@@ -73,6 +86,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
     "inPastTime": MessageLookupByLibrary.simpleMessage("في وقت سابق"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+    "makeAsDefaultCard": MessageLookupByLibrary.simpleMessage(
+      "جعل البطاقة افتراضية",
+    ),
     "markAllAsRead": MessageLookupByLibrary.simpleMessage("تحديد الكل مقروء"),
     "more": MessageLookupByLibrary.simpleMessage("المزيد"),
     "mostPopular": MessageLookupByLibrary.simpleMessage("الاكثر مبيعا"),
@@ -104,17 +120,30 @@ class MessageLookup extends MessageLookupByLibrary {
     "paymentOnDelivery": MessageLookupByLibrary.simpleMessage(
       "الدفع عند الإستلام",
     ),
+    "pleaseChoosePaymentMethod": MessageLookupByLibrary.simpleMessage(
+      "من فضلك اختر طريقه الدفع المناسبه لك.",
+    ),
     "pleaseEnterAddress": MessageLookupByLibrary.simpleMessage(
       "يرجي كتابة العنوان",
     ),
     "pleaseEnterApartmentNumber": MessageLookupByLibrary.simpleMessage(
       "يرجي كتابة رقم الشقه",
     ),
+    "pleaseEnterCardName": MessageLookupByLibrary.simpleMessage(
+      "يرجي كتابة اسم البطاقه",
+    ),
+    "pleaseEnterCardNumber": MessageLookupByLibrary.simpleMessage(
+      "يرجي كتابة رقم البطاقة",
+    ),
     "pleaseEnterCity": MessageLookupByLibrary.simpleMessage(
       "يرجي كتابة المدينة",
     ),
+    "pleaseEnterCvv": MessageLookupByLibrary.simpleMessage("يرجي كتابة CVV"),
     "pleaseEnterEmail": MessageLookupByLibrary.simpleMessage(
       "من فضلك ادخل البريد الالكتروني",
+    ),
+    "pleaseEnterExpiryDate": MessageLookupByLibrary.simpleMessage(
+      "يرجي كتابة تاريخ الصلاحيه",
     ),
     "pleaseEnterName": MessageLookupByLibrary.simpleMessage(
       "من فضلك ادخل الاسم",
@@ -124,6 +153,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "pleaseEnterValidEmail": MessageLookupByLibrary.simpleMessage(
       "من فضلك ادخل بريد الكتروني صحيح",
+    ),
+    "pleaseEnterValidExpiryDate": MessageLookupByLibrary.simpleMessage(
+      "يرجي كتابة تاريخ صحيح",
     ),
     "pleaseSelectPaymentMethod": MessageLookupByLibrary.simpleMessage(
       "يرجي تحديد طريقه الدفع",

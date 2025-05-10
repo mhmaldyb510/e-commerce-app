@@ -4,6 +4,7 @@ import 'package:e_commerce_app/core/widgets/custom_app_bar.dart';
 import 'package:e_commerce_app/features/checkout/cubit/checkout_cubit.dart';
 import 'package:e_commerce_app/features/checkout/view/widgets/address_page.dart';
 import 'package:e_commerce_app/features/checkout/view/widgets/checkout_titles_list.dart';
+import 'package:e_commerce_app/features/checkout/view/widgets/payment_page.dart';
 import 'package:e_commerce_app/features/checkout/view/widgets/shipping_page.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -74,7 +75,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                           children: const [
                             ShippingPage(),
                             AddressPage(),
-                            Center(child: Text('Payment')),
+                            PaymentPage(),
                             Center(child: Text('Review')),
                           ],
                         ),

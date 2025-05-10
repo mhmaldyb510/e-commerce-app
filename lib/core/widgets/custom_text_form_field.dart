@@ -1,6 +1,7 @@
 import 'package:e_commerce_app/core/themes/app_colors.dart';
 import 'package:e_commerce_app/core/themes/text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class CustomTextFormField extends StatefulWidget {
   final bool isPassword;
@@ -12,6 +13,9 @@ class CustomTextFormField extends StatefulWidget {
   final Function(String?)? onSaved;
   final FocusNode? focusNode;
   final ValueChanged<String>? onFieldSubmitted;
+  final TextEditingController? controller;
+  final List<TextInputFormatter>? inputFormatters;
+  final int? maxLength;
 
   const CustomTextFormField({
     super.key,
@@ -24,6 +28,8 @@ class CustomTextFormField extends StatefulWidget {
     this.onSaved,
     this.focusNode,
     this.onFieldSubmitted,
+    this.controller,
+    this.inputFormatters, this.maxLength
   });
 
   @override
@@ -41,6 +47,9 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      maxLength: widget.maxLength,
+      controller: widget.controller,
+      inputFormatters: widget.inputFormatters,
       focusNode: widget.focusNode,
       onSaved: widget.onSaved,
       onChanged: widget.onChanged,

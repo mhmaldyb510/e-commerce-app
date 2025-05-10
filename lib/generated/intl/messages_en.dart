@@ -36,14 +36,25 @@ class MessageLookup extends MessageLookupByLibrary {
     "byCreatingAccount": MessageLookupByLibrary.simpleMessage(
       "By creating an account , you agree to our | Terms and Conditions",
     ),
+    "cardHolderName": MessageLookupByLibrary.simpleMessage("Card Holder Name"),
+    "cardNumber": MessageLookupByLibrary.simpleMessage("Card Number"),
+    "cardNumberShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
+      "Card number should be at least ",
+    ),
     "cart": MessageLookupByLibrary.simpleMessage("Cart"),
     "categories": MessageLookupByLibrary.simpleMessage("Categories"),
     "characters": MessageLookupByLibrary.simpleMessage("characters"),
+    "choosePaymentMethod": MessageLookupByLibrary.simpleMessage(
+      "Choose the appropriate payment method:",
+    ),
     "city": MessageLookupByLibrary.simpleMessage("City"),
     "codeVerification": MessageLookupByLibrary.simpleMessage(
       "Code Verification",
     ),
     "confirmPassword": MessageLookupByLibrary.simpleMessage("Confirm Password"),
+    "confirmTheOrder": MessageLookupByLibrary.simpleMessage(
+      "Confirm the Order",
+    ),
     "create": MessageLookupByLibrary.simpleMessage("Create"),
     "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
     "createNewAccount": MessageLookupByLibrary.simpleMessage(
@@ -51,6 +62,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "createNewPasswordForSignIn": MessageLookupByLibrary.simpleMessage(
       "Create New Password for Sign In",
+    ),
+    "cvvShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
+      "CVV should be at least ",
     ),
     "deliveryFromPlace": MessageLookupByLibrary.simpleMessage(
       "Delivery From Place",
@@ -63,6 +77,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "enterCodeSentToEmail": MessageLookupByLibrary.simpleMessage(
       "Enter the code sent to this email",
     ),
+    "expiryDate": MessageLookupByLibrary.simpleMessage("Expiry Date"),
     "filter": MessageLookupByLibrary.simpleMessage("Filter"),
     "filterBy": MessageLookupByLibrary.simpleMessage("Filter By"),
     "floorAndApartmentNumber": MessageLookupByLibrary.simpleMessage(
@@ -75,6 +90,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "home": MessageLookupByLibrary.simpleMessage("Home"),
     "inPastTime": MessageLookupByLibrary.simpleMessage("In past time"),
     "login": MessageLookupByLibrary.simpleMessage("Login"),
+    "makeAsDefaultCard": MessageLookupByLibrary.simpleMessage(
+      "Make as Default Card",
+    ),
     "markAllAsRead": MessageLookupByLibrary.simpleMessage("Mark all as read"),
     "more": MessageLookupByLibrary.simpleMessage("More"),
     "mostPopular": MessageLookupByLibrary.simpleMessage("Most Popular"),
@@ -106,17 +124,30 @@ class MessageLookup extends MessageLookupByLibrary {
     "paymentOnDelivery": MessageLookupByLibrary.simpleMessage(
       "Payment on Delivery",
     ),
+    "pleaseChoosePaymentMethod": MessageLookupByLibrary.simpleMessage(
+      "Please choose the payment method that suits you.",
+    ),
     "pleaseEnterAddress": MessageLookupByLibrary.simpleMessage(
       "Please enter address",
     ),
     "pleaseEnterApartmentNumber": MessageLookupByLibrary.simpleMessage(
       "Please enter apartment number",
     ),
+    "pleaseEnterCardName": MessageLookupByLibrary.simpleMessage(
+      "Please enter card name",
+    ),
+    "pleaseEnterCardNumber": MessageLookupByLibrary.simpleMessage(
+      "Please enter card number",
+    ),
     "pleaseEnterCity": MessageLookupByLibrary.simpleMessage(
       "Please enter city",
     ),
+    "pleaseEnterCvv": MessageLookupByLibrary.simpleMessage("Please enter CVV"),
     "pleaseEnterEmail": MessageLookupByLibrary.simpleMessage(
       "Please enter email",
+    ),
+    "pleaseEnterExpiryDate": MessageLookupByLibrary.simpleMessage(
+      "Please enter expiry date",
     ),
     "pleaseEnterName": MessageLookupByLibrary.simpleMessage(
       "Please enter name",
@@ -126,6 +157,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "pleaseEnterValidEmail": MessageLookupByLibrary.simpleMessage(
       "Please enter valid email",
+    ),
+    "pleaseEnterValidExpiryDate": MessageLookupByLibrary.simpleMessage(
+      "Please enter valid expiry date",
     ),
     "pleaseSelectPaymentMethod": MessageLookupByLibrary.simpleMessage(
       "Please select a payment method",

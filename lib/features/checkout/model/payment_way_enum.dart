@@ -1,4 +1,6 @@
 enum PaymentWayEnum {
-  online,
-  cash,
+  applePay,
+  paypal,
+  mastercard,
+  visa
 }

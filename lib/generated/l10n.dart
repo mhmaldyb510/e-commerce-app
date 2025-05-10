@@ -620,6 +620,26 @@ class S {
     );
   }
 
+  /// `Please choose the payment method that suits you.`
+  String get pleaseChoosePaymentMethod {
+    return Intl.message(
+      'Please choose the payment method that suits you.',
+      name: 'pleaseChoosePaymentMethod',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose the appropriate payment method:`
+  String get choosePaymentMethod {
+    return Intl.message(
+      'Choose the appropriate payment method:',
+      name: 'choosePaymentMethod',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Next`
   String get next {
     return Intl.message('Next', name: 'next', desc: '', args: []);
@@ -675,6 +695,116 @@ class S {
     return Intl.message(
       'Save the Address',
       name: 'saveTheAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Card Holder Name`
+  String get cardHolderName {
+    return Intl.message(
+      'Card Holder Name',
+      name: 'cardHolderName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Card Number`
+  String get cardNumber {
+    return Intl.message('Card Number', name: 'cardNumber', desc: '', args: []);
+  }
+
+  /// `Expiry Date`
+  String get expiryDate {
+    return Intl.message('Expiry Date', name: 'expiryDate', desc: '', args: []);
+  }
+
+  /// `Make as Default Card`
+  String get makeAsDefaultCard {
+    return Intl.message(
+      'Make as Default Card',
+      name: 'makeAsDefaultCard',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm the Order`
+  String get confirmTheOrder {
+    return Intl.message(
+      'Confirm the Order',
+      name: 'confirmTheOrder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter card name`
+  String get pleaseEnterCardName {
+    return Intl.message(
+      'Please enter card name',
+      name: 'pleaseEnterCardName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter card number`
+  String get pleaseEnterCardNumber {
+    return Intl.message(
+      'Please enter card number',
+      name: 'pleaseEnterCardNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Card number should be at least `
+  String get cardNumberShouldBeAtLeast {
+    return Intl.message(
+      'Card number should be at least ',
+      name: 'cardNumberShouldBeAtLeast',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter expiry date`
+  String get pleaseEnterExpiryDate {
+    return Intl.message(
+      'Please enter expiry date',
+      name: 'pleaseEnterExpiryDate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter valid expiry date`
+  String get pleaseEnterValidExpiryDate {
+    return Intl.message(
+      'Please enter valid expiry date',
+      name: 'pleaseEnterValidExpiryDate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter CVV`
+  String get pleaseEnterCvv {
+    return Intl.message(
+      'Please enter CVV',
+      name: 'pleaseEnterCvv',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `CVV should be at least `
+  String get cvvShouldBeAtLeast {
+    return Intl.message(
+      'CVV should be at least ',
+      name: 'cvvShouldBeAtLeast',
       desc: '',
       args: [],
     );

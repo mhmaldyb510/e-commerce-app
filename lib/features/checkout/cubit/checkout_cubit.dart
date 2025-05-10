@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:e_commerce_app/features/checkout/model/payment_way_enum.dart';
+import 'package:e_commerce_app/features/checkout/model/how_to_pay_enum.dart';
 import 'package:meta/meta.dart';
 
 part 'checkout_state.dart';
@@ -9,7 +9,7 @@ class CheckoutCubit extends Cubit<CheckoutState> {
   List<String> done = [];
   int pageIndex = 0;
 
-  PaymentWayEnum paymentWay = PaymentWayEnum.online;
+  HowToPayEnum howToPay = HowToPayEnum.online;
   void changePageIndex(int index) {
     pageIndex = index;
 
