@@ -24,21 +24,38 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "account": MessageLookupByLibrary.simpleMessage("Account"),
     "addToCart": MessageLookupByLibrary.simpleMessage("Add to Cart"),
+    "address": MessageLookupByLibrary.simpleMessage("Address"),
     "alphabetically": MessageLookupByLibrary.simpleMessage("Alphabetically"),
     "alreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "Already have an account?",
     ),
+    "apartmentNumber": MessageLookupByLibrary.simpleMessage("Apartment Number"),
     "bestSellers": MessageLookupByLibrary.simpleMessage("Best Sellers"),
+    "buyNowAndPayLater": MessageLookupByLibrary.simpleMessage(
+      "Buy Now and Pay Later",
+    ),
     "byCreatingAccount": MessageLookupByLibrary.simpleMessage(
       "By creating an account , you agree to our | Terms and Conditions",
+    ),
+    "cardHolderName": MessageLookupByLibrary.simpleMessage("Card Holder Name"),
+    "cardNumber": MessageLookupByLibrary.simpleMessage("Card Number"),
+    "cardNumberShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
+      "Card number should be at least ",
     ),
     "cart": MessageLookupByLibrary.simpleMessage("Cart"),
     "categories": MessageLookupByLibrary.simpleMessage("Categories"),
     "characters": MessageLookupByLibrary.simpleMessage("characters"),
+    "choosePaymentMethod": MessageLookupByLibrary.simpleMessage(
+      "Choose the appropriate payment method:",
+    ),
+    "city": MessageLookupByLibrary.simpleMessage("City"),
     "codeVerification": MessageLookupByLibrary.simpleMessage(
       "Code Verification",
     ),
     "confirmPassword": MessageLookupByLibrary.simpleMessage("Confirm Password"),
+    "confirmTheOrder": MessageLookupByLibrary.simpleMessage(
+      "Confirm the Order",
+    ),
     "create": MessageLookupByLibrary.simpleMessage("Create"),
     "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
     "createNewAccount": MessageLookupByLibrary.simpleMessage(
@@ -47,21 +64,37 @@ class MessageLookup extends MessageLookupByLibrary {
     "createNewPasswordForSignIn": MessageLookupByLibrary.simpleMessage(
       "Create New Password for Sign In",
     ),
+    "cvvShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
+      "CVV should be at least ",
+    ),
+    "deliveryFromPlace": MessageLookupByLibrary.simpleMessage(
+      "Delivery From Place",
+    ),
     "dontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "Don\'t have an account?",
     ),
+    "edit": MessageLookupByLibrary.simpleMessage("Edit"),
+    "egyptianPound": MessageLookupByLibrary.simpleMessage("EGP"),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
     "enterCodeSentToEmail": MessageLookupByLibrary.simpleMessage(
       "Enter the code sent to this email",
     ),
+    "expiryDate": MessageLookupByLibrary.simpleMessage("Expiry Date"),
     "filter": MessageLookupByLibrary.simpleMessage("Filter"),
     "filterBy": MessageLookupByLibrary.simpleMessage("Filter By"),
+    "floorAndApartmentNumber": MessageLookupByLibrary.simpleMessage(
+      "Floor Number, Apartment Number",
+    ),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
+    "free": MessageLookupByLibrary.simpleMessage("Free"),
     "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
     "goodMorning": MessageLookupByLibrary.simpleMessage("Good Morning !.."),
     "home": MessageLookupByLibrary.simpleMessage("Home"),
     "inPastTime": MessageLookupByLibrary.simpleMessage("In past time"),
     "login": MessageLookupByLibrary.simpleMessage("Login"),
+    "makeAsDefaultCard": MessageLookupByLibrary.simpleMessage(
+      "Make as Default Card",
+    ),
     "markAllAsRead": MessageLookupByLibrary.simpleMessage("Mark all as read"),
     "more": MessageLookupByLibrary.simpleMessage("More"),
     "mostPopular": MessageLookupByLibrary.simpleMessage("Most Popular"),
@@ -71,6 +104,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "newAccount": MessageLookupByLibrary.simpleMessage("New Account"),
     "newNotification": MessageLookupByLibrary.simpleMessage("New"),
     "newPassword": MessageLookupByLibrary.simpleMessage("New Password"),
+    "next": MessageLookupByLibrary.simpleMessage("Next"),
     "notification": MessageLookupByLibrary.simpleMessage("Notification"),
     "onboardingDetails1": MessageLookupByLibrary.simpleMessage(
       "Discover a unique shopping experience with ProductsHUB. Explore our wide range of high-quality products and get the best deals and exceptional service.",
@@ -80,6 +114,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "onboardingHead2": MessageLookupByLibrary.simpleMessage("Search and Shop"),
     "or": MessageLookupByLibrary.simpleMessage("Or"),
+    "orderSummary": MessageLookupByLibrary.simpleMessage("Order Summary"),
     "ourProducts": MessageLookupByLibrary.simpleMessage("Our Products"),
     "password": MessageLookupByLibrary.simpleMessage("Password"),
     "passwordShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
@@ -88,8 +123,39 @@ class MessageLookup extends MessageLookupByLibrary {
     "passwordsDoNotMatch": MessageLookupByLibrary.simpleMessage(
       "Passwords do not match",
     ),
+    "payment": MessageLookupByLibrary.simpleMessage("Payment"),
+    "paymentMethod": MessageLookupByLibrary.simpleMessage("Payment Method"),
+    "paymentOnDelivery": MessageLookupByLibrary.simpleMessage(
+      "Payment on Delivery",
+    ),
+    "placeOrder": MessageLookupByLibrary.simpleMessage("Place Order"),
+    "pleaseChoosePaymentMethod": MessageLookupByLibrary.simpleMessage(
+      "Please choose the payment method that suits you.",
+    ),
+    "pleaseConfirmYourOrder": MessageLookupByLibrary.simpleMessage(
+      "Please confirm your order",
+    ),
+    "pleaseEnterAddress": MessageLookupByLibrary.simpleMessage(
+      "Please enter address",
+    ),
+    "pleaseEnterApartmentNumber": MessageLookupByLibrary.simpleMessage(
+      "Please enter apartment number",
+    ),
+    "pleaseEnterCardName": MessageLookupByLibrary.simpleMessage(
+      "Please enter card name",
+    ),
+    "pleaseEnterCardNumber": MessageLookupByLibrary.simpleMessage(
+      "Please enter card number",
+    ),
+    "pleaseEnterCity": MessageLookupByLibrary.simpleMessage(
+      "Please enter city",
+    ),
+    "pleaseEnterCvv": MessageLookupByLibrary.simpleMessage("Please enter CVV"),
     "pleaseEnterEmail": MessageLookupByLibrary.simpleMessage(
       "Please enter email",
+    ),
+    "pleaseEnterExpiryDate": MessageLookupByLibrary.simpleMessage(
+      "Please enter expiry date",
     ),
     "pleaseEnterName": MessageLookupByLibrary.simpleMessage(
       "Please enter name",
@@ -99,6 +165,12 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "pleaseEnterValidEmail": MessageLookupByLibrary.simpleMessage(
       "Please enter valid email",
+    ),
+    "pleaseEnterValidExpiryDate": MessageLookupByLibrary.simpleMessage(
+      "Please enter valid expiry date",
+    ),
+    "pleaseSelectPaymentMethod": MessageLookupByLibrary.simpleMessage(
+      "Please select a payment method",
     ),
     "price": MessageLookupByLibrary.simpleMessage("Price"),
     "priseHighToLow": MessageLookupByLibrary.simpleMessage(
@@ -110,11 +182,15 @@ class MessageLookup extends MessageLookupByLibrary {
     "products": MessageLookupByLibrary.simpleMessage("Products"),
     "questionMark": MessageLookupByLibrary.simpleMessage("?"),
     "resendCode": MessageLookupByLibrary.simpleMessage("Resend the Code"),
+    "review": MessageLookupByLibrary.simpleMessage("Review"),
     "reviews": MessageLookupByLibrary.simpleMessage("Reviews"),
+    "saveTheAddress": MessageLookupByLibrary.simpleMessage("Save the Address"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("Welcome to "),
     "scopeDotes": MessageLookupByLibrary.simpleMessage(":"),
     "searchFor": MessageLookupByLibrary.simpleMessage("Search for......."),
     "settings": MessageLookupByLibrary.simpleMessage("Settings"),
+    "shipping": MessageLookupByLibrary.simpleMessage("Shipping"),
+    "shippingAddress": MessageLookupByLibrary.simpleMessage("Shipping Address"),
     "signInWithApple": MessageLookupByLibrary.simpleMessage(
       "Sign in with Apple",
     ),
@@ -127,8 +203,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "skip": MessageLookupByLibrary.simpleMessage("Skip"),
     "sortBy": MessageLookupByLibrary.simpleMessage("Sort By"),
     "startNow": MessageLookupByLibrary.simpleMessage("Start now"),
+    "subtotal": MessageLookupByLibrary.simpleMessage("Subtotal:"),
     "theReview": MessageLookupByLibrary.simpleMessage("The Review"),
     "to": MessageLookupByLibrary.simpleMessage("To"),
+    "total": MessageLookupByLibrary.simpleMessage("Total"),
     "verificationCodePrompt": MessageLookupByLibrary.simpleMessage(
       "Don\'t worry, just enter your email and we will send a verification code.",
     ),

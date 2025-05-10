@@ -25,6 +25,7 @@ class DarkTheme extends ThemeClass {
     primaryColor: primaryColor,
     textTheme: const TextTheme(
       titleMedium: TextStyle(color: Colors.white),
+      bodySmall: TextStyle(color: Colors.white),
       bodyMedium: TextStyle(color: Colors.white),
       bodyLarge: TextStyle(color: Colors.white),
       titleSmall: TextStyle(color: Colors.white),

@@ -1,0 +1,1 @@
+enum HowToPayEnum { online, cash }

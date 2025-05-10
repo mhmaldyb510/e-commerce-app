@@ -24,42 +24,73 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "account": MessageLookupByLibrary.simpleMessage("حسابي"),
     "addToCart": MessageLookupByLibrary.simpleMessage("اضافة للسلة"),
+    "address": MessageLookupByLibrary.simpleMessage("العنوان"),
     "alphabetically": MessageLookupByLibrary.simpleMessage("الأبجديه"),
     "alreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "تمتلك حساب بالفعل؟",
     ),
+    "apartmentNumber": MessageLookupByLibrary.simpleMessage("رقم الشقه"),
     "bestSellers": MessageLookupByLibrary.simpleMessage("الاكثر مبيعا"),
+    "buyNowAndPayLater": MessageLookupByLibrary.simpleMessage(
+      "شراء الان ودفع لاحقا",
+    ),
     "byCreatingAccount": MessageLookupByLibrary.simpleMessage(
       "من خلال إنشاء حساب , فإنك توافق على | الشروط والأحكام الخاصة بنا",
+    ),
+    "cardHolderName": MessageLookupByLibrary.simpleMessage("اسم حامل البطاقه"),
+    "cardNumber": MessageLookupByLibrary.simpleMessage("رقم البطاقة"),
+    "cardNumberShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
+      "رقم البطاقة يجب ان يكون على الاقل ",
     ),
     "cart": MessageLookupByLibrary.simpleMessage("السلة"),
     "categories": MessageLookupByLibrary.simpleMessage("التصنيفات"),
     "characters": MessageLookupByLibrary.simpleMessage("حروف"),
+    "choosePaymentMethod": MessageLookupByLibrary.simpleMessage(
+      "أختار طريقه الدفع المناسبه :",
+    ),
+    "city": MessageLookupByLibrary.simpleMessage("المدينة"),
     "codeVerification": MessageLookupByLibrary.simpleMessage("تحقق من الرمز"),
     "confirmPassword": MessageLookupByLibrary.simpleMessage(
       "تأكيد كلمة المرور",
     ),
+    "confirmTheOrder": MessageLookupByLibrary.simpleMessage("تاكيد الطلب"),
     "create": MessageLookupByLibrary.simpleMessage("إنشاء"),
     "createAccount": MessageLookupByLibrary.simpleMessage("قم بانشاء حساب"),
     "createNewAccount": MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
     "createNewPasswordForSignIn": MessageLookupByLibrary.simpleMessage(
       "انشاء كلمة مرور جديدة لتسجيل الدخول",
     ),
+    "cvvShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
+      "CVV يجب ان يكون على الاقل ",
+    ),
+    "deliveryFromPlace": MessageLookupByLibrary.simpleMessage(
+      "التسليم من المكان",
+    ),
     "dontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "لا يوجد لديك حساب؟",
     ),
+    "edit": MessageLookupByLibrary.simpleMessage("تعديل"),
+    "egyptianPound": MessageLookupByLibrary.simpleMessage("جنيه"),
     "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
     "enterCodeSentToEmail": MessageLookupByLibrary.simpleMessage(
       "أدخل الرمز الذي أرسلناه إلى عنوان البريد التالي",
     ),
+    "expiryDate": MessageLookupByLibrary.simpleMessage("تاريخ الصلاحيه"),
     "filter": MessageLookupByLibrary.simpleMessage("تصفيه"),
     "filterBy": MessageLookupByLibrary.simpleMessage("تصنيف حسب"),
+    "floorAndApartmentNumber": MessageLookupByLibrary.simpleMessage(
+      "رقم الطابق , رقم الشقه",
+    ),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
+    "free": MessageLookupByLibrary.simpleMessage("مجانا"),
     "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
     "goodMorning": MessageLookupByLibrary.simpleMessage("صباح الخير !.."),
     "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
     "inPastTime": MessageLookupByLibrary.simpleMessage("في وقت سابق"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+    "makeAsDefaultCard": MessageLookupByLibrary.simpleMessage(
+      "جعل البطاقة افتراضية",
+    ),
     "markAllAsRead": MessageLookupByLibrary.simpleMessage("تحديد الكل مقروء"),
     "more": MessageLookupByLibrary.simpleMessage("المزيد"),
     "mostPopular": MessageLookupByLibrary.simpleMessage("الاكثر مبيعا"),
@@ -69,6 +100,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "newAccount": MessageLookupByLibrary.simpleMessage("حساب جديد"),
     "newNotification": MessageLookupByLibrary.simpleMessage("جديد"),
     "newPassword": MessageLookupByLibrary.simpleMessage("كلمة مرور جديدة"),
+    "next": MessageLookupByLibrary.simpleMessage("التالي"),
     "notification": MessageLookupByLibrary.simpleMessage("الاشعارات"),
     "onboardingDetails1": MessageLookupByLibrary.simpleMessage(
       "اكتشف تجربة تسوق فريدة مع ProductsHUB. استكشف مجموعتنا الواسعة من المنتجات عالية الجودة واحصل على أفضل العروض والخدمة المتميزة.",
@@ -78,6 +110,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "onboardingHead2": MessageLookupByLibrary.simpleMessage("ابحث وتسوق"),
     "or": MessageLookupByLibrary.simpleMessage("أو"),
+    "orderSummary": MessageLookupByLibrary.simpleMessage("ملخص الطلب :"),
     "ourProducts": MessageLookupByLibrary.simpleMessage("منتجاتنا"),
     "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
     "passwordShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
@@ -86,8 +119,39 @@ class MessageLookup extends MessageLookupByLibrary {
     "passwordsDoNotMatch": MessageLookupByLibrary.simpleMessage(
       "كلمات المرور لا تتطابق",
     ),
+    "payment": MessageLookupByLibrary.simpleMessage("الدفع"),
+    "paymentMethod": MessageLookupByLibrary.simpleMessage("وسيلة الدفع"),
+    "paymentOnDelivery": MessageLookupByLibrary.simpleMessage(
+      "الدفع عند الإستلام",
+    ),
+    "placeOrder": MessageLookupByLibrary.simpleMessage("تأكيد الطلب"),
+    "pleaseChoosePaymentMethod": MessageLookupByLibrary.simpleMessage(
+      "من فضلك اختر طريقه الدفع المناسبه لك.",
+    ),
+    "pleaseConfirmYourOrder": MessageLookupByLibrary.simpleMessage(
+      "يرجي تاكيد طلبك",
+    ),
+    "pleaseEnterAddress": MessageLookupByLibrary.simpleMessage(
+      "يرجي كتابة العنوان",
+    ),
+    "pleaseEnterApartmentNumber": MessageLookupByLibrary.simpleMessage(
+      "يرجي كتابة رقم الشقه",
+    ),
+    "pleaseEnterCardName": MessageLookupByLibrary.simpleMessage(
+      "يرجي كتابة اسم البطاقه",
+    ),
+    "pleaseEnterCardNumber": MessageLookupByLibrary.simpleMessage(
+      "يرجي كتابة رقم البطاقة",
+    ),
+    "pleaseEnterCity": MessageLookupByLibrary.simpleMessage(
+      "يرجي كتابة المدينة",
+    ),
+    "pleaseEnterCvv": MessageLookupByLibrary.simpleMessage("يرجي كتابة CVV"),
     "pleaseEnterEmail": MessageLookupByLibrary.simpleMessage(
       "من فضلك ادخل البريد الالكتروني",
+    ),
+    "pleaseEnterExpiryDate": MessageLookupByLibrary.simpleMessage(
+      "يرجي كتابة تاريخ الصلاحيه",
     ),
     "pleaseEnterName": MessageLookupByLibrary.simpleMessage(
       "من فضلك ادخل الاسم",
@@ -97,6 +161,12 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "pleaseEnterValidEmail": MessageLookupByLibrary.simpleMessage(
       "من فضلك ادخل بريد الكتروني صحيح",
+    ),
+    "pleaseEnterValidExpiryDate": MessageLookupByLibrary.simpleMessage(
+      "يرجي كتابة تاريخ صحيح",
+    ),
+    "pleaseSelectPaymentMethod": MessageLookupByLibrary.simpleMessage(
+      "يرجي تحديد طريقه الدفع",
     ),
     "price": MessageLookupByLibrary.simpleMessage("السعر"),
     "priseHighToLow": MessageLookupByLibrary.simpleMessage(
@@ -108,10 +178,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "products": MessageLookupByLibrary.simpleMessage("المنتجات"),
     "questionMark": MessageLookupByLibrary.simpleMessage("؟"),
     "resendCode": MessageLookupByLibrary.simpleMessage("إعادة إرسال الرمز"),
+    "review": MessageLookupByLibrary.simpleMessage("المراجعة"),
     "reviews": MessageLookupByLibrary.simpleMessage("التقييمات"),
+    "saveTheAddress": MessageLookupByLibrary.simpleMessage("حفظ العنوان"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("مرحباً بك في "),
     "searchFor": MessageLookupByLibrary.simpleMessage("بحث عن......."),
     "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
+    "shipping": MessageLookupByLibrary.simpleMessage("الشحن"),
+    "shippingAddress": MessageLookupByLibrary.simpleMessage("عنوان التوصيل"),
     "signInWithApple": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة ابل"),
     "signInWithFacebook": MessageLookupByLibrary.simpleMessage(
       "تسجيل بواسطة فيسبوك",
@@ -122,8 +196,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
     "sortBy": MessageLookupByLibrary.simpleMessage("ترتيب حسب"),
     "startNow": MessageLookupByLibrary.simpleMessage("ابدأ الان"),
+    "subtotal": MessageLookupByLibrary.simpleMessage("المجموع الفرعي :"),
     "theReview": MessageLookupByLibrary.simpleMessage("المراجعة"),
     "to": MessageLookupByLibrary.simpleMessage("إلى"),
+    "total": MessageLookupByLibrary.simpleMessage("الكلي"),
     "verificationCodePrompt": MessageLookupByLibrary.simpleMessage(
       "لا تقلق ، ما عليك سوى كتابة البريد الإلكتروني وسنرسل رمز التحقق.",
     ),

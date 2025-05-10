@@ -550,6 +550,336 @@ class S {
     return Intl.message('Add to Cart', name: 'addToCart', desc: '', args: []);
   }
 
+  /// `Shipping`
+  String get shipping {
+    return Intl.message('Shipping', name: 'shipping', desc: '', args: []);
+  }
+
+  /// `Address`
+  String get address {
+    return Intl.message('Address', name: 'address', desc: '', args: []);
+  }
+
+  /// `Payment`
+  String get payment {
+    return Intl.message('Payment', name: 'payment', desc: '', args: []);
+  }
+
+  /// `Review`
+  String get review {
+    return Intl.message('Review', name: 'review', desc: '', args: []);
+  }
+
+  /// `Free`
+  String get free {
+    return Intl.message('Free', name: 'free', desc: '', args: []);
+  }
+
+  /// `EGP`
+  String get egyptianPound {
+    return Intl.message('EGP', name: 'egyptianPound', desc: '', args: []);
+  }
+
+  /// `Payment on Delivery`
+  String get paymentOnDelivery {
+    return Intl.message(
+      'Payment on Delivery',
+      name: 'paymentOnDelivery',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delivery From Place`
+  String get deliveryFromPlace {
+    return Intl.message(
+      'Delivery From Place',
+      name: 'deliveryFromPlace',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Buy Now and Pay Later`
+  String get buyNowAndPayLater {
+    return Intl.message(
+      'Buy Now and Pay Later',
+      name: 'buyNowAndPayLater',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please select a payment method`
+  String get pleaseSelectPaymentMethod {
+    return Intl.message(
+      'Please select a payment method',
+      name: 'pleaseSelectPaymentMethod',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please choose the payment method that suits you.`
+  String get pleaseChoosePaymentMethod {
+    return Intl.message(
+      'Please choose the payment method that suits you.',
+      name: 'pleaseChoosePaymentMethod',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose the appropriate payment method:`
+  String get choosePaymentMethod {
+    return Intl.message(
+      'Choose the appropriate payment method:',
+      name: 'choosePaymentMethod',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Next`
+  String get next {
+    return Intl.message('Next', name: 'next', desc: '', args: []);
+  }
+
+  /// `City`
+  String get city {
+    return Intl.message('City', name: 'city', desc: '', args: []);
+  }
+
+  /// `Floor Number, Apartment Number`
+  String get floorAndApartmentNumber {
+    return Intl.message(
+      'Floor Number, Apartment Number',
+      name: 'floorAndApartmentNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter apartment number`
+  String get pleaseEnterApartmentNumber {
+    return Intl.message(
+      'Please enter apartment number',
+      name: 'pleaseEnterApartmentNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter address`
+  String get pleaseEnterAddress {
+    return Intl.message(
+      'Please enter address',
+      name: 'pleaseEnterAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter city`
+  String get pleaseEnterCity {
+    return Intl.message(
+      'Please enter city',
+      name: 'pleaseEnterCity',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save the Address`
+  String get saveTheAddress {
+    return Intl.message(
+      'Save the Address',
+      name: 'saveTheAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Card Holder Name`
+  String get cardHolderName {
+    return Intl.message(
+      'Card Holder Name',
+      name: 'cardHolderName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Card Number`
+  String get cardNumber {
+    return Intl.message('Card Number', name: 'cardNumber', desc: '', args: []);
+  }
+
+  /// `Expiry Date`
+  String get expiryDate {
+    return Intl.message('Expiry Date', name: 'expiryDate', desc: '', args: []);
+  }
+
+  /// `Make as Default Card`
+  String get makeAsDefaultCard {
+    return Intl.message(
+      'Make as Default Card',
+      name: 'makeAsDefaultCard',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm the Order`
+  String get confirmTheOrder {
+    return Intl.message(
+      'Confirm the Order',
+      name: 'confirmTheOrder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter card name`
+  String get pleaseEnterCardName {
+    return Intl.message(
+      'Please enter card name',
+      name: 'pleaseEnterCardName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter card number`
+  String get pleaseEnterCardNumber {
+    return Intl.message(
+      'Please enter card number',
+      name: 'pleaseEnterCardNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Card number should be at least `
+  String get cardNumberShouldBeAtLeast {
+    return Intl.message(
+      'Card number should be at least ',
+      name: 'cardNumberShouldBeAtLeast',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter expiry date`
+  String get pleaseEnterExpiryDate {
+    return Intl.message(
+      'Please enter expiry date',
+      name: 'pleaseEnterExpiryDate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter valid expiry date`
+  String get pleaseEnterValidExpiryDate {
+    return Intl.message(
+      'Please enter valid expiry date',
+      name: 'pleaseEnterValidExpiryDate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter CVV`
+  String get pleaseEnterCvv {
+    return Intl.message(
+      'Please enter CVV',
+      name: 'pleaseEnterCvv',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `CVV should be at least `
+  String get cvvShouldBeAtLeast {
+    return Intl.message(
+      'CVV should be at least ',
+      name: 'cvvShouldBeAtLeast',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Order Summary`
+  String get orderSummary {
+    return Intl.message(
+      'Order Summary',
+      name: 'orderSummary',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Subtotal:`
+  String get subtotal {
+    return Intl.message('Subtotal:', name: 'subtotal', desc: '', args: []);
+  }
+
+  /// `Total`
+  String get total {
+    return Intl.message('Total', name: 'total', desc: '', args: []);
+  }
+
+  /// `Please confirm your order`
+  String get pleaseConfirmYourOrder {
+    return Intl.message(
+      'Please confirm your order',
+      name: 'pleaseConfirmYourOrder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Payment Method`
+  String get paymentMethod {
+    return Intl.message(
+      'Payment Method',
+      name: 'paymentMethod',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Edit`
+  String get edit {
+    return Intl.message('Edit', name: 'edit', desc: '', args: []);
+  }
+
+  /// `Shipping Address`
+  String get shippingAddress {
+    return Intl.message(
+      'Shipping Address',
+      name: 'shippingAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Apartment Number`
+  String get apartmentNumber {
+    return Intl.message(
+      'Apartment Number',
+      name: 'apartmentNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Place Order`
+  String get placeOrder {
+    return Intl.message('Place Order', name: 'placeOrder', desc: '', args: []);
+  }
+
   /// `Cart`
   String get cart {
     return Intl.message(

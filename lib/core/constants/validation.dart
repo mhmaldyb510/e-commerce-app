@@ -51,4 +51,66 @@ class Validation {
       return null;
     }
   }
+
+  static String? addressValidator(BuildContext context, String value) {
+    if (value.isEmpty) {
+      return S.of(context).pleaseEnterAddress;
+    } else {
+      return null;
+    }
+  }
+
+  static String? cityValidator(BuildContext context, String value) {
+    if (value.isEmpty) {
+      return S.of(context).pleaseEnterCity;
+    } else {
+      return null;
+    }
+  }
+
+  static String? apartmentValidator(BuildContext context, String value) {
+    if (value.isEmpty) {
+      return S.of(context).pleaseEnterApartmentNumber;
+    } else {
+      return null;
+    }
+  }
+
+  static String? cardNameValidator(BuildContext context, String value) {
+    if (value.isEmpty) {
+      return S.of(context).pleaseEnterCardName;
+    } else {
+      return null;
+    }
+  }
+
+  static String? cardNumberValidator(BuildContext context, String value) {
+    if (value.isEmpty) {
+      return S.of(context).pleaseEnterCardNumber;
+    } else if (value.length != 16) {
+      return '${S.of(context).cardNumberShouldBeAtLeast} 16 ${S.of(context).characters}';
+    } else {
+      return null;
+    }
+  }
+
+  static String? expiryDateValidator(BuildContext context, String value) {
+    if (value.isEmpty) {
+      return S.of(context).pleaseEnterExpiryDate;
+    } else if (value.length < 4) {
+      return S.of(context).pleaseEnterValidExpiryDate;
+    } else {
+      return null;
+    }
+  }
+
+  static String? cvvValidator(BuildContext context, String value) {
+    if (value.isEmpty) {
+      return S.of(context).pleaseEnterCvv;
+    } else if (value.length < 3) {
+      return '${S.of(context).cvvShouldBeAtLeast} 3 ${S.of(context).characters}';
+    } else {
+      return null;
+    }
+  }
 }
