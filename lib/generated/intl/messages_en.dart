@@ -29,6 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "alreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "Already have an account?",
     ),
+    "apartmentNumber": MessageLookupByLibrary.simpleMessage("Apartment Number"),
     "bestSellers": MessageLookupByLibrary.simpleMessage("Best Sellers"),
     "buyNowAndPayLater": MessageLookupByLibrary.simpleMessage(
       "Buy Now and Pay Later",
@@ -72,6 +73,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "dontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "Don\'t have an account?",
     ),
+    "edit": MessageLookupByLibrary.simpleMessage("Edit"),
     "egyptianPound": MessageLookupByLibrary.simpleMessage("EGP"),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
     "enterCodeSentToEmail": MessageLookupByLibrary.simpleMessage(
@@ -112,6 +114,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "onboardingHead2": MessageLookupByLibrary.simpleMessage("Search and Shop"),
     "or": MessageLookupByLibrary.simpleMessage("Or"),
+    "orderSummary": MessageLookupByLibrary.simpleMessage("Order Summary"),
     "ourProducts": MessageLookupByLibrary.simpleMessage("Our Products"),
     "password": MessageLookupByLibrary.simpleMessage("Password"),
     "passwordShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
@@ -121,11 +124,16 @@ class MessageLookup extends MessageLookupByLibrary {
       "Passwords do not match",
     ),
     "payment": MessageLookupByLibrary.simpleMessage("Payment"),
+    "paymentMethod": MessageLookupByLibrary.simpleMessage("Payment Method"),
     "paymentOnDelivery": MessageLookupByLibrary.simpleMessage(
       "Payment on Delivery",
     ),
+    "placeOrder": MessageLookupByLibrary.simpleMessage("Place Order"),
     "pleaseChoosePaymentMethod": MessageLookupByLibrary.simpleMessage(
       "Please choose the payment method that suits you.",
+    ),
+    "pleaseConfirmYourOrder": MessageLookupByLibrary.simpleMessage(
+      "Please confirm your order",
     ),
     "pleaseEnterAddress": MessageLookupByLibrary.simpleMessage(
       "Please enter address",
@@ -182,6 +190,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "searchFor": MessageLookupByLibrary.simpleMessage("Search for......."),
     "settings": MessageLookupByLibrary.simpleMessage("Settings"),
     "shipping": MessageLookupByLibrary.simpleMessage("Shipping"),
+    "shippingAddress": MessageLookupByLibrary.simpleMessage("Shipping Address"),
     "signInWithApple": MessageLookupByLibrary.simpleMessage(
       "Sign in with Apple",
     ),
@@ -194,8 +203,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "skip": MessageLookupByLibrary.simpleMessage("Skip"),
     "sortBy": MessageLookupByLibrary.simpleMessage("Sort By"),
     "startNow": MessageLookupByLibrary.simpleMessage("Start now"),
+    "subtotal": MessageLookupByLibrary.simpleMessage("Subtotal:"),
     "theReview": MessageLookupByLibrary.simpleMessage("The Review"),
     "to": MessageLookupByLibrary.simpleMessage("To"),
+    "total": MessageLookupByLibrary.simpleMessage("Total"),
     "verificationCodePrompt": MessageLookupByLibrary.simpleMessage(
       "Don\'t worry, just enter your email and we will send a verification code.",
     ),

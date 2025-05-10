@@ -87,7 +87,7 @@ class Validation {
   static String? cardNumberValidator(BuildContext context, String value) {
     if (value.isEmpty) {
       return S.of(context).pleaseEnterCardNumber;
-    } else if (value.length < 16) {
+    } else if (value.length != 16) {
       return '${S.of(context).cardNumberShouldBeAtLeast} 16 ${S.of(context).characters}';
     } else {
       return null;

@@ -29,7 +29,8 @@ class CustomTextFormField extends StatefulWidget {
     this.focusNode,
     this.onFieldSubmitted,
     this.controller,
-    this.inputFormatters, this.maxLength
+    this.inputFormatters,
+    this.maxLength,
   });
 
   @override

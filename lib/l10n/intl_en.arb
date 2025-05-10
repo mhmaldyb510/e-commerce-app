@@ -92,6 +92,15 @@
     "pleaseEnterValidExpiryDate": "Please enter valid expiry date",
     "pleaseEnterCvv": "Please enter CVV",
     "cvvShouldBeAtLeast": "CVV should be at least ",
+    "orderSummary": "Order Summary",
+    "subtotal": "Subtotal:",
+    "total" : "Total",
+    "pleaseConfirmYourOrder": "Please confirm your order",
+    "paymentMethod": "Payment Method",
+    "edit": "Edit",
+    "shippingAddress": "Shipping Address",
+    "apartmentNumber": "Apartment Number",
+    "placeOrder": "Place Order",
     "@home": {
         "description": "Label for the home bottom navigation item"
     },

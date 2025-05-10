@@ -810,6 +810,76 @@ class S {
     );
   }
 
+  /// `Order Summary`
+  String get orderSummary {
+    return Intl.message(
+      'Order Summary',
+      name: 'orderSummary',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Subtotal:`
+  String get subtotal {
+    return Intl.message('Subtotal:', name: 'subtotal', desc: '', args: []);
+  }
+
+  /// `Total`
+  String get total {
+    return Intl.message('Total', name: 'total', desc: '', args: []);
+  }
+
+  /// `Please confirm your order`
+  String get pleaseConfirmYourOrder {
+    return Intl.message(
+      'Please confirm your order',
+      name: 'pleaseConfirmYourOrder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Payment Method`
+  String get paymentMethod {
+    return Intl.message(
+      'Payment Method',
+      name: 'paymentMethod',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Edit`
+  String get edit {
+    return Intl.message('Edit', name: 'edit', desc: '', args: []);
+  }
+
+  /// `Shipping Address`
+  String get shippingAddress {
+    return Intl.message(
+      'Shipping Address',
+      name: 'shippingAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Apartment Number`
+  String get apartmentNumber {
+    return Intl.message(
+      'Apartment Number',
+      name: 'apartmentNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Place Order`
+  String get placeOrder {
+    return Intl.message('Place Order', name: 'placeOrder', desc: '', args: []);
+  }
+
   /// `Cart`
   String get cart {
     return Intl.message(

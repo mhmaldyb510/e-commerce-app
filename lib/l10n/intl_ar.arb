@@ -91,6 +91,15 @@
     "pleaseEnterValidExpiryDate": "يرجي كتابة تاريخ صحيح",
     "pleaseEnterCvv": "يرجي كتابة CVV",
     "cvvShouldBeAtLeast": "CVV يجب ان يكون على الاقل ",
+    "orderSummary": "ملخص الطلب :",
+    "subtotal": "المجموع الفرعي :",
+    "total": "الكلي",
+    "pleaseConfirmYourOrder": "يرجي تاكيد طلبك",
+    "paymentMethod": "وسيلة الدفع",
+    "edit": "تعديل",
+    "shippingAddress": "عنوان التوصيل",
+    "apartmentNumber": "رقم الشقه",
+    "placeOrder": "تأكيد الطلب",
     "@home": {
         "description": "Label for the home bottom navigation item"
     },

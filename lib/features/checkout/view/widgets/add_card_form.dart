@@ -18,7 +18,9 @@ class AddCardForm extends StatefulWidget {
 class _AddCardFormState extends State<AddCardForm> {
   AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
   final _formKey = GlobalKey<FormState>();
-  TextEditingController cardExpiryDateController = TextEditingController();
+  final TextEditingController cardExpiryDateController =
+      TextEditingController();
+  final TextEditingController cardNumberController = TextEditingController();
   bool makeDefault = true;
 
   @override
@@ -39,11 +41,21 @@ class _AddCardFormState extends State<AddCardForm> {
             const SizedBox(height: 8),
             CustomTextFormField(
               hintText: S.of(context).cardNumber,
+              onChanged: (value) {
+                context.read<CheckoutCubit>().setCardNumber(int.parse(value));
+                if (value.length > 16) {
+                  cardNumberController.text = value.substring(0, 16);
+                  cardNumberController.selection = TextSelection.fromPosition(
+                    TextPosition(offset: cardNumberController.text.length),
+                  );
+                }
+              },
               validator:
                   (p0) => Validation.cardNumberValidator(context, p0 ?? ''),
               keyboardType: TextInputType.number,
               inputFormatters: [FilteringTextInputFormatter.digitsOnly],
               textInputAction: TextInputAction.next,
+              controller: cardNumberController,
             ),
             const SizedBox(height: 8),
             Row(
@@ -132,10 +144,14 @@ class _AddCardFormState extends State<AddCardForm> {
                 });
                 if (_formKey.currentState!.validate()) {
                   setState(() {
-                    BlocProvider.of<CheckoutCubit>(
-                      context,
-                    ).done.add(S.of(context).payment);
-                    BlocProvider.of<CheckoutCubit>(context).pageIndex++;
+                    if (!context.read<CheckoutCubit>().done.contains(
+                      S.of(context).payment,
+                    )) {
+                      BlocProvider.of<CheckoutCubit>(
+                        context,
+                      ).done.add(S.of(context).payment);
+                    }
+                    BlocProvider.of<CheckoutCubit>(context).changePageIndex(3);
                   });
                 }
               },

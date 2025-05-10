@@ -18,6 +18,9 @@ class _AddressPageState extends State<AddressPage> {
   final _formKey = GlobalKey<FormState>();
   AutovalidateMode _autoValidateMode = AutovalidateMode.disabled;
   bool saveAddress = true;
+  String cityName = '';
+  String address = '';
+  String apartmentNumber = '';
 
   @override
   Widget build(BuildContext context) {
@@ -49,6 +52,11 @@ class _AddressPageState extends State<AddressPage> {
             validator: (p0) => Validation.addressValidator(context, p0 ?? ''),
             keyboardType: TextInputType.streetAddress,
             textInputAction: TextInputAction.next,
+            onChanged: (value) {
+              setState(() {
+                address = value;
+              });
+            },
           ),
           const SizedBox(height: 8),
           CustomTextFormField(
@@ -57,6 +65,11 @@ class _AddressPageState extends State<AddressPage> {
             keyboardType: TextInputType.text,
             textInputAction: TextInputAction.next,
             onFieldSubmitted: (_) => focusScope.nextFocus(),
+            onChanged: (value) {
+              setState(() {
+                cityName = value;
+              });
+            },
           ),
           const SizedBox(height: 8),
           CustomTextFormField(
@@ -64,6 +77,12 @@ class _AddressPageState extends State<AddressPage> {
             validator: (p0) => Validation.apartmentValidator(context, p0 ?? ''),
             keyboardType: TextInputType.number,
             textInputAction: TextInputAction.done,
+            onFieldSubmitted: (_) => focusScope.unfocus(),
+            onChanged: (value) {
+              setState(() {
+                apartmentNumber = value;
+              });
+            },
           ),
           const SizedBox(height: 16),
           Row(
@@ -96,7 +115,14 @@ class _AddressPageState extends State<AddressPage> {
                 _autoValidateMode = AutovalidateMode.always;
               });
               if (_formKey.currentState!.validate()) {
-                context.read<CheckoutCubit>().done.add(S.of(context).address);
+                context.read<CheckoutCubit>().setAddress(
+                  '$address, $cityName, ${S.of(context).apartmentNumber} $apartmentNumber',
+                );
+                if (!context.read<CheckoutCubit>().done.contains(
+                  S.of(context).address,
+                )) {
+                  context.read<CheckoutCubit>().done.add(S.of(context).address);
+                }
                 context.read<CheckoutCubit>().changePageIndex(
                   context.read<CheckoutCubit>().pageIndex + 1,
                 );

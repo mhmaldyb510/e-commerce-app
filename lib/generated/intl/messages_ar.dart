@@ -29,6 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "alreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "تمتلك حساب بالفعل؟",
     ),
+    "apartmentNumber": MessageLookupByLibrary.simpleMessage("رقم الشقه"),
     "bestSellers": MessageLookupByLibrary.simpleMessage("الاكثر مبيعا"),
     "buyNowAndPayLater": MessageLookupByLibrary.simpleMessage(
       "شراء الان ودفع لاحقا",
@@ -68,6 +69,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "dontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "لا يوجد لديك حساب؟",
     ),
+    "edit": MessageLookupByLibrary.simpleMessage("تعديل"),
     "egyptianPound": MessageLookupByLibrary.simpleMessage("جنيه"),
     "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
     "enterCodeSentToEmail": MessageLookupByLibrary.simpleMessage(
@@ -108,6 +110,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "onboardingHead2": MessageLookupByLibrary.simpleMessage("ابحث وتسوق"),
     "or": MessageLookupByLibrary.simpleMessage("أو"),
+    "orderSummary": MessageLookupByLibrary.simpleMessage("ملخص الطلب :"),
     "ourProducts": MessageLookupByLibrary.simpleMessage("منتجاتنا"),
     "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
     "passwordShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
@@ -117,11 +120,16 @@ class MessageLookup extends MessageLookupByLibrary {
       "كلمات المرور لا تتطابق",
     ),
     "payment": MessageLookupByLibrary.simpleMessage("الدفع"),
+    "paymentMethod": MessageLookupByLibrary.simpleMessage("وسيلة الدفع"),
     "paymentOnDelivery": MessageLookupByLibrary.simpleMessage(
       "الدفع عند الإستلام",
     ),
+    "placeOrder": MessageLookupByLibrary.simpleMessage("تأكيد الطلب"),
     "pleaseChoosePaymentMethod": MessageLookupByLibrary.simpleMessage(
       "من فضلك اختر طريقه الدفع المناسبه لك.",
+    ),
+    "pleaseConfirmYourOrder": MessageLookupByLibrary.simpleMessage(
+      "يرجي تاكيد طلبك",
     ),
     "pleaseEnterAddress": MessageLookupByLibrary.simpleMessage(
       "يرجي كتابة العنوان",
@@ -177,6 +185,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "searchFor": MessageLookupByLibrary.simpleMessage("بحث عن......."),
     "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
     "shipping": MessageLookupByLibrary.simpleMessage("الشحن"),
+    "shippingAddress": MessageLookupByLibrary.simpleMessage("عنوان التوصيل"),
     "signInWithApple": MessageLookupByLibrary.simpleMessage("تسجيل بواسطة ابل"),
     "signInWithFacebook": MessageLookupByLibrary.simpleMessage(
       "تسجيل بواسطة فيسبوك",
@@ -187,8 +196,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
     "sortBy": MessageLookupByLibrary.simpleMessage("ترتيب حسب"),
     "startNow": MessageLookupByLibrary.simpleMessage("ابدأ الان"),
+    "subtotal": MessageLookupByLibrary.simpleMessage("المجموع الفرعي :"),
     "theReview": MessageLookupByLibrary.simpleMessage("المراجعة"),
     "to": MessageLookupByLibrary.simpleMessage("إلى"),
+    "total": MessageLookupByLibrary.simpleMessage("الكلي"),
     "verificationCodePrompt": MessageLookupByLibrary.simpleMessage(
       "لا تقلق ، ما عليك سوى كتابة البريد الإلكتروني وسنرسل رمز التحقق.",
     ),

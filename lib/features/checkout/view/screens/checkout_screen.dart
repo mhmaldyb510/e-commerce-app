@@ -5,6 +5,7 @@ import 'package:e_commerce_app/features/checkout/cubit/checkout_cubit.dart';
 import 'package:e_commerce_app/features/checkout/view/widgets/address_page.dart';
 import 'package:e_commerce_app/features/checkout/view/widgets/checkout_titles_list.dart';
 import 'package:e_commerce_app/features/checkout/view/widgets/payment_page.dart';
+import 'package:e_commerce_app/features/checkout/view/widgets/review_page.dart';
 import 'package:e_commerce_app/features/checkout/view/widgets/shipping_page.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -49,14 +50,21 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => CheckoutCubit(),
+      create: (context) => CheckoutCubit()..products = widget.products ?? [],
       child: Builder(
         builder: (context) {
           return Scaffold(
             appBar: PreferredSize(
               preferredSize: const Size.fromHeight(56),
-              child: CustomAppBar(
-                title: pages[BlocProvider.of<CheckoutCubit>(context).pageIndex],
+              child: BlocBuilder<CheckoutCubit, CheckoutState>(
+                builder: (context, state) {
+                  return CustomAppBar(
+                    title:
+                        pages[BlocProvider.of<CheckoutCubit>(
+                          context,
+                        ).pageIndex],
+                  );
+                },
               ),
             ),
             body: SingleChildScrollView(
@@ -76,7 +84,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                             ShippingPage(),
                             AddressPage(),
                             PaymentPage(),
-                            Center(child: Text('Review')),
+                            ReviewPage(),
                           ],
                         ),
                       ],
