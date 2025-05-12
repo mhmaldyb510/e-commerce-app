@@ -1,5 +1,6 @@
-import 'package:e_commerce_app/core/cubits/modal_buttom_sheet_cubit/modal_bottom_sheet_cubit.dart';
+import 'package:e_commerce_app/core/cubits/modal_bottom_sheet_cubit/modal_bottom_sheet_cubit.dart';
 import 'package:e_commerce_app/core/widgets/custom_nav_bar_item.dart';
+import 'package:e_commerce_app/features/account/view/screens/account_screen.dart';
 import 'package:e_commerce_app/features/home/view/screens/home_screen.dart';
 import 'package:e_commerce_app/features/products/view/screens/product_screen.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
@@ -22,7 +23,7 @@ class _MainLayoutState extends State<MainLayout> {
     const HomeScreen(),
     const ProductScreen(),
     const Center(child: Text('Cart')),
-    const Center(child: Text('Account')),
+    const AccountScreen(),
   ];
 
   List<PersistentBottomNavBarItem> _navBarsItems({
@@ -52,7 +53,7 @@ class _MainLayoutState extends State<MainLayout> {
         context,
         activeIcon: Iconsax.user_bold,
         unActiveIcon: Iconsax.user_outline,
-        title: S.of(context).account,
+        title: S.of(context).myAccount,
       ),
     ];
   }

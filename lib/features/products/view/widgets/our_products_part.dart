@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/core/cubits/modal_buttom_sheet_cubit/modal_bottom_sheet_cubit.dart';
+import 'package:e_commerce_app/core/cubits/modal_bottom_sheet_cubit/modal_bottom_sheet_cubit.dart';
 import 'package:e_commerce_app/core/themes/app_colors.dart';
 import 'package:e_commerce_app/core/themes/text_styles.dart';
 import 'package:e_commerce_app/features/products/view/widgets/categories_list.dart';

@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/core/cubits/modal_buttom_sheet_cubit/modal_bottom_sheet_cubit.dart';
+import 'package:e_commerce_app/core/cubits/modal_bottom_sheet_cubit/modal_bottom_sheet_cubit.dart';
 import 'package:e_commerce_app/core/widgets/blurring_widget.dart';
 import 'package:e_commerce_app/core/widgets/custom_app_bar.dart';
 import 'package:e_commerce_app/core/widgets/custom_search_field.dart';
