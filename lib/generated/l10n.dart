@@ -935,6 +935,66 @@ class S {
     return Intl.message('Who We Are', name: 'whoWeAre', desc: '', args: []);
   }
 
+  /// `The Current Password`
+  String get theCurrentPassword {
+    return Intl.message(
+      'The Current Password',
+      name: 'theCurrentPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The New Password`
+  String get theNewPassword {
+    return Intl.message(
+      'The New Password',
+      name: 'theNewPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm The New Password`
+  String get confirmTheNewPassword {
+    return Intl.message(
+      'Confirm The New Password',
+      name: 'confirmTheNewPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save The Changes`
+  String get saveTheChanges {
+    return Intl.message(
+      'Save The Changes',
+      name: 'saveTheChanges',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change Password`
+  String get changePassword {
+    return Intl.message(
+      'Change Password',
+      name: 'changePassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Personal Information`
+  String get personalInformation {
+    return Intl.message(
+      'Personal Information',
+      name: 'personalInformation',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Cart`
   String get cart {
     return Intl.message(

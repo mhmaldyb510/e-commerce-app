@@ -111,7 +111,13 @@
     "theme": "Theme",
     "help": "Help",
     "whoWeAre": "Who We Are",
+    "theCurrentPassword": "The Current Password",
+    "theNewPassword": "The New Password",
+    "confirmTheNewPassword": "Confirm The New Password",
+    "saveTheChanges": "Save The Changes",
+    "changePassword": "Change Password",
     "@general": {},
+    "personalInformation": "Personal Information",
     "@home": {
         "description": "Label for the home bottom navigation item"
     },
@@ -130,5 +136,6 @@
     "settings": "Settings",
     "@settings": {
         "description": "Label for the settings bottom navigation item"
-    }
+    },
+    "@personalInformation": {}
 }
