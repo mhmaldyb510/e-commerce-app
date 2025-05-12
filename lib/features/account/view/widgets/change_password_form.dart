@@ -2,7 +2,7 @@ import 'package:e_commerce_app/core/constants/validation.dart';
 import 'package:e_commerce_app/core/themes/text_styles.dart';
 import 'package:e_commerce_app/core/widgets/custom_text_form_field.dart';
 import 'package:e_commerce_app/features/account/cubit/change_personal_info_cubit.dart';
-import 'package:e_commerce_app/features/account/view/model/helpers/check_for_password_changes.dart';
+import 'package:e_commerce_app/features/account/model/helpers/check_for_password_changes.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

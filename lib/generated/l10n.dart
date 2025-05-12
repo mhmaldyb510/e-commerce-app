@@ -985,6 +985,66 @@ class S {
     );
   }
 
+  /// `Order Number`
+  String get orderNumber {
+    return Intl.message(
+      'Order Number',
+      name: 'orderNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Order Done`
+  String get orderDone {
+    return Intl.message('Order Done', name: 'orderDone', desc: '', args: []);
+  }
+
+  /// `Order Count`
+  String get orderCount {
+    return Intl.message('Order Count', name: 'orderCount', desc: '', args: []);
+  }
+
+  /// `Track Order`
+  String get orderTrack {
+    return Intl.message('Track Order', name: 'orderTrack', desc: '', args: []);
+  }
+
+  /// `Order Accepted`
+  String get orderAccepted {
+    return Intl.message(
+      'Order Accepted',
+      name: 'orderAccepted',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Order Shipped`
+  String get orderShipped {
+    return Intl.message(
+      'Order Shipped',
+      name: 'orderShipped',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Out for Delivery`
+  String get outForDelivery {
+    return Intl.message(
+      'Out for Delivery',
+      name: 'outForDelivery',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delivered`
+  String get delivered {
+    return Intl.message('Delivered', name: 'delivered', desc: '', args: []);
+  }
+
   /// `Personal Information`
   String get personalInformation {
     return Intl.message(

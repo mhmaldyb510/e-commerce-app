@@ -91,6 +91,9 @@ class Assets {
 
   /// Assets for enter
   /// assets/images/enter.png
-  static const String enter =
-      "assets/images/enter.png";
+  static const String enter = "assets/images/enter.png";
+
+  /// Assets for iconsBox
+  /// assets/icons/box.svg
+  static const String iconsBox = "assets/icons/box.svg";
 }

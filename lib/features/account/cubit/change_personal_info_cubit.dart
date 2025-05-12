@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:e_commerce_app/core/helpers/storage.dart';
-import 'package:e_commerce_app/features/account/view/model/helpers/check_for_password_changes.dart';
+import 'package:e_commerce_app/features/account/model/helpers/check_for_password_changes.dart';
 import 'package:flutter/material.dart';
 
 part 'change_personal_info_state.dart';

@@ -1,6 +1,7 @@
 import 'package:e_commerce_app/features/account/model/navigation_option.dart';
 import 'package:e_commerce_app/features/account/model/option_model.dart';
 import 'package:e_commerce_app/features/account/model/switch_option.dart';
+import 'package:e_commerce_app/features/account/view/screens/my_orders_screen.dart';
 import 'package:e_commerce_app/features/account/view/screens/profile_screen.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ List<OptionModel> optionsList = [
   NavigationOption(
     title: S.current.myOrders,
     icon: Iconsax.box_outline,
-    route: const Text('myOrders'),
+    route: const MyOrdersScreen(),
   ),
   NavigationOption(
     title: S.current.payments,
