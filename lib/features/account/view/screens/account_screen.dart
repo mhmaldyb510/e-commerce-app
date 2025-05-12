@@ -63,6 +63,7 @@ class _AccountScreenState extends State<AccountScreen> {
               ),
               const SizedBox(height: 16),
               OptionsList(options: optionsList),
+
               const SizedBox(height: 22),
               Text(
                 S.of(context).help,

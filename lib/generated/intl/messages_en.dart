@@ -142,6 +142,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "personalInformation": MessageLookupByLibrary.simpleMessage(
       "Personal Information",
     ),
+
     "placeOrder": MessageLookupByLibrary.simpleMessage("Place Order"),
     "pleaseChoosePaymentMethod": MessageLookupByLibrary.simpleMessage(
       "Please choose the payment method that suits you.",

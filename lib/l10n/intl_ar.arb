@@ -115,6 +115,7 @@
     "confirmTheNewPassword": "تاكيد كلمة المرور الجديدة",
     "saveTheChanges": "حفظ التغييرات",
     "changePassword": "تغيير كلمة المرور",
+
     "general": "عام",
     "@general": {},
     "@home": {

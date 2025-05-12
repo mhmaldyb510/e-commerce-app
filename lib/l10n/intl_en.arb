@@ -118,6 +118,7 @@
     "changePassword": "Change Password",
     "@general": {},
     "personalInformation": "Personal Information",
+
     "@home": {
         "description": "Label for the home bottom navigation item"
     },
