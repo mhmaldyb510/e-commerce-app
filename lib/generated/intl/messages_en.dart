@@ -43,6 +43,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "cart": MessageLookupByLibrary.simpleMessage("Cart"),
     "categories": MessageLookupByLibrary.simpleMessage("Categories"),
+    "changePassword": MessageLookupByLibrary.simpleMessage("Change Password"),
     "characters": MessageLookupByLibrary.simpleMessage("characters"),
     "choosePaymentMethod": MessageLookupByLibrary.simpleMessage(
       "Choose the appropriate payment method:",
@@ -52,6 +53,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "Code Verification",
     ),
     "confirmPassword": MessageLookupByLibrary.simpleMessage("Confirm Password"),
+    "confirmTheNewPassword": MessageLookupByLibrary.simpleMessage(
+      "Confirm The New Password",
+    ),
     "confirmTheOrder": MessageLookupByLibrary.simpleMessage(
       "Confirm the Order",
     ),
@@ -135,6 +139,10 @@ class MessageLookup extends MessageLookupByLibrary {
       "Payment on Delivery",
     ),
     "payments": MessageLookupByLibrary.simpleMessage("Payments"),
+    "personalInformation": MessageLookupByLibrary.simpleMessage(
+      "Personal Information",
+    ),
+
     "placeOrder": MessageLookupByLibrary.simpleMessage("Place Order"),
     "pleaseChoosePaymentMethod": MessageLookupByLibrary.simpleMessage(
       "Please choose the payment method that suits you.",
@@ -193,6 +201,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "review": MessageLookupByLibrary.simpleMessage("Review"),
     "reviews": MessageLookupByLibrary.simpleMessage("Reviews"),
     "saveTheAddress": MessageLookupByLibrary.simpleMessage("Save the Address"),
+    "saveTheChanges": MessageLookupByLibrary.simpleMessage("Save The Changes"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("Welcome to "),
     "scopeDotes": MessageLookupByLibrary.simpleMessage(":"),
     "searchFor": MessageLookupByLibrary.simpleMessage("Search for......."),
@@ -212,6 +221,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "sortBy": MessageLookupByLibrary.simpleMessage("Sort By"),
     "startNow": MessageLookupByLibrary.simpleMessage("Start now"),
     "subtotal": MessageLookupByLibrary.simpleMessage("Subtotal:"),
+    "theCurrentPassword": MessageLookupByLibrary.simpleMessage(
+      "The Current Password",
+    ),
+    "theNewPassword": MessageLookupByLibrary.simpleMessage("The New Password"),
     "theReview": MessageLookupByLibrary.simpleMessage("The Review"),
     "theme": MessageLookupByLibrary.simpleMessage("Theme"),
     "to": MessageLookupByLibrary.simpleMessage("To"),

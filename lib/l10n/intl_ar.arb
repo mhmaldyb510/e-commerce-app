@@ -109,6 +109,13 @@
     "theme": "الوضع",
     "help": "المساعدة",
     "whoWeAre": "من نحن",
+    "personalInformation": "المعلومات الشخصية",
+    "theCurrentPassword": "كلمة المرور الحالية",
+    "theNewPassword": "كلمة المرور الجديدة",
+    "confirmTheNewPassword": "تاكيد كلمة المرور الجديدة",
+    "saveTheChanges": "حفظ التغييرات",
+    "changePassword": "تغيير كلمة المرور",
+
     "general": "عام",
     "@general": {},
     "@home": {

@@ -43,6 +43,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "cart": MessageLookupByLibrary.simpleMessage("السلة"),
     "categories": MessageLookupByLibrary.simpleMessage("التصنيفات"),
+    "changePassword": MessageLookupByLibrary.simpleMessage("تغيير كلمة المرور"),
     "characters": MessageLookupByLibrary.simpleMessage("حروف"),
     "choosePaymentMethod": MessageLookupByLibrary.simpleMessage(
       "أختار طريقه الدفع المناسبه :",
@@ -51,6 +52,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "codeVerification": MessageLookupByLibrary.simpleMessage("تحقق من الرمز"),
     "confirmPassword": MessageLookupByLibrary.simpleMessage(
       "تأكيد كلمة المرور",
+    ),
+    "confirmTheNewPassword": MessageLookupByLibrary.simpleMessage(
+      "تاكيد كلمة المرور الجديدة",
     ),
     "confirmTheOrder": MessageLookupByLibrary.simpleMessage("تاكيد الطلب"),
     "create": MessageLookupByLibrary.simpleMessage("إنشاء"),
@@ -131,6 +135,10 @@ class MessageLookup extends MessageLookupByLibrary {
       "الدفع عند الإستلام",
     ),
     "payments": MessageLookupByLibrary.simpleMessage("المدفوعات"),
+    "personalInformation": MessageLookupByLibrary.simpleMessage(
+      "المعلومات الشخصية",
+    ),
+
     "placeOrder": MessageLookupByLibrary.simpleMessage("تأكيد الطلب"),
     "pleaseChoosePaymentMethod": MessageLookupByLibrary.simpleMessage(
       "من فضلك اختر طريقه الدفع المناسبه لك.",
@@ -189,6 +197,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "review": MessageLookupByLibrary.simpleMessage("المراجعة"),
     "reviews": MessageLookupByLibrary.simpleMessage("التقييمات"),
     "saveTheAddress": MessageLookupByLibrary.simpleMessage("حفظ العنوان"),
+    "saveTheChanges": MessageLookupByLibrary.simpleMessage("حفظ التغييرات"),
     "sayWelcome": MessageLookupByLibrary.simpleMessage("مرحباً بك في "),
     "searchFor": MessageLookupByLibrary.simpleMessage("بحث عن......."),
     "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
@@ -205,6 +214,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "sortBy": MessageLookupByLibrary.simpleMessage("ترتيب حسب"),
     "startNow": MessageLookupByLibrary.simpleMessage("ابدأ الان"),
     "subtotal": MessageLookupByLibrary.simpleMessage("المجموع الفرعي :"),
+    "theCurrentPassword": MessageLookupByLibrary.simpleMessage(
+      "كلمة المرور الحالية",
+    ),
+    "theNewPassword": MessageLookupByLibrary.simpleMessage(
+      "كلمة المرور الجديدة",
+    ),
     "theReview": MessageLookupByLibrary.simpleMessage("المراجعة"),
     "theme": MessageLookupByLibrary.simpleMessage("الوضع"),
     "to": MessageLookupByLibrary.simpleMessage("إلى"),
