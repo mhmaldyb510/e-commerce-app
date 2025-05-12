@@ -94,13 +94,24 @@
     "cvvShouldBeAtLeast": "CVV should be at least ",
     "orderSummary": "Order Summary",
     "subtotal": "Subtotal:",
-    "total" : "Total",
+    "total": "Total",
     "pleaseConfirmYourOrder": "Please confirm your order",
     "paymentMethod": "Payment Method",
     "edit": "Edit",
     "shippingAddress": "Shipping Address",
     "apartmentNumber": "Apartment Number",
     "placeOrder": "Place Order",
+    "general": "General",
+    "profile": "Profile",
+    "myOrders": "My Orders",
+    "payments": "Payments",
+    "favorites": "Favorites",
+    "notifications": "Notifications",
+    "language": "Language",
+    "theme": "Theme",
+    "help": "Help",
+    "whoWeAre": "Who We Are",
+    "@general": {},
     "@home": {
         "description": "Label for the home bottom navigation item"
     },
@@ -112,8 +123,8 @@
     "@categories": {
         "description": "Label for the categories bottom navigation item"
     },
-    "account": "Account",
-    "@account": {
+    "myAccount": "My Account",
+    "@myAccount": {
         "description": "Label for the account bottom navigation item"
     },
     "settings": "Settings",

@@ -88,4 +88,9 @@ class Assets {
   /// assets/images/women's clothing.jpg
   static const String imagesWomenSClothing =
       "assets/images/women's clothing.jpg";
+
+  /// Assets for enter
+  /// assets/images/enter.png
+  static const String enter =
+      "assets/images/enter.png";
 }

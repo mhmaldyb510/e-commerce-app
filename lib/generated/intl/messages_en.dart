@@ -22,7 +22,6 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-    "account": MessageLookupByLibrary.simpleMessage("Account"),
     "addToCart": MessageLookupByLibrary.simpleMessage("Add to Cart"),
     "address": MessageLookupByLibrary.simpleMessage("Address"),
     "alphabetically": MessageLookupByLibrary.simpleMessage("Alphabetically"),
@@ -80,6 +79,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Enter the code sent to this email",
     ),
     "expiryDate": MessageLookupByLibrary.simpleMessage("Expiry Date"),
+    "favorites": MessageLookupByLibrary.simpleMessage("Favorites"),
     "filter": MessageLookupByLibrary.simpleMessage("Filter"),
     "filterBy": MessageLookupByLibrary.simpleMessage("Filter By"),
     "floorAndApartmentNumber": MessageLookupByLibrary.simpleMessage(
@@ -88,9 +88,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
     "free": MessageLookupByLibrary.simpleMessage("Free"),
     "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
+    "general": MessageLookupByLibrary.simpleMessage("General"),
     "goodMorning": MessageLookupByLibrary.simpleMessage("Good Morning !.."),
+    "help": MessageLookupByLibrary.simpleMessage("Help"),
     "home": MessageLookupByLibrary.simpleMessage("Home"),
     "inPastTime": MessageLookupByLibrary.simpleMessage("In past time"),
+    "language": MessageLookupByLibrary.simpleMessage("Language"),
     "login": MessageLookupByLibrary.simpleMessage("Login"),
     "makeAsDefaultCard": MessageLookupByLibrary.simpleMessage(
       "Make as Default Card",
@@ -98,6 +101,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "markAllAsRead": MessageLookupByLibrary.simpleMessage("Mark all as read"),
     "more": MessageLookupByLibrary.simpleMessage("More"),
     "mostPopular": MessageLookupByLibrary.simpleMessage("Most Popular"),
+    "myAccount": MessageLookupByLibrary.simpleMessage("My Account"),
+    "myOrders": MessageLookupByLibrary.simpleMessage("My Orders"),
     "nameShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
       "Name should be at least ",
     ),
@@ -106,6 +111,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "newPassword": MessageLookupByLibrary.simpleMessage("New Password"),
     "next": MessageLookupByLibrary.simpleMessage("Next"),
     "notification": MessageLookupByLibrary.simpleMessage("Notification"),
+    "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
     "onboardingDetails1": MessageLookupByLibrary.simpleMessage(
       "Discover a unique shopping experience with ProductsHUB. Explore our wide range of high-quality products and get the best deals and exceptional service.",
     ),
@@ -128,6 +134,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "paymentOnDelivery": MessageLookupByLibrary.simpleMessage(
       "Payment on Delivery",
     ),
+    "payments": MessageLookupByLibrary.simpleMessage("Payments"),
     "placeOrder": MessageLookupByLibrary.simpleMessage("Place Order"),
     "pleaseChoosePaymentMethod": MessageLookupByLibrary.simpleMessage(
       "Please choose the payment method that suits you.",
@@ -180,6 +187,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Price (Low to High)",
     ),
     "products": MessageLookupByLibrary.simpleMessage("Products"),
+    "profile": MessageLookupByLibrary.simpleMessage("Profile"),
     "questionMark": MessageLookupByLibrary.simpleMessage("?"),
     "resendCode": MessageLookupByLibrary.simpleMessage("Resend the Code"),
     "review": MessageLookupByLibrary.simpleMessage("Review"),
@@ -205,10 +213,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "startNow": MessageLookupByLibrary.simpleMessage("Start now"),
     "subtotal": MessageLookupByLibrary.simpleMessage("Subtotal:"),
     "theReview": MessageLookupByLibrary.simpleMessage("The Review"),
+    "theme": MessageLookupByLibrary.simpleMessage("Theme"),
     "to": MessageLookupByLibrary.simpleMessage("To"),
     "total": MessageLookupByLibrary.simpleMessage("Total"),
     "verificationCodePrompt": MessageLookupByLibrary.simpleMessage(
       "Don\'t worry, just enter your email and we will send a verification code.",
     ),
+    "whoWeAre": MessageLookupByLibrary.simpleMessage("Who We Are"),
   };
 }

@@ -880,6 +880,61 @@ class S {
     return Intl.message('Place Order', name: 'placeOrder', desc: '', args: []);
   }
 
+  /// `General`
+  String get general {
+    return Intl.message('General', name: 'general', desc: '', args: []);
+  }
+
+  /// `Profile`
+  String get profile {
+    return Intl.message('Profile', name: 'profile', desc: '', args: []);
+  }
+
+  /// `My Orders`
+  String get myOrders {
+    return Intl.message('My Orders', name: 'myOrders', desc: '', args: []);
+  }
+
+  /// `Payments`
+  String get payments {
+    return Intl.message('Payments', name: 'payments', desc: '', args: []);
+  }
+
+  /// `Favorites`
+  String get favorites {
+    return Intl.message('Favorites', name: 'favorites', desc: '', args: []);
+  }
+
+  /// `Notifications`
+  String get notifications {
+    return Intl.message(
+      'Notifications',
+      name: 'notifications',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Language`
+  String get language {
+    return Intl.message('Language', name: 'language', desc: '', args: []);
+  }
+
+  /// `Theme`
+  String get theme {
+    return Intl.message('Theme', name: 'theme', desc: '', args: []);
+  }
+
+  /// `Help`
+  String get help {
+    return Intl.message('Help', name: 'help', desc: '', args: []);
+  }
+
+  /// `Who We Are`
+  String get whoWeAre {
+    return Intl.message('Who We Are', name: 'whoWeAre', desc: '', args: []);
+  }
+
   /// `Cart`
   String get cart {
     return Intl.message(
@@ -900,11 +955,11 @@ class S {
     );
   }
 
-  /// `Account`
-  String get account {
+  /// `My Account`
+  String get myAccount {
     return Intl.message(
-      'Account',
-      name: 'account',
+      'My Account',
+      name: 'myAccount',
       desc: 'Label for the account bottom navigation item',
       args: [],
     );
