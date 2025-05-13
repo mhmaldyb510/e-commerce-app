@@ -132,6 +132,8 @@
     "error": "خطأ",
     "ok": "موافق",
     "pleaseAcceptTheTermsOfUse": "يرجي قبول الشروط والاحكام",
+    "enterCode": "ادخل الكود",
+    "passwordChangedSuccessfully": "تم تغيير كلمة المرور بنجاح",
     "@general": {},
     "@home": {
         "description": "Label for the home bottom navigation item"

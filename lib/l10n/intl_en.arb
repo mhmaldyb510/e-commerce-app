@@ -132,6 +132,8 @@
     "error": "Error",
     "ok": "Ok",
     "pleaseAcceptTheTermsOfUse": "Please accept the terms of use",
+    "enterCode": "Enter Code",
+    "passwordChangedSuccessfully": "Password changed successfully",
     "@general": {},
     "personalInformation": "Personal Information",
     "@home": {

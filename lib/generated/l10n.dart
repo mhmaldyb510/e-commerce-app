@@ -1095,6 +1095,21 @@ class S {
     );
   }
 
+  /// `Enter Code`
+  String get enterCode {
+    return Intl.message('Enter Code', name: 'enterCode', desc: '', args: []);
+  }
+
+  /// `Password changed successfully`
+  String get passwordChangedSuccessfully {
+    return Intl.message(
+      'Password changed successfully',
+      name: 'passwordChangedSuccessfully',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Personal Information`
   String get personalInformation {
     return Intl.message(

@@ -3,6 +3,8 @@ import 'package:e_commerce_app/core/themes/text_styles.dart';
 import 'package:e_commerce_app/core/widgets/main_layout.dart';
 import 'package:e_commerce_app/features/authentication/model/auth_api_helper.dart';
 import 'package:e_commerce_app/features/authentication/view/screens/code_verification_screen.dart';
+import 'package:e_commerce_app/features/authentication/view/screens/new_password_screen.dart';
+import 'package:e_commerce_app/features/onboarding/view/screens/onboarding_screen.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
@@ -124,20 +126,73 @@ class AuthenticationCubit extends Cubit<AuthenticationState> {
 
   AutovalidateMode forgetPasswordAutovalidateMode = AutovalidateMode.disabled;
 
-  forgetPassword(BuildContext context) {
+  forgetPassword(BuildContext context) async {
     forgetPasswordAutovalidateMode = AutovalidateMode.always;
-    emit(AuthenticationInitial());
     if (forgetPasswordFormKey.currentState!.validate()) {
-      Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => const CodeVerificationScreen()),
-      );
+      emit(AuthenticationLoading());
+      try {
+        await AuthApiHelper.forgetPassword(email: forgetPasswordEmail);
+        if (context.mounted) {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const CodeVerificationScreen(),
+            ),
+          );
+        }
+      } catch (e) {
+        if (context.mounted) {
+          ScaffoldMessenger.of(
+            context,
+          ).showSnackBar(SnackBar(content: Text(e.toString())));
+        }
+      }
     }
+    emit(AuthenticationInitial());
   }
 
-  // OTP variables
+  // codeVerification variables
 
-  //TODO: handel otp variables
+  String verificationCode = '';
 
+  GlobalKey<FormState> verificationCodeFormKey = GlobalKey<FormState>();
+
+  AutovalidateMode verificationCodeAutovalidateMode = AutovalidateMode.disabled;
+
+  verificationCodeVerification(BuildContext context) async {
+    verificationCodeAutovalidateMode = AutovalidateMode.always;
+    emit(AuthenticationLoading());
+    if (verificationCodeFormKey.currentState!.validate()) {
+      try {
+        await AuthApiHelper.verifyCode(code: verificationCode);
+        if (context.mounted) {
+          Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) => const NewPasswordScreen()),
+          );
+        }
+      } catch (e) {
+        if (context.mounted) {
+          ScaffoldMessenger.of(
+            context,
+          ).showSnackBar(SnackBar(content: Text(e.toString())));
+        }
+      }
+    }
+    emit(AuthenticationInitial());
+  }
+
+  resendCode(BuildContext context) async {
+    emit(AuthenticationLoading());
+    try {
+      await AuthApiHelper.forgetPassword(email: forgetPasswordEmail);
+    } catch (e) {
+      if (context.mounted) {
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text(e.toString())));
+      }
+    }
+    emit(AuthenticationInitial());
+  }
   // changePassword variables
 
   String changePasswordNewPassword = '';
@@ -148,11 +203,32 @@ class AuthenticationCubit extends Cubit<AuthenticationState> {
 
   AutovalidateMode changePasswordAutovalidateMode = AutovalidateMode.disabled;
 
-  changePassword() {
+  changePassword(BuildContext context) async {
     changePasswordAutovalidateMode = AutovalidateMode.always;
-    emit(AuthenticationInitial());
     if (changePasswordFormKey.currentState!.validate()) {
-      // TODO: implement changePassword
+      emit(AuthenticationLoading());
+      try {
+        await AuthApiHelper.resetPassword(
+          email: forgetPasswordEmail,
+          newPassword: changePasswordNewPassword,
+        );
+        if (context.mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text(S.of(context).passwordChangedSuccessfully)),
+          );
+          Navigator.of(context).pushAndRemoveUntil(
+            MaterialPageRoute(builder: (context) => const OnboardingScreen()),
+            (route) => false,
+          );
+        }
+      } catch (e) {
+        if (context.mounted) {
+          ScaffoldMessenger.of(
+            context,
+          ).showSnackBar(SnackBar(content: Text(e.toString())));
+        }
+      }
     }
+    emit(AuthenticationInitial());
   }
 }
