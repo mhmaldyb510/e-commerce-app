@@ -31,7 +31,7 @@ class ChangePersonalInfoCubit extends Cubit<ChangePersonalInfoState> {
   final personalInfoFormKey = GlobalKey<FormState>();
   AutovalidateMode personalInfoAutovalidateMode = AutovalidateMode.disabled;
 
-  changeUserInfo() {
+  changeUserInfo() async {
     // Reset validation state if all password fields are empty
     if (currentPassword.isEmpty &&
         newPassword.isEmpty &&
@@ -55,6 +55,9 @@ class ChangePersonalInfoCubit extends Cubit<ChangePersonalInfoState> {
     personalInfoAutovalidateMode = AutovalidateMode.always;
     emit(ValidationChangedState());
 
+    String token = await Storage.getUserData().then(
+      (value) => value['token'] ?? '',
+    );
     if (checkForPasswordChanges(
       currentPassword,
       newPassword,
@@ -68,7 +71,7 @@ class ChangePersonalInfoCubit extends Cubit<ChangePersonalInfoState> {
         if (newName == '' || newName.isEmpty) {
           newName = currentNameController.text;
         }
-        Storage.setUserData(name: newName, email: newEmail);
+        Storage.setUserData(name: newName, email: newEmail, token: token);
         emit(ChangeUserInfoSuccessState());
       }
     } else {
@@ -79,7 +82,7 @@ class ChangePersonalInfoCubit extends Cubit<ChangePersonalInfoState> {
         if (newName == '' || newName.isEmpty) {
           newName = currentNameController.text;
         }
-        Storage.setUserData(name: newName, email: newEmail);
+        Storage.setUserData(name: newName, email: newEmail, token: token);
         emit(ChangeUserInfoSuccessState());
       }
     }

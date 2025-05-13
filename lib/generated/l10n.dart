@@ -1050,6 +1050,51 @@ class S {
     return Intl.message('Add New Card', name: 'addNewCard', desc: '', args: []);
   }
 
+  /// `Please enter phone`
+  String get pleaseEnterPhone {
+    return Intl.message(
+      'Please enter phone',
+      name: 'pleaseEnterPhone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone should be at least `
+  String get phoneShouldBeAtLeast {
+    return Intl.message(
+      'Phone should be at least ',
+      name: 'phoneShouldBeAtLeast',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone`
+  String get phone {
+    return Intl.message('Phone', name: 'phone', desc: '', args: []);
+  }
+
+  /// `Error`
+  String get error {
+    return Intl.message('Error', name: 'error', desc: '', args: []);
+  }
+
+  /// `Ok`
+  String get ok {
+    return Intl.message('Ok', name: 'ok', desc: '', args: []);
+  }
+
+  /// `Please accept the terms of use`
+  String get pleaseAcceptTheTermsOfUse {
+    return Intl.message(
+      'Please accept the terms of use',
+      name: 'pleaseAcceptTheTermsOfUse',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Personal Information`
   String get personalInformation {
     return Intl.message(

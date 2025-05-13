@@ -44,6 +44,17 @@ class SignupForm extends StatelessWidget {
                   onChanged: (value) => cubit.signUpEmail = value,
                 ),
                 const SizedBox(height: 16),
+
+                // --------------phone field----------------
+                CustomTextFormField(
+                  validator:
+                      (p0) => Validation.phoneValidator(context, p0 ?? ''),
+                  hintText: S.of(context).phone,
+                  keyboardType: TextInputType.phone,
+                  textInputAction: TextInputAction.next,
+                  onChanged: (value) => cubit.signUpPhone = value,
+                ),
+                const SizedBox(height: 16),
                 // --------------password field----------------
                 CustomTextFormField(
                   validator:
@@ -99,8 +110,8 @@ class SignupForm extends StatelessWidget {
                 // --------------sign up button----------------
                 CustomButton(
                   text: S.of(context).createNewAccount,
-                  onPressed: () {
-                    cubit.signUp(context);
+                  onPressed: () async {
+                    await cubit.signUp(context);
                   },
                 ),
                 const SizedBox(height: 26),

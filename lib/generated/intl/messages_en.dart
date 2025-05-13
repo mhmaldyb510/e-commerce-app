@@ -84,6 +84,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "enterCodeSentToEmail": MessageLookupByLibrary.simpleMessage(
       "Enter the code sent to this email",
     ),
+    "error": MessageLookupByLibrary.simpleMessage("Error"),
     "expiryDate": MessageLookupByLibrary.simpleMessage("Expiry Date"),
     "favorites": MessageLookupByLibrary.simpleMessage("Favorites"),
     "filter": MessageLookupByLibrary.simpleMessage("Filter"),
@@ -118,6 +119,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "next": MessageLookupByLibrary.simpleMessage("Next"),
     "notification": MessageLookupByLibrary.simpleMessage("Notification"),
     "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
+    "ok": MessageLookupByLibrary.simpleMessage("Ok"),
     "onboardingDetails1": MessageLookupByLibrary.simpleMessage(
       "Discover a unique shopping experience with ProductsHUB. Explore our wide range of high-quality products and get the best deals and exceptional service.",
     ),
@@ -151,7 +153,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "personalInformation": MessageLookupByLibrary.simpleMessage(
       "Personal Information",
     ),
+    "phone": MessageLookupByLibrary.simpleMessage("Phone"),
+    "phoneShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
+      "Phone should be at least ",
+    ),
     "placeOrder": MessageLookupByLibrary.simpleMessage("Place Order"),
+    "pleaseAcceptTheTermsOfUse": MessageLookupByLibrary.simpleMessage(
+      "Please accept the terms of use",
+    ),
     "pleaseChoosePaymentMethod": MessageLookupByLibrary.simpleMessage(
       "Please choose the payment method that suits you.",
     ),
@@ -185,6 +194,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "pleaseEnterPassword": MessageLookupByLibrary.simpleMessage(
       "Please enter password",
+    ),
+    "pleaseEnterPhone": MessageLookupByLibrary.simpleMessage(
+      "Please enter phone",
     ),
     "pleaseEnterValidEmail": MessageLookupByLibrary.simpleMessage(
       "Please enter valid email",

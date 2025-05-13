@@ -16,6 +16,16 @@ class Validation {
     }
   }
 
+  static String? phoneValidator(BuildContext context, String value) {
+    if (value.isEmpty) {
+      return S.of(context).pleaseEnterPhone;
+    } else if (value.length < 10) {
+      return '${S.of(context).phoneShouldBeAtLeast} 10 ${S.of(context).characters}';
+    } else {
+      return null;
+    }
+  }
+
   static String? passwordValidator(BuildContext context, String value) {
     if (value.isEmpty) {
       return S.of(context).pleaseEnterPassword;

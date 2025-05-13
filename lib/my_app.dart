@@ -45,9 +45,8 @@ class MyApp extends StatelessWidget {
           builder: (context, snapshot) {
             if (snapshot.hasData) {
               Map<String, String?> data = snapshot.data!;
-              String? name = data['name'];
-              String? email = data['email'];
-              return (email != null && name != null)
+              String? token = data['token'];
+              return token != null
                   ? const MainLayout()
                   : const OnboardingScreen();
             } else if (snapshot.hasError) {
