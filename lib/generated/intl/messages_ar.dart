@@ -80,6 +80,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "enterCodeSentToEmail": MessageLookupByLibrary.simpleMessage(
       "أدخل الرمز الذي أرسلناه إلى عنوان البريد التالي",
     ),
+    "error": MessageLookupByLibrary.simpleMessage("خطأ"),
     "expiryDate": MessageLookupByLibrary.simpleMessage("تاريخ الصلاحيه"),
     "favorites": MessageLookupByLibrary.simpleMessage("المفضلات"),
     "filter": MessageLookupByLibrary.simpleMessage("تصفيه"),
@@ -114,6 +115,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "next": MessageLookupByLibrary.simpleMessage("التالي"),
     "notification": MessageLookupByLibrary.simpleMessage("الاشعارات"),
     "notifications": MessageLookupByLibrary.simpleMessage("الاشعارات"),
+    "ok": MessageLookupByLibrary.simpleMessage("موافق"),
     "onboardingDetails1": MessageLookupByLibrary.simpleMessage(
       "اكتشف تجربة تسوق فريدة مع ProductsHUB. استكشف مجموعتنا الواسعة من المنتجات عالية الجودة واحصل على أفضل العروض والخدمة المتميزة.",
     ),
@@ -147,7 +149,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "personalInformation": MessageLookupByLibrary.simpleMessage(
       "المعلومات الشخصية",
     ),
+    "phone": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
+    "phoneShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
+      "رقم الهاتف يجب ان يكون على الاقل ",
+    ),
     "placeOrder": MessageLookupByLibrary.simpleMessage("تأكيد الطلب"),
+    "pleaseAcceptTheTermsOfUse": MessageLookupByLibrary.simpleMessage(
+      "يرجي قبول الشروط والاحكام",
+    ),
     "pleaseChoosePaymentMethod": MessageLookupByLibrary.simpleMessage(
       "من فضلك اختر طريقه الدفع المناسبه لك.",
     ),
@@ -181,6 +190,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "pleaseEnterPassword": MessageLookupByLibrary.simpleMessage(
       "من فضلك ادخل كلمة المرور",
+    ),
+    "pleaseEnterPhone": MessageLookupByLibrary.simpleMessage(
+      "يرجي كتابة رقم الهاتف",
     ),
     "pleaseEnterValidEmail": MessageLookupByLibrary.simpleMessage(
       "من فضلك ادخل بريد الكتروني صحيح",

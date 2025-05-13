@@ -126,6 +126,12 @@
     "outForDelivery": "Out for Delivery",
     "delivered": "Delivered",
     "addNewCard": "Add New Card",
+    "pleaseEnterPhone": "Please enter phone",
+    "phoneShouldBeAtLeast": "Phone should be at least ",
+    "phone": "Phone",
+    "error": "Error",
+    "ok": "Ok",
+    "pleaseAcceptTheTermsOfUse": "Please accept the terms of use",
     "@general": {},
     "personalInformation": "Personal Information",
     "@home": {

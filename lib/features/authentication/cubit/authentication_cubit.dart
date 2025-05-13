@@ -1,7 +1,9 @@
 import 'package:bloc/bloc.dart';
-import 'package:e_commerce_app/core/helpers/storage.dart';
+import 'package:e_commerce_app/core/themes/text_styles.dart';
 import 'package:e_commerce_app/core/widgets/main_layout.dart';
+import 'package:e_commerce_app/features/authentication/model/auth_api_helper.dart';
 import 'package:e_commerce_app/features/authentication/view/screens/code_verification_screen.dart';
+import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 part 'authentication_state.dart';
@@ -43,6 +45,8 @@ class AuthenticationCubit extends Cubit<AuthenticationState> {
 
   String signUpName = '';
 
+  String signUpPhone = '';
+
   bool signUpAcceptLicense = false;
 
   void changeSignUpAcceptLicenseState() {
@@ -50,16 +54,55 @@ class AuthenticationCubit extends Cubit<AuthenticationState> {
     emit(AuthenticationInitial());
   }
 
-  signUp(BuildContext context) {
+  signUp(BuildContext context) async {
     signUpAutovalidateMode = AutovalidateMode.always;
     emit(AuthenticationInitial());
+    if (!signUpAcceptLicense) {
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(S.of(context).pleaseAcceptTheTermsOfUse)),
+        );
+      }
+      return;
+    }
     if (signUpFormKey.currentState!.validate()) {
-      // TODO: implement signUp
-      Storage.setUserData(name: signUpName, email: signUpEmail);
-      Navigator.of(context).pushAndRemoveUntil(
-        MaterialPageRoute(builder: (context) => const MainLayout()),
-        (route) => false,
-      );
+      try {
+        await AuthApiHelper.register(
+          name: signUpName,
+          email: signUpEmail,
+          password: signUpPassword,
+          rePassword: signUpPassword,
+          phone: signUpPhone,
+        );
+        if (context.mounted) {
+          Navigator.of(context).pushAndRemoveUntil(
+            MaterialPageRoute(builder: (context) => const MainLayout()),
+            (route) => false,
+          );
+        }
+      } catch (e) {
+        if (context.mounted) {
+          showDialog(
+            context: context,
+            builder:
+                (context) => AlertDialog(
+                  title: Text(
+                    S.of(context).error,
+                    style: TextStyles.bodySmallBold.copyWith(
+                      color: Theme.of(context).textTheme.bodySmall!.color,
+                    ),
+                  ),
+                  content: Text(e.toString()),
+                  actions: [
+                    TextButton(
+                      onPressed: () => Navigator.pop(context),
+                      child: Text(S.of(context).ok),
+                    ),
+                  ],
+                ),
+          );
+        }
+      }
     }
   }
 

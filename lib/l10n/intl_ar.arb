@@ -126,6 +126,12 @@
     "delivered": "تم التسليم",
     "general": "عام",
     "addNewCard": "اضافة بطاقة جديده",
+    "pleaseEnterPhone": "يرجي كتابة رقم الهاتف",
+    "phoneShouldBeAtLeast": "رقم الهاتف يجب ان يكون على الاقل ",
+    "phone": "رقم الهاتف",
+    "error": "خطأ",
+    "ok": "موافق",
+    "pleaseAcceptTheTermsOfUse": "يرجي قبول الشروط والاحكام",
     "@general": {},
     "@home": {
         "description": "Label for the home bottom navigation item"
