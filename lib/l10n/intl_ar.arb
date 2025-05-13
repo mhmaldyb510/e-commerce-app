@@ -125,6 +125,7 @@
     "outForDelivery": "خرج للتوصيل",
     "delivered": "تم التسليم",
     "general": "عام",
+    "addNewCard": "اضافة بطاقة جديده",
     "@general": {},
     "@home": {
         "description": "Label for the home bottom navigation item"

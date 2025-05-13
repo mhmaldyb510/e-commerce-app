@@ -125,6 +125,7 @@
     "orderShipped": "Order Shipped",
     "outForDelivery": "Out for Delivery",
     "delivered": "Delivered",
+    "addNewCard": "Add New Card",
     "@general": {},
     "personalInformation": "Personal Information",
     "@home": {
