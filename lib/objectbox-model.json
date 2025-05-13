@@ -1,0 +1,57 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:8158138168438795910",
+      "lastPropertyId": "6:8409486368122835459",
+      "name": "CardDetails",
+      "properties": [
+        {
+          "id": "1:3655173470605536143",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1557575503763659051",
+          "name": "cardHolderName",
+          "type": 9
+        },
+        {
+          "id": "3:1169018243372704809",
+          "name": "cardNumber",
+          "type": 9
+        },
+        {
+          "id": "4:624230779410839915",
+          "name": "expiryDate",
+          "type": 9
+        },
+        {
+          "id": "5:8580875240472653137",
+          "name": "cvv",
+          "type": 9
+        },
+        {
+          "id": "6:8409486368122835459",
+          "name": "cardType",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "1:8158138168438795910",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

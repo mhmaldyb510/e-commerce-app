@@ -10,8 +10,6 @@ class PaymentOptionList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<String> children = [
-      Brands.apple_pay,
-      Brands.paypal,
       Brands.mastercard,
       Brands.visa,
     ];

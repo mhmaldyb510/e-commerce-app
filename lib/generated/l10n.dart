@@ -1045,6 +1045,11 @@ class S {
     return Intl.message('Delivered', name: 'delivered', desc: '', args: []);
   }
 
+  /// `Add New Card`
+  String get addNewCard {
+    return Intl.message('Add New Card', name: 'addNewCard', desc: '', args: []);
+  }
+
   /// `Personal Information`
   String get personalInformation {
     return Intl.message(
