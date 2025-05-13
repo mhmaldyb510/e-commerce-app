@@ -66,6 +66,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "cvvShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
       "CVV يجب ان يكون على الاقل ",
     ),
+    "delivered": MessageLookupByLibrary.simpleMessage("تم التسليم"),
     "deliveryFromPlace": MessageLookupByLibrary.simpleMessage(
       "التسليم من المكان",
     ),
@@ -120,8 +121,15 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "onboardingHead2": MessageLookupByLibrary.simpleMessage("ابحث وتسوق"),
     "or": MessageLookupByLibrary.simpleMessage("أو"),
+    "orderAccepted": MessageLookupByLibrary.simpleMessage("قبول الطلب"),
+    "orderCount": MessageLookupByLibrary.simpleMessage("عدد الطلبات"),
+    "orderDone": MessageLookupByLibrary.simpleMessage("تم الطلب"),
+    "orderNumber": MessageLookupByLibrary.simpleMessage("رقم الطلب"),
+    "orderShipped": MessageLookupByLibrary.simpleMessage("تم شحن الطلب"),
     "orderSummary": MessageLookupByLibrary.simpleMessage("ملخص الطلب :"),
+    "orderTrack": MessageLookupByLibrary.simpleMessage("تتبع الطلب"),
     "ourProducts": MessageLookupByLibrary.simpleMessage("منتجاتنا"),
+    "outForDelivery": MessageLookupByLibrary.simpleMessage("خرج للتوصيل"),
     "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
     "passwordShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
       "كلمة المرور يجب ان تكون على الاقل ",
@@ -138,7 +146,6 @@ class MessageLookup extends MessageLookupByLibrary {
     "personalInformation": MessageLookupByLibrary.simpleMessage(
       "المعلومات الشخصية",
     ),
-
     "placeOrder": MessageLookupByLibrary.simpleMessage("تأكيد الطلب"),
     "pleaseChoosePaymentMethod": MessageLookupByLibrary.simpleMessage(
       "من فضلك اختر طريقه الدفع المناسبه لك.",

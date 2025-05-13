@@ -308,7 +308,7 @@ packages:
     source: hosted
     version: "5.2.1"
   flutter_svg:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: flutter_svg
       sha256: d44bf546b13025ec7353091516f6881f1d4c633993cb109c3916c3a0159dadf1
@@ -698,6 +698,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.7.4"
+  timelines_plus:
+    dependency: "direct main"
+    description:
+      name: timelines_plus
+      sha256: be31f493402dc24df7fe410dc5f82a605807bb4ca13183de6d4362886449b593
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.6"
   typed_data:
     dependency: transitive
     description:

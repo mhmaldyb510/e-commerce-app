@@ -1,4 +1,5 @@
 {
+    "@@locale": "ar",
     "skip": "تخطي",
     "sayWelcome": "مرحباً بك في ",
     "onboardingDetails1": "اكتشف تجربة تسوق فريدة مع ProductsHUB. استكشف مجموعتنا الواسعة من المنتجات عالية الجودة واحصل على أفضل العروض والخدمة المتميزة.",
@@ -115,7 +116,14 @@
     "confirmTheNewPassword": "تاكيد كلمة المرور الجديدة",
     "saveTheChanges": "حفظ التغييرات",
     "changePassword": "تغيير كلمة المرور",
-
+    "orderNumber": "رقم الطلب",
+    "orderDone": "تم الطلب",
+    "orderCount": "عدد الطلبات",
+    "orderTrack": "تتبع الطلب",
+    "orderAccepted": "قبول الطلب",
+    "orderShipped": "تم شحن الطلب",
+    "outForDelivery": "خرج للتوصيل",
+    "delivered": "تم التسليم",
     "general": "عام",
     "@general": {},
     "@home": {

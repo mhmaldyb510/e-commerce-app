@@ -1,4 +1,5 @@
 {
+    "@@locale": "en",
     "skip": "Skip",
     "sayWelcome": "Welcome to ",
     "onboardingDetails1": "Discover a unique shopping experience with ProductsHUB. Explore our wide range of high-quality products and get the best deals and exceptional service.",
@@ -116,9 +117,16 @@
     "confirmTheNewPassword": "Confirm The New Password",
     "saveTheChanges": "Save The Changes",
     "changePassword": "Change Password",
+    "orderNumber": "Order Number",
+    "orderDone": "Order Done",
+    "orderCount": "Order Count",
+    "orderTrack": "Track Order",
+    "orderAccepted": "Order Accepted",
+    "orderShipped": "Order Shipped",
+    "outForDelivery": "Out for Delivery",
+    "delivered": "Delivered",
     "@general": {},
     "personalInformation": "Personal Information",
-
     "@home": {
         "description": "Label for the home bottom navigation item"
     },

@@ -70,6 +70,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "cvvShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
       "CVV should be at least ",
     ),
+    "delivered": MessageLookupByLibrary.simpleMessage("Delivered"),
     "deliveryFromPlace": MessageLookupByLibrary.simpleMessage(
       "Delivery From Place",
     ),
@@ -124,8 +125,15 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "onboardingHead2": MessageLookupByLibrary.simpleMessage("Search and Shop"),
     "or": MessageLookupByLibrary.simpleMessage("Or"),
+    "orderAccepted": MessageLookupByLibrary.simpleMessage("Order Accepted"),
+    "orderCount": MessageLookupByLibrary.simpleMessage("Order Count"),
+    "orderDone": MessageLookupByLibrary.simpleMessage("Order Done"),
+    "orderNumber": MessageLookupByLibrary.simpleMessage("Order Number"),
+    "orderShipped": MessageLookupByLibrary.simpleMessage("Order Shipped"),
     "orderSummary": MessageLookupByLibrary.simpleMessage("Order Summary"),
+    "orderTrack": MessageLookupByLibrary.simpleMessage("Track Order"),
     "ourProducts": MessageLookupByLibrary.simpleMessage("Our Products"),
+    "outForDelivery": MessageLookupByLibrary.simpleMessage("Out for Delivery"),
     "password": MessageLookupByLibrary.simpleMessage("Password"),
     "passwordShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
       "Password should be at least ",
@@ -142,7 +150,6 @@ class MessageLookup extends MessageLookupByLibrary {
     "personalInformation": MessageLookupByLibrary.simpleMessage(
       "Personal Information",
     ),
-
     "placeOrder": MessageLookupByLibrary.simpleMessage("Place Order"),
     "pleaseChoosePaymentMethod": MessageLookupByLibrary.simpleMessage(
       "Please choose the payment method that suits you.",
