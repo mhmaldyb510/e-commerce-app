@@ -61,8 +61,8 @@ class NewPasswordForm extends StatelessWidget {
                 const SizedBox(height: 24),
                 CustomButton(
                   text: "${S.of(context).create} ${S.of(context).newPassword}",
-                  onPressed: () {
-                    cubit.changePassword();
+                  onPressed: () async {
+                    await cubit.changePassword(context);
                   },
                 ),
               ],

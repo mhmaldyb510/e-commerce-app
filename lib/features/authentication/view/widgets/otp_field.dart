@@ -2,7 +2,11 @@ import 'dart:developer';
 
 import 'package:e_commerce_app/core/themes/app_colors.dart';
 import 'package:e_commerce_app/core/themes/text_styles.dart';
+import 'package:e_commerce_app/features/authentication/cubit/authentication_cubit.dart';
+import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 class OtpField extends StatefulWidget {
@@ -16,15 +20,21 @@ class OtpField extends StatefulWidget {
 
 class _OtpFieldState extends State<OtpField> {
   final TextEditingController _otpController = TextEditingController();
-  String currentText = "";
 
   @override
   Widget build(BuildContext context) {
-    double unitWidth = MediaQuery.sizeOf(context).width / 4 - 20;
+    double unitWidth = MediaQuery.sizeOf(context).width / widget.length - 20;
     return Directionality(
       textDirection: TextDirection.ltr,
       child: PinCodeTextField(
-        // Todo: Handle validation
+        validator: (value) {
+          if (value!.isEmpty) {
+            return S.of(context).enterCode;
+          } else if (value.length < widget.length) {
+            return S.of(context).enterCode;
+          }
+          return null;
+        },
         appContext: context,
         autoDisposeControllers: true,
         textStyle: TextStyles.heading5Bold.copyWith(
@@ -55,12 +65,13 @@ class _OtpFieldState extends State<OtpField> {
           selectedFillColor: const Color(0xffF9FAFA),
           inactiveFillColor: const Color(0xffF9FAFA),
         ),
+        inputFormatters: [FilteringTextInputFormatter.digitsOnly],
 
         enableActiveFill: true,
         onChanged: (value) {
           log(value);
           setState(() {
-            currentText = value;
+            context.read<AuthenticationCubit>().verificationCode = value;
           });
         },
         beforeTextPaste: (text) {

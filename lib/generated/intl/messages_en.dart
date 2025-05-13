@@ -81,6 +81,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "edit": MessageLookupByLibrary.simpleMessage("Edit"),
     "egyptianPound": MessageLookupByLibrary.simpleMessage("EGP"),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
+    "enterCode": MessageLookupByLibrary.simpleMessage("Enter Code"),
     "enterCodeSentToEmail": MessageLookupByLibrary.simpleMessage(
       "Enter the code sent to this email",
     ),
@@ -138,6 +139,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "ourProducts": MessageLookupByLibrary.simpleMessage("Our Products"),
     "outForDelivery": MessageLookupByLibrary.simpleMessage("Out for Delivery"),
     "password": MessageLookupByLibrary.simpleMessage("Password"),
+    "passwordChangedSuccessfully": MessageLookupByLibrary.simpleMessage(
+      "Password changed successfully",
+    ),
     "passwordShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
       "Password should be at least ",
     ),

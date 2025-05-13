@@ -77,6 +77,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "edit": MessageLookupByLibrary.simpleMessage("تعديل"),
     "egyptianPound": MessageLookupByLibrary.simpleMessage("جنيه"),
     "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
+    "enterCode": MessageLookupByLibrary.simpleMessage("ادخل الكود"),
     "enterCodeSentToEmail": MessageLookupByLibrary.simpleMessage(
       "أدخل الرمز الذي أرسلناه إلى عنوان البريد التالي",
     ),
@@ -134,6 +135,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "ourProducts": MessageLookupByLibrary.simpleMessage("منتجاتنا"),
     "outForDelivery": MessageLookupByLibrary.simpleMessage("خرج للتوصيل"),
     "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+    "passwordChangedSuccessfully": MessageLookupByLibrary.simpleMessage(
+      "تم تغيير كلمة المرور بنجاح",
+    ),
     "passwordShouldBeAtLeast": MessageLookupByLibrary.simpleMessage(
       "كلمة المرور يجب ان تكون على الاقل ",
     ),
