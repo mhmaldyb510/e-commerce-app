@@ -3,14 +3,12 @@ import 'package:e_commerce_app/core/themes/app_colors.dart';
 import 'package:e_commerce_app/core/themes/text_styles.dart';
 import 'package:e_commerce_app/core/widgets/custom_button.dart';
 import 'package:e_commerce_app/core/widgets/custom_text_form_field.dart';
-import 'package:e_commerce_app/core/widgets/third_part_buttons.dart';
 import 'package:e_commerce_app/features/authentication/cubit/authentication_cubit.dart';
 import 'package:e_commerce_app/features/authentication/view/screens/forgot_password_screen.dart';
 import 'package:e_commerce_app/features/authentication/view/screens/signup_screen.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:icons_plus/icons_plus.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({super.key});
@@ -105,54 +103,54 @@ class LoginForm extends StatelessWidget {
                 ),
                 const SizedBox(height: 33),
                 // --------------or section----------------
-                Row(
-                  children: [
-                    const Expanded(
-                      child: Divider(color: AppColors.offColor, thickness: 1),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: Text(
-                        S.of(context).or,
-                        style: TextStyles.bodyBaseBold.copyWith(
-                          fontWeight: FontWeight.w600,
-                          color: AppColors.grayscale950,
-                        ),
-                      ),
-                    ),
-                    const Expanded(
-                      child: Divider(color: AppColors.offColor, thickness: 1),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 16),
-                // --------------google button----------------
-                ThirdPartButtons(
-                  text: S.of(context).signInWithGoogle,
-                  icon: Brand(Brands.google),
-                  onPressed: () {},
-                ),
-                const SizedBox(height: 16),
-                // --------------apple button----------------
-                ThirdPartButtons(
-                  text: S.of(context).signInWithApple,
-                  icon: Brand(
-                    Brands.apple_logo,
+                // Row(
+                //   children: [
+                //     const Expanded(
+                //       child: Divider(color: AppColors.offColor, thickness: 1),
+                //     ),
+                //     Padding(
+                //       padding: const EdgeInsets.symmetric(horizontal: 16),
+                //       child: Text(
+                //         S.of(context).or,
+                //         style: TextStyles.bodyBaseBold.copyWith(
+                //           fontWeight: FontWeight.w600,
+                //           color: AppColors.grayscale950,
+                //         ),
+                //       ),
+                //     ),
+                //     const Expanded(
+                //       child: Divider(color: AppColors.offColor, thickness: 1),
+                //     ),
+                //   ],
+                // ),
+                // const SizedBox(height: 16),
+                // // --------------google button----------------
+                // ThirdPartButtons(
+                //   text: S.of(context).signInWithGoogle,
+                //   icon: Brand(Brands.google),
+                //   onPressed: () {},
+                // ),
+                // const SizedBox(height: 16),
+                // // --------------apple button----------------
+                // ThirdPartButtons(
+                //   text: S.of(context).signInWithApple,
+                //   icon: Brand(
+                //     Brands.apple_logo,
 
-                    colorFilter: const ColorFilter.mode(
-                      AppColors.grayscale950,
-                      BlendMode.srcATop,
-                    ),
-                  ),
-                  onPressed: () {},
-                ),
-                const SizedBox(height: 16),
-                // --------------facebook button----------------
-                ThirdPartButtons(
-                  text: S.of(context).signInWithFacebook,
-                  icon: Brand(Brands.facebook),
-                  onPressed: () {},
-                ),
+                //     colorFilter: const ColorFilter.mode(
+                //       AppColors.grayscale950,
+                //       BlendMode.srcATop,
+                //     ),
+                //   ),
+                //   onPressed: () {},
+                // ),
+                // const SizedBox(height: 16),
+                // // --------------facebook button----------------
+                // ThirdPartButtons(
+                //   text: S.of(context).signInWithFacebook,
+                //   icon: Brand(Brands.facebook),
+                //   onPressed: () {},
+                // ),
               ],
             ),
           ),
