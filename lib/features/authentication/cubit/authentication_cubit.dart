@@ -21,15 +21,25 @@ class AuthenticationCubit extends Cubit<AuthenticationState> {
 
   String logInPassword = '';
 
-  logIn(BuildContext context) {
+  logIn(BuildContext context) async {
     logInAutovalidateMode = AutovalidateMode.always;
     emit(AuthenticationInitial());
     if (logInFormKey.currentState!.validate()) {
-      // TODO: implement logIn
-      Navigator.of(context).pushAndRemoveUntil(
-        MaterialPageRoute(builder: (context) => const MainLayout()),
-        (route) => false,
-      );
+      try {
+        await AuthApiHelper.login(email: logInEmail, password: logInPassword);
+        if (context.mounted) {
+          Navigator.of(context).pushAndRemoveUntil(
+            MaterialPageRoute(builder: (context) => const MainLayout()),
+            (route) => false,
+          );
+        }
+      } catch (e) {
+        if (context.mounted) {
+          ScaffoldMessenger.of(
+            context,
+          ).showSnackBar(SnackBar(content: Text(e.toString())));
+        }
+      }
     }
   }
 
