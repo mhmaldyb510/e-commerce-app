@@ -1110,6 +1110,11 @@ class S {
     );
   }
 
+  /// `Results`
+  String get results {
+    return Intl.message('Results', name: 'results', desc: '', args: []);
+  }
+
   /// `Personal Information`
   String get personalInformation {
     return Intl.message(

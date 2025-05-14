@@ -5,9 +5,5 @@ class FeatureModel {
   final String value;
   final Widget icon;
 
-  FeatureModel({
-    required this.title,
-    required this.value,
-    required this.icon,
-  });
+  FeatureModel({required this.title, required this.value, required this.icon});
 }

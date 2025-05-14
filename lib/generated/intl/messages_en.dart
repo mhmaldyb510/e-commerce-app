@@ -222,6 +222,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "profile": MessageLookupByLibrary.simpleMessage("Profile"),
     "questionMark": MessageLookupByLibrary.simpleMessage("?"),
     "resendCode": MessageLookupByLibrary.simpleMessage("Resend the Code"),
+    "results": MessageLookupByLibrary.simpleMessage("Results"),
     "review": MessageLookupByLibrary.simpleMessage("Review"),
     "reviews": MessageLookupByLibrary.simpleMessage("Reviews"),
     "saveTheAddress": MessageLookupByLibrary.simpleMessage("Save the Address"),

@@ -10,7 +10,6 @@ class CardDetails {
   String expiryDate;
   String cvv;
   String cardType; // e.g., "Visa" or "MasterCard"
-  
 
   CardDetails({
     required this.cardHolderName,

@@ -26,7 +26,7 @@ class ProductDetailsSection extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              product.title,
+              product.name,
               style: TextStyles.bodyBaseBold.copyWith(
                 color: Theme.of(context).textTheme.bodyMedium!.color,
               ),
@@ -37,15 +37,13 @@ class ProductDetailsSection extends StatelessWidget {
                 const SizedBox(height: 4),
                 RichText(
                   text: TextSpan(
-                    text:
-                        'EGP ${(double.parse(product.price) * 50).toStringAsFixed(0)}   ',
+                    text: 'EGP ${product.priceAfterDiscount}   ',
                     style: TextStyles.bodySmallBold.copyWith(
                       color: AppColors.orange500,
                     ),
                     children: [
                       TextSpan(
-                        text:
-                            '${(double.parse(product.price) * 50 * 1.4).toStringAsFixed(0)} EGP',
+                        text: '${product.price} EGP',
                         style: TextStyles.bodySmallBold.copyWith(
                           decoration: TextDecoration.lineThrough,
                           fontWeight: FontWeight.w600,
@@ -72,7 +70,7 @@ class ProductDetailsSection extends StatelessWidget {
               features: [
                 FeatureModel(
                   title: S.of(context).reviews,
-                  value: product.rating,
+                  value: product.rate.toString(),
                   icon: Image.asset(Assets.iconsFavourites),
                 ),
               ],
@@ -83,5 +81,3 @@ class ProductDetailsSection extends StatelessWidget {
     );
   }
 }
-
-

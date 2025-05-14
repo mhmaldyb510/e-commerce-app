@@ -6,23 +6,26 @@ import 'package:e_commerce_app/core/widgets/most_popular_row.dart';
 import 'package:e_commerce_app/core/widgets/product_card.dart';
 import 'package:e_commerce_app/features/products/cubit/product_cubit.dart';
 import 'package:e_commerce_app/features/products/view/widgets/our_products_part.dart';
+import 'package:e_commerce_app/features/products/view/widgets/search_result_part.dart';
 import 'package:e_commerce_app/features/search/view/screen/search_screen.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class ProductScreen extends StatelessWidget {
-  const ProductScreen({super.key});
+class ProductsScreen extends StatelessWidget {
+  const ProductsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => ProductCubit()..getProducts(),
-      child: BlocBuilder<ProductCubit, ProductState>(
-        builder: (context, state) {
-          return Stack(
-            children: [
-              Scaffold(
+    return BlocBuilder<ProductCubit, ProductState>(
+      builder: (context, state) {
+        return Stack(
+          children: [
+            RefreshIndicator(
+              onRefresh: () async {
+                await context.read<ProductCubit>().fetchProductsScreen();
+              },
+              child: Scaffold(
                 appBar: PreferredSize(
                   preferredSize: const Size.fromHeight(56),
                   child: CustomAppBar(title: S.of(context).products),
@@ -41,7 +44,8 @@ class ProductScreen extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => const SearchScreen(),
+                                    builder:
+                                        (context) => const SearchScreen(),
                                   ),
                                 );
                               },
@@ -49,18 +53,24 @@ class ProductScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      const SliverToBoxAdapter(
+                      SliverToBoxAdapter(
                         child: Padding(
-                          padding: EdgeInsets.only(bottom: 24),
-                          child: OurProductsPart(),
+                          padding: const EdgeInsets.only(bottom: 24),
+                          child:
+                              state is ProductFilteredState
+                                  ? SearchResultPart(
+                                    count: state.products.length,
+                                  )
+                                  : const OurProductsPart(),
                         ),
                       ),
-                      const SliverToBoxAdapter(
-                        child: Padding(
-                          padding: EdgeInsets.only(bottom: 24),
-                          child: MostPopularRow(),
+                      if (state is! ProductFilteredState)
+                        const SliverToBoxAdapter(
+                          child: Padding(
+                            padding: EdgeInsets.only(bottom: 24),
+                            child: MostPopularRow(),
+                          ),
                         ),
-                      ),
                       if (state is ProductsLoadingState)
                         const SliverToBoxAdapter(
                           child: Center(child: CircularProgressIndicator()),
@@ -79,24 +89,39 @@ class ProductScreen extends StatelessWidget {
                                   ProductCard(product: state.products[index]),
                           itemCount: 10,
                         ),
+                      if (state is ProductFilteredState)
+                        SliverGrid.builder(
+                          gridDelegate:
+                              const SliverGridDelegateWithFixedCrossAxisCount(
+                                crossAxisCount: 2,
+                                mainAxisSpacing: 16,
+                                crossAxisSpacing: 16,
+                                childAspectRatio: 191 / 237,
+                              ),
+                          itemBuilder:
+                              (context, index) =>
+                                  ProductCard(product: state.products[index]),
+                          itemCount: state.products.length,
+                        ),
+                      const SliverToBoxAdapter(child: SizedBox(height: 100)),
                     ],
                   ),
                 ),
               ),
-
-              BlocBuilder<ModalBottomSheetCubit, ModalBottomSheetState>(
-                builder: (context, modalState) {
-                  return context
-                          .read<ModalBottomSheetCubit>()
-                          .isModalSheetOpened
-                      ? const BlurringWidget()
-                      : const SizedBox.shrink();
-                },
-              ),
-            ],
-          );
-        },
-      ),
+            ),
+    
+            BlocBuilder<ModalBottomSheetCubit, ModalBottomSheetState>(
+              builder: (context, modalState) {
+                return context
+                        .read<ModalBottomSheetCubit>()
+                        .isModalSheetOpened
+                    ? const BlurringWidget()
+                    : const SizedBox.shrink();
+              },
+            ),
+          ],
+        );
+      },
     );
   }
 }

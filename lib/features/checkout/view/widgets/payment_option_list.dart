@@ -9,10 +9,7 @@ class PaymentOptionList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<String> children = [
-      Brands.mastercard,
-      Brands.visa,
-    ];
+    List<String> children = [Brands.mastercard, Brands.visa];
     return Wrap(
       children: List.generate(
         children.length,
@@ -28,7 +25,10 @@ class PaymentOptionList extends StatelessWidget {
                   borderRadius: BorderRadius.circular(4),
                   border: Border.all(color: AppColors.offColor),
                 ),
-                child: Transform.scale(scale: 1.3, child: Brand(children[index])),
+                child: Transform.scale(
+                  scale: 1.3,
+                  child: Brand(children[index]),
+                ),
               ),
             ),
             if (index != children.length - 1) const SizedBox(width: 16),

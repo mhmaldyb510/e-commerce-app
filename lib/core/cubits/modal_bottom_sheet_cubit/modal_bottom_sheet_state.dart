@@ -4,4 +4,3 @@ part of 'modal_bottom_sheet_cubit.dart';
 sealed class ModalBottomSheetState {}
 
 final class ModalBottomSheetInitial extends ModalBottomSheetState {}
-

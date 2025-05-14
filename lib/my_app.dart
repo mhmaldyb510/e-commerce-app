@@ -6,6 +6,7 @@ import 'package:e_commerce_app/core/themes/light_theme.dart';
 import 'package:e_commerce_app/core/widgets/main_layout.dart';
 import 'package:e_commerce_app/features/authentication/cubit/authentication_cubit.dart';
 import 'package:e_commerce_app/features/onboarding/view/screens/onboarding_screen.dart';
+import 'package:e_commerce_app/features/products/cubit/product_cubit.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:e_commerce_app/main.dart';
 import 'package:e_commerce_app/objectbox.g.dart';
@@ -46,6 +47,9 @@ class _MyAppState extends State<MyApp> {
         ),
         if (!isLoggedIn)
           BlocProvider(create: (context) => AuthenticationCubit()),
+        BlocProvider(
+          create: (context) => ProductCubit()..fetchProductsScreen(),
+        ),
       ],
       child: MaterialApp(
         locale: const Locale('ar'),

@@ -40,7 +40,7 @@ class ProductCard extends StatelessWidget {
                 return Column(
                   children: [
                     Hero(
-                      tag: product.image,
+                      tag: product.imagePath,
                       child: Container(
                         clipBehavior: Clip.none,
                         height: constraints.maxHeight * 128 / 237,
@@ -48,7 +48,7 @@ class ProductCard extends StatelessWidget {
                           borderRadius: BorderRadius.circular(15),
                           color: Colors.white,
                           image: DecorationImage(
-                            image: NetworkImage(product.image),
+                            image: NetworkImage(product.imagePath),
                             fit: BoxFit.contain,
                           ),
                         ),
@@ -57,7 +57,7 @@ class ProductCard extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(8),
                       child: Text(
-                        product.title,
+                        product.name,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
 
@@ -80,8 +80,10 @@ class ProductCard extends StatelessWidget {
                           children: [
                             const SizedBox(width: 8),
                             Text(
-                              //this will transform price from USD to EGP we will not need it if we use price set with EGP
-                              'EGP ${(double.parse(product.price) * 50).toStringAsFixed(0)}',
+                              !(product.priceAfterDiscount != null ||
+                                      product.priceAfterDiscount != 0)
+                                  ? 'EGP ${product.priceAfterDiscount} '
+                                  : 'EGP ${product.price}',
                               style: TextStyles.bodyBaseRegular.copyWith(
                                 fontWeight: FontWeight.w400,
                                 fontSize: 14,
@@ -97,7 +99,10 @@ class ProductCard extends StatelessWidget {
                             ),
                             const SizedBox(width: 16),
                             Text(
-                              '${(double.parse(product.price) * 50 * 1.4).toStringAsFixed(0)} EGP',
+                              !(product.priceAfterDiscount != null ||
+                                      product.priceAfterDiscount != 0)
+                                  ? '${product.price} EGP'
+                                  : '',
                               style: TextStyles.bodyBaseRegular.copyWith(
                                 decoration: TextDecoration.lineThrough,
                                 fontWeight: FontWeight.w400,
@@ -125,7 +130,7 @@ class ProductCard extends StatelessWidget {
                         child: Align(
                           alignment: Alignment.centerLeft,
                           child: Text(
-                            '${S.of(context).reviews} (${product.rating}) ⭐',
+                            '${S.of(context).reviews} (${product.rate}) ⭐',
                             textAlign: TextAlign.left,
                           ),
                         ),

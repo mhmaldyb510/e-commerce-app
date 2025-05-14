@@ -134,6 +134,7 @@
     "pleaseAcceptTheTermsOfUse": "يرجي قبول الشروط والاحكام",
     "enterCode": "ادخل الكود",
     "passwordChangedSuccessfully": "تم تغيير كلمة المرور بنجاح",
+    "results": "نتائج",
     "@general": {},
     "@home": {
         "description": "Label for the home bottom navigation item"

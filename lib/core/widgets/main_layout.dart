@@ -2,7 +2,7 @@ import 'package:e_commerce_app/core/cubits/modal_bottom_sheet_cubit/modal_bottom
 import 'package:e_commerce_app/core/widgets/custom_nav_bar_item.dart';
 import 'package:e_commerce_app/features/account/view/screens/account_screen.dart';
 import 'package:e_commerce_app/features/home/view/screens/home_screen.dart';
-import 'package:e_commerce_app/features/products/view/screens/product_screen.dart';
+import 'package:e_commerce_app/features/products/view/screens/products_screen.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -21,7 +21,7 @@ class _MainLayoutState extends State<MainLayout> {
 
   List<Widget> _screens() => [
     const HomeScreen(),
-    const ProductScreen(),
+    const ProductsScreen(),
     const Center(child: Text('Cart')),
     const AccountScreen(),
   ];

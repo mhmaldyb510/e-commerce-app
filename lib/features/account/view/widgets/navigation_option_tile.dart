@@ -11,7 +11,11 @@ class NavigationOptionTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => option.route)),
+      onTap:
+          () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => option.route),
+          ),
       minTileHeight: 22,
       contentPadding: EdgeInsets.zero,
       leading: Icon(option.icon, size: 20, color: AppColors.kPrimaryColor),

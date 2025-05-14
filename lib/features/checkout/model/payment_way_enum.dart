@@ -1,6 +1,1 @@
-enum PaymentWayEnum {
-  applePay,
-  paypal,
-  mastercard,
-  visa
-}
+enum PaymentWayEnum { applePay, paypal, mastercard, visa }
