@@ -3,9 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class BlurringWidget extends StatelessWidget {
-  const BlurringWidget({
-    super.key,
-  });
+  const BlurringWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

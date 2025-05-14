@@ -6,10 +6,7 @@ import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class ReviewSection extends StatelessWidget {
-  const ReviewSection({
-    super.key,
-    required this.product,
-  });
+  const ReviewSection({super.key, required this.product});
 
   final ProductModel product;
 
@@ -20,7 +17,7 @@ class ReviewSection extends StatelessWidget {
         const Text('⭐'),
         const SizedBox(width: 9),
         Text(
-          product.rating,
+          product.rate.toString(),
           style: TextStyles.bodySmallBold.copyWith(
             fontWeight: FontWeight.w600,
             color: Theme.of(context).textTheme.bodySmall!.color,
@@ -28,7 +25,7 @@ class ReviewSection extends StatelessWidget {
         ),
         const SizedBox(width: 9),
         Text(
-          '(${roundDownToNearestTen(int.parse(product.ratingCount))}+)',
+          '(${roundDownToNearestTen(product.ratingsQuantity)}+)',
           style: TextStyles.bodySmallRegular.copyWith(
             color: Theme.of(context).hintColor,
           ),

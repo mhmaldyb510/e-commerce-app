@@ -17,7 +17,7 @@ class ItemDetailsScreen extends StatelessWidget {
         children: [
           ListView(
             children: [
-              ProductImage(productImage: product.image),
+              ProductImage(productImage: product.imagePath),
               const SizedBox(height: 24),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16.0),

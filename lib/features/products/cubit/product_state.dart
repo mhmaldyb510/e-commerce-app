@@ -9,12 +9,18 @@ final class ProductsLoadingState extends ProductState {}
 
 final class ProductsLoadedState extends ProductState {
   final List<ProductModel> products;
-  ProductsLoadedState(this.products);
+  final List<CategoryModel> categories;
+  ProductsLoadedState({required this.products, required this.categories});
 }
 
 final class ProductsErrorState extends ProductState {
   final String message;
   ProductsErrorState(this.message);
+}
+
+final class ProductFilteredState extends ProductState {
+  final List<ProductModel> products;
+  ProductFilteredState({required this.products});
 }
 
 final class FilterModalSheetState extends ProductState {}

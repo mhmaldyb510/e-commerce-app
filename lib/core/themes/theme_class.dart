@@ -11,9 +11,9 @@ class ThemeClass {
         foregroundColor: AppColors.kPrimaryColor,
         backgroundColor: AppColors.green1_50,
         iconSize: 20,
-        padding: const EdgeInsets.all(20)
-      )
-    )
+        padding: const EdgeInsets.all(20),
+      ),
+    ),
   );
 
   ThemeData get baseTheme => _baseTheme;

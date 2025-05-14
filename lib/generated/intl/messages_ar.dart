@@ -218,6 +218,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
     "questionMark": MessageLookupByLibrary.simpleMessage("؟"),
     "resendCode": MessageLookupByLibrary.simpleMessage("إعادة إرسال الرمز"),
+    "results": MessageLookupByLibrary.simpleMessage("نتائج"),
     "review": MessageLookupByLibrary.simpleMessage("المراجعة"),
     "reviews": MessageLookupByLibrary.simpleMessage("التقييمات"),
     "saveTheAddress": MessageLookupByLibrary.simpleMessage("حفظ العنوان"),

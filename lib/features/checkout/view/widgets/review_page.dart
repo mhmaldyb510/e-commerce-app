@@ -16,7 +16,7 @@ class ReviewPage extends StatelessWidget {
   Widget build(BuildContext context) {
     double totalPrice = 0;
     for (var element in BlocProvider.of<CheckoutCubit>(context).products) {
-      totalPrice += double.parse(element.price) * 50;
+      totalPrice += element.price;
     }
     return SingleChildScrollView(
       child: BlocBuilder<CheckoutCubit, CheckoutState>(

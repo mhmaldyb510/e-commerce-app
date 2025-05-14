@@ -1,8 +1,10 @@
 import 'package:e_commerce_app/core/themes/text_styles.dart';
 import 'package:e_commerce_app/core/widgets/custom_button.dart';
+import 'package:e_commerce_app/features/products/cubit/product_cubit.dart';
 import 'package:e_commerce_app/features/products/model/sort_enum.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SortingBottomSheet extends StatefulWidget {
   final SortEnum? chosenSort;
@@ -76,6 +78,23 @@ class _SortingBottomSheetState extends State<SortingBottomSheet> {
             text: S.of(context).filter,
             onPressed: () {
               Navigator.of(context).pop();
+              switch (sort) {
+                case SortEnum.alphabetically:
+                  context.read<ProductCubit>().getCategoryProducts(
+                    sort: 'title',
+                  );
+                  break;
+                case SortEnum.priceHighToLow:
+                  context.read<ProductCubit>().getCategoryProducts(
+                    sort: '-price',
+                  );
+                  break;
+                case SortEnum.priceLowToHigh:
+                  context.read<ProductCubit>().getCategoryProducts(
+                    sort: 'price',
+                  );
+                  break;
+              }
             },
           ),
           const SizedBox(height: 32),

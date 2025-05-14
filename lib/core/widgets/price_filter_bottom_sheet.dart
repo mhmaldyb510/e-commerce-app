@@ -1,9 +1,11 @@
 import 'package:e_commerce_app/core/themes/app_colors.dart';
 import 'package:e_commerce_app/core/themes/text_styles.dart';
 import 'package:e_commerce_app/core/widgets/custom_button.dart';
+import 'package:e_commerce_app/features/products/cubit/product_cubit.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:intl/intl.dart';
 
@@ -272,6 +274,7 @@ class _PriceFilterBottomSheetState extends State<PriceFilterBottomSheet> {
             text: S.of(context).filter,
             onPressed: () {
               Navigator.pop(context);
+              context.read<ProductCubit>().getCategoryProducts();
             },
           ),
 

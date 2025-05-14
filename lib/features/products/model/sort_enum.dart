@@ -1,5 +1,1 @@
-enum SortEnum {
-  priceLowToHigh,
-  priceHighToLow,
-  alphabetically
-}
+enum SortEnum { priceLowToHigh, priceHighToLow, alphabetically }
