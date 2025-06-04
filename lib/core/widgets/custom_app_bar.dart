@@ -17,7 +17,11 @@ class CustomAppBar extends StatelessWidget {
                   fixedSize: const Size(44, 44),
                   side: const BorderSide(color: Color(0xffF1F1F5)),
                 ),
-                onPressed: Navigator.of(context).pop,
+                onPressed: () {
+                  if (Navigator.canPop(context)) {
+                    Navigator.pop(context);
+                  }
+                },
                 icon: const Icon(Icons.arrow_back_ios),
               )
               : null,

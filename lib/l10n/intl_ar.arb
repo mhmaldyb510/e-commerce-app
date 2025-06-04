@@ -135,6 +135,8 @@
     "enterCode": "ادخل الكود",
     "passwordChangedSuccessfully": "تم تغيير كلمة المرور بنجاح",
     "results": "نتائج",
+    "youHave": "لديك ",
+    "productsOnCart": "منتجات في السلة",
     "@general": {},
     "@home": {
         "description": "Label for the home bottom navigation item"

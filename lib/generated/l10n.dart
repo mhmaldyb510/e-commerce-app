@@ -1115,6 +1115,21 @@ class S {
     return Intl.message('Results', name: 'results', desc: '', args: []);
   }
 
+  /// `You have `
+  String get youHave {
+    return Intl.message('You have ', name: 'youHave', desc: '', args: []);
+  }
+
+  /// `products on cart`
+  String get productsOnCart {
+    return Intl.message(
+      'products on cart',
+      name: 'productsOnCart',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Personal Information`
   String get personalInformation {
     return Intl.message(

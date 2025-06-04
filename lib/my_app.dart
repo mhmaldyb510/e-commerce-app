@@ -6,6 +6,7 @@ import 'package:e_commerce_app/core/themes/light_theme.dart';
 import 'package:e_commerce_app/core/widgets/main_layout.dart';
 import 'package:e_commerce_app/features/authentication/cubit/authentication_cubit.dart';
 import 'package:e_commerce_app/features/onboarding/view/screens/onboarding_screen.dart';
+import 'package:e_commerce_app/features/product_details/cubit/product_page_cubit.dart';
 import 'package:e_commerce_app/features/products/cubit/product_cubit.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:e_commerce_app/main.dart';
@@ -50,6 +51,7 @@ class _MyAppState extends State<MyApp> {
         BlocProvider(
           create: (context) => ProductCubit()..fetchProductsScreen(),
         ),
+        BlocProvider(create: (context) => ProductPageCubit()),
       ],
       child: MaterialApp(
         locale: const Locale('ar'),

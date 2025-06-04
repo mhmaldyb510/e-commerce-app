@@ -3,9 +3,11 @@ import 'package:e_commerce_app/core/constants/assets.dart';
 import 'package:e_commerce_app/core/models/product_model.dart';
 import 'package:e_commerce_app/core/themes/text_styles.dart';
 import 'package:e_commerce_app/core/widgets/favorite_button.dart';
+import 'package:e_commerce_app/features/product_details/cubit/product_page_cubit.dart';
 import 'package:e_commerce_app/features/product_details/view/screens/item_details_screen.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ProductCard extends StatelessWidget {
   final ProductModel product;
@@ -141,17 +143,34 @@ class ProductCard extends StatelessWidget {
               },
             ),
             const Positioned(top: 8, right: 8, child: FavoriteButton()),
-            Positioned(
-              bottom: 8,
-              right: 8,
-              child: InkWell(
-                onTap: () {},
-                child: Image.asset(
-                  Assets.iconsAddButton,
-                  width: 30,
-                  height: 30,
-                ),
-              ),
+            BlocBuilder<ProductPageCubit, ProductPageState>(
+              builder: (context, state) {
+                return Positioned(
+                  bottom: 8,
+                  right: 8,
+                  child: InkWell(
+                    onTap: () async {
+                      context.read<ProductPageCubit>().setProductID(product.id);
+                      await context.read<ProductPageCubit>().addProductToCart();
+                    },
+                    child:
+                        (state is ProductPageLoading &&
+                                context.read<ProductPageCubit>().productID ==
+                                    product.id)
+                            ? Center(
+                              child: Transform.scale(
+                                scale: 0.5,
+                                child: const CircularProgressIndicator(),
+                              ),
+                            )
+                            : Image.asset(
+                              Assets.iconsAddButton,
+                              width: 30,
+                              height: 30,
+                            ),
+                  ),
+                );
+              },
             ),
           ],
         ),

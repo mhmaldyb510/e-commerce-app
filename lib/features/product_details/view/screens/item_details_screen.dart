@@ -1,10 +1,11 @@
 import 'package:e_commerce_app/core/models/product_model.dart';
 import 'package:e_commerce_app/core/widgets/custom_button.dart';
-import 'package:e_commerce_app/features/checkout/view/screens/checkout_screen.dart';
+import 'package:e_commerce_app/features/product_details/cubit/product_page_cubit.dart';
 import 'package:e_commerce_app/features/product_details/view/widgets/product_details_section.dart';
 import 'package:e_commerce_app/features/product_details/view/widgets/product_image.dart';
 import 'package:e_commerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ItemDetailsScreen extends StatelessWidget {
   final ProductModel product;
@@ -26,18 +27,31 @@ class ItemDetailsScreen extends StatelessWidget {
               const SizedBox(height: 24),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                child: CustomButton(
-                  text: S.of(context).addToCart,
-                  onPressed:
-                      () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder:
-                              (context) => CheckoutScreen(products: [product]),
-                        ),
-                      ),
+                child: BlocBuilder<ProductPageCubit, ProductPageState>(
+                  builder: (context, state) {
+                    return CustomButton(
+                      text: S.of(context).addToCart,
+                      onPressed: () async {
+                        context.read<ProductPageCubit>().setProductID(
+                          product.id,
+                        );
+                        await context
+                            .read<ProductPageCubit>()
+                            .addProductToCart();
+                      },
+                      child:
+                          state is ProductPageLoading
+                              ? const Center(
+                                child: CircularProgressIndicator(
+                                  color: Colors.white,
+                                ),
+                              )
+                              : null,
+                    );
+                  },
                 ),
               ),
+
               const SizedBox(height: 70),
             ],
           ),
