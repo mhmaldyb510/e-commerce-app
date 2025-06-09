@@ -70,7 +70,6 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                 )
                 : null,
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
-        fillColor: const Color(0xffF9FAFA),
         filled: true,
         hintText: widget.hintText,
         hintStyle: TextStyles.bodySmallBold.copyWith(

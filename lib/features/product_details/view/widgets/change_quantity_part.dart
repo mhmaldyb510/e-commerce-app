@@ -1,7 +1,9 @@
 import 'package:e_commerce_app/core/themes/app_colors.dart';
 import 'package:e_commerce_app/core/themes/text_styles.dart';
+import 'package:e_commerce_app/features/product_details/cubit/product_page_cubit.dart';
 import 'package:e_commerce_app/features/product_details/view/widgets/custom_circler_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ChangeQuantityPart extends StatefulWidget {
   const ChangeQuantityPart({super.key});
@@ -11,7 +13,6 @@ class ChangeQuantityPart extends StatefulWidget {
 }
 
 class _ChangeQuantityPartState extends State<ChangeQuantityPart> {
-  int quantity = 1;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -22,13 +23,13 @@ class _ChangeQuantityPartState extends State<ChangeQuantityPart> {
           iconColor: Theme.of(context).scaffoldBackgroundColor,
           onPressed: () {
             setState(() {
-              quantity++;
+              context.read<ProductPageCubit>().quantity++;
             });
           },
         ),
         const SizedBox(width: 16),
         Text(
-          '$quantity',
+          context.read<ProductPageCubit>().quantity.toString(),
           style: TextStyles.bodyBaseBold.copyWith(
             color: Theme.of(context).textTheme.bodyMedium!.color,
           ),
@@ -40,8 +41,8 @@ class _ChangeQuantityPartState extends State<ChangeQuantityPart> {
           iconColor: Theme.of(context).hintColor,
           onPressed: () {
             setState(() {
-              if (quantity > 1) {
-                quantity--;
+              if (context.read<ProductPageCubit>().quantity > 1) {
+                context.read<ProductPageCubit>().quantity--;
               }
             });
           },

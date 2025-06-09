@@ -219,6 +219,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Price (Low to High)",
     ),
     "products": MessageLookupByLibrary.simpleMessage("Products"),
+    "productsOnCart": MessageLookupByLibrary.simpleMessage("products on cart"),
     "profile": MessageLookupByLibrary.simpleMessage("Profile"),
     "questionMark": MessageLookupByLibrary.simpleMessage("?"),
     "resendCode": MessageLookupByLibrary.simpleMessage("Resend the Code"),
@@ -258,5 +259,6 @@ class MessageLookup extends MessageLookupByLibrary {
       "Don\'t worry, just enter your email and we will send a verification code.",
     ),
     "whoWeAre": MessageLookupByLibrary.simpleMessage("Who We Are"),
+    "youHave": MessageLookupByLibrary.simpleMessage("You have "),
   };
 }

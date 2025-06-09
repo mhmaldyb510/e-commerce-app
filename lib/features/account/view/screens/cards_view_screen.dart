@@ -26,6 +26,16 @@ class CardsViewScreen extends StatelessWidget {
             child: BlocBuilder<PaymentCubit, PaymentState>(
               builder: (context, state) {
                 var cards = context.read<PaymentCubit>().getAllCards();
+                List<String> cardsNumbers = [];
+                for (var card in cards) {
+                  try {
+                    cardsNumbers.add(
+                      card.cardNumber.substring(card.cardNumber.length - 4),
+                    );
+                  } catch (e) {
+                    cardsNumbers.add('0000');
+                  }
+                }
                 return RefreshIndicator(
                   onRefresh:
                       () async => context.read<PaymentCubit>().getAllCards(),
@@ -49,7 +59,7 @@ class CardsViewScreen extends StatelessWidget {
                                     ? const Icon(Iconsax.card_bold)
                                     : Brand(cards[index].cardType),
                             title: Text(
-                              '**** **** **** ${cards[index].cardNumber.substring(cards[index].cardNumber.length - 4)}',
+                              '**** **** **** ${cardsNumbers[index]}',
                             ),
                           ),
                         ),

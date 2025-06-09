@@ -215,6 +215,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "السعر (من الاقل للاعلى)",
     ),
     "products": MessageLookupByLibrary.simpleMessage("المنتجات"),
+    "productsOnCart": MessageLookupByLibrary.simpleMessage("منتجات في السلة"),
     "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
     "questionMark": MessageLookupByLibrary.simpleMessage("؟"),
     "resendCode": MessageLookupByLibrary.simpleMessage("إعادة إرسال الرمز"),
@@ -253,5 +254,6 @@ class MessageLookup extends MessageLookupByLibrary {
       "لا تقلق ، ما عليك سوى كتابة البريد الإلكتروني وسنرسل رمز التحقق.",
     ),
     "whoWeAre": MessageLookupByLibrary.simpleMessage("من نحن"),
+    "youHave": MessageLookupByLibrary.simpleMessage("لديك "),
   };
 }

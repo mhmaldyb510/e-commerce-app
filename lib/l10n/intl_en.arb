@@ -135,6 +135,8 @@
     "enterCode": "Enter Code",
     "passwordChangedSuccessfully": "Password changed successfully",
     "results": "Results",
+    "youHave": "You have ",
+    "productsOnCart": "products on cart",
     "@general": {},
     "personalInformation": "Personal Information",
     "@home": {
