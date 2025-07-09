@@ -12,14 +12,11 @@ A feature-rich e-commerce application built with Flutter. This project serves as
 
 ### More Screenshots
 
- <img src="docs/images/image (1).png" width="200"/>  
- <img src="docs/images/image (2).png" width="200"/>
- <img src="docs/images/image (4).png" width="200"/> 
- <img src="docs/images/image (8).png" width="200"/>
- <img src="docs/images/image (10).png" width="200"/>
- <img src="docs/images/image (11).png" width="200"/> 
- <img src="docs/images/image (13).png" width="200"/>
- <img src="docs/images/image (14).png" width="200"/>
+| | | |
+| :---: | :---: | :---: |
+| <img src="docs/images/image (1).png" width="200"/> | <img src="docs/images/image (2).png" width="200"/> | <img src="docs/images/image (4).png" width="200"/> |
+| <img src="docs/images/image (8).png" width="200"/> | <img src="docs/images/image (10).png" width="200"/> | <img src="docs/images/image (11).png" width="200"/> |
+| <img src="docs/images/image (13).png" width="200"/> | <img src="docs/images/image (14).png" width="200"/> | |
 
 ## ✨ Features
 
